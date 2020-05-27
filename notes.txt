@@ -16,3 +16,5 @@ Requirements
   + Links to live demos
 
 5-) A call to action
+
+6-) choose fonts

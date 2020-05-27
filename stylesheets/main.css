@@ -1,0 +1,25 @@
+* {
+  border: 1px red solid;
+}
+
+html {
+  font-family: 'Carrois Gothic SC', sans-serif;
+  background-color: rgba(85, 85, 255, 0.445);
+}
+
+html body {
+  min-width: 350px;
+}
+
+#vesika { 
+  max-width: 170px;
+}
+
+#contact-card {
+  min-width: 170px;
+}
+
+.media .project-visual {
+  width: 100px;
+  height: 100px;
+}
