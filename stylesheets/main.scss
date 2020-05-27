@@ -1,3 +1,7 @@
+//* {
+//  border: 1px red solid;
+//}
+
 #who-am-i {
   font-family: 'Carrois Gothic SC', sans-serif;
 }
@@ -10,34 +14,33 @@ html body {
   min-width: 350px;
 }
 
-#vesika {
+#vesika { 
   max-width: 170px;
 }
 
-.contact-card h2 {
-  font-size: 18px;
-}
-
-.contact-card p {
-  text-transform: capitalize;
+.contact-card {
+  h2 {
+    font-size: 18px;
+  }
+  p {
+    text-transform: capitalize;
+  }
 }
 
 #social-media-links a {
   color: black;
-}
-
-#social-media-links a :hover {
-  color: gray;
-}
-
-#social-media-links a i {
-  font-size: 35px;
-  width: 50px;
-  height: 50px;
+  :hover {
+    color: gray;
+  }
+  i {
+    font-size: 35px;
+    width: 50px;
+    height: 50px;
+  }
 }
 
 .media .project-visual {
   width: 100px;
   height: 100px;
 }
-/*# sourceMappingURL=main.css.map */
+
