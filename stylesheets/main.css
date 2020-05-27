@@ -6,6 +6,9 @@ html body {
 
 #who-am-i {
   font-family: 'Baloo Chettan 2', cursive;
+  background: #f4f3f3;
+  background: -webkit-gradient(linear, left bottom, left top, from(#f4f3f3), to(#6c757d));
+  background: linear-gradient(0deg, #f4f3f3 0%, #6c757d 100%);
 }
 
 #who-am-i p {
@@ -26,7 +29,12 @@ html body {
 
 .badge-jamilia {
   background-color: #F4F3F3;
-  color: #6C757D;
+  color: #798794;
+}
+
+.bg-jamilia {
+  background-color: #798794;
+  color: #F4F3F3;
 }
 
 #vesika {
@@ -42,11 +50,11 @@ html body {
 }
 
 #social-media-links a {
-  color: #6C757D;
+  color: #2c2c2c;
 }
 
 #social-media-links a :hover {
-  color: black;
+  color: #6C757D;
 }
 
 #social-media-links a i {

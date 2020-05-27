@@ -14,6 +14,8 @@ html body {
   p {
     font-weight: 600;
   }
+  background: rgb(244,243,243);
+  background: linear-gradient(0deg, rgba(244,243,243,1) 0%, rgba(108,117,125,1) 100%);
 }
 
 .projects {
@@ -29,7 +31,12 @@ html body {
 
 .badge-jamilia {
   background-color: #F4F3F3;
-  color: #6C757D;
+  color: rgb(121, 135, 148);
+}
+
+.bg-jamilia {
+  background-color:  rgb(121, 135, 148);
+  color: #F4F3F3;
 }
 
 #vesika { 
@@ -46,9 +53,9 @@ html body {
 }
 
 #social-media-links a {
-  color: #6C757D;
+  color: rgb(44, 44, 44);
   :hover {
-    color: black;
+    color: #6C757D;
   }
   i {
     font-size: 35px;
