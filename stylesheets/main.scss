@@ -1,17 +1,35 @@
-//* {
-//  border: 1px red solid;
-//}
+// * {
+//   border: 1px red solid;
+// }
+
+html body {
+  background-color: #F4F3F3;
+  min-width: 350px;
+  color: rgb(44, 44, 44);
+}
 
 #who-am-i {
-  font-family: 'Carrois Gothic SC', sans-serif;
+  //font-family: 'Carrois Gothic SC', sans-serif;
+  font-family: 'Baloo Chettan 2', cursive;
+  p {
+    font-weight: 600;
+  }
 }
 
 .projects {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana;
+  a:hover {
+    color:  rgb(44, 44, 44);
+  }
 }
 
-html body {
-  min-width: 350px;
+.text-jamilia {
+  color: #F4F3F3;
+}
+
+.badge-jamilia {
+  background-color: #F4F3F3;
+  color: #6C757D;
 }
 
 #vesika { 
@@ -23,14 +41,14 @@ html body {
     font-size: 18px;
   }
   p {
-    text-transform: capitalize;
+    text-transform: uppercase;
   }
 }
 
 #social-media-links a {
-  color: black;
+  color: #6C757D;
   :hover {
-    color: gray;
+    color: black;
   }
   i {
     font-size: 35px;
