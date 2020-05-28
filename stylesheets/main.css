@@ -3,6 +3,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  border: red solid 1px;
 }
 
 html body {
@@ -99,6 +100,7 @@ html body .body-big .project-visual-big {
   font-size: 35px;
   width: 50px;
   height: 50px;
+  text-align: center;
 }
 
 .media .project-visual {
