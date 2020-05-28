@@ -11,24 +11,27 @@ html body .body-big {
 
 html body .body-big .column-md-6 {
   font-size: 25px;
+  background: #f4f3f3;
+  background: -webkit-gradient(linear, left bottom, left top, from(#6c757d), to(#f4f3f3));
+  background: linear-gradient(0deg, #6c757d 0%, #f4f3f3 100%);
 }
 
 html body .body-big .project-visual-big {
   max-width: 500px;
 }
 
-#who-am-i {
+.who-am-i {
   font-family: 'Baloo Chettan 2', cursive;
   background: #f4f3f3;
   background: -webkit-gradient(linear, left bottom, left top, from(#f4f3f3), to(#6c757d));
   background: linear-gradient(0deg, #f4f3f3 0%, #6c757d 100%);
 }
 
-#who-am-i p {
+.who-am-i p {
   font-weight: 600;
 }
 
-#who-am-i .stack-big {
+.who-am-i .stack-big {
   font-size: 20px;
   font-weight: lighter;
 }
@@ -77,15 +80,15 @@ html body .body-big .project-visual-big {
   text-transform: uppercase;
 }
 
-#social-media-links a {
+.social-media-links a {
   color: #2c2c2c;
 }
 
-#social-media-links a :hover {
+.social-media-links a :hover {
   color: #6C757D;
 }
 
-#social-media-links a i {
+.social-media-links a i {
   font-size: 35px;
   width: 50px;
   height: 50px;
