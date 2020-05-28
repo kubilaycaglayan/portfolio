@@ -1,5 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html body {
-  background-color: #F4F3F3;
+  background-color: #f4f3f3;
   min-width: 350px;
   color: rgb(44, 44, 44);
   .body-big {
@@ -7,8 +13,12 @@ html body {
     max-width: 1120px;
     .column-md-6 {
       font-size: 25px;
-      background: rgb(244,243,243);
-      background: linear-gradient(0deg, rgba(108,117,125,1) 0%, rgba(244,243,243,1) 100%);
+      background: rgb(244, 243, 243);
+      background: linear-gradient(
+        0deg,
+        rgba(108, 117, 125, 1) 0%,
+        rgba(244, 243, 243, 1) 100%
+      )
     }
     .project-visual-big {
       max-width: 500px;
@@ -18,12 +28,16 @@ html body {
 
 .who-am-i {
   //font-family: 'Carrois Gothic SC', sans-serif;
-  font-family: 'Baloo Chettan 2', cursive;
+  font-family: "Baloo Chettan 2", cursive;
   p {
     font-weight: 600;
   }
-  background: rgb(244,243,243);
-  background: linear-gradient(0deg, rgba(244,243,243,1) 0%, rgba(108,117,125,1) 100%);
+  background: rgb(244, 243, 243);
+  background: linear-gradient(
+    0deg,
+    rgba(244, 243, 243, 1) 0%,
+    rgba(108, 117, 125, 1) 100%
+  );
   .stack-big {
     font-size: 20px;
     font-weight: lighter;
@@ -31,31 +45,35 @@ html body {
 }
 
 .projects {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana;
   a:hover {
-    color:  rgb(44, 44, 44);
+    color: rgb(44, 44, 44);
   }
   li {
-    background: rgb(244,243,243);
-    background: linear-gradient(0deg, rgba(108,117,125,1) 0%, rgba(244,243,243,1) 100%);
+    background: rgb(244, 243, 243);
+    background: linear-gradient(
+      0deg,
+      rgba(108, 117, 125, 1) 0%,
+      rgba(244, 243, 243, 1) 100%
+    );
   }
 }
 
 .text-jamilia {
-  color: #F4F3F3;
+  color: #f4f3f3;
 }
 
 .badge-jamilia {
-  background-color: #F4F3F3;
+  background-color: #f4f3f3;
   color: rgb(121, 135, 148);
 }
 
 .bg-jamilia {
-  background-color:  rgb(121, 135, 148);
-  color: #F4F3F3;
+  background-color: rgb(121, 135, 148);
+  color: #f4f3f3;
 }
 
-#vesika { 
+#vesika {
   max-width: 170px;
 }
 #photo-big {
@@ -74,7 +92,7 @@ html body {
 .social-media-links a {
   color: rgb(44, 44, 44);
   :hover {
-    color: #6C757D;
+    color: #6c757d;
   }
   i {
     font-size: 35px;
@@ -87,4 +105,3 @@ html body {
   width: 100px;
   height: 100px;
 }
-

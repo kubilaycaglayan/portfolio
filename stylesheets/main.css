@@ -1,5 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 html body {
-  background-color: #F4F3F3;
+  background-color: #f4f3f3;
   min-width: 350px;
   color: #2c2c2c;
 }
@@ -21,7 +28,7 @@ html body .body-big .project-visual-big {
 }
 
 .who-am-i {
-  font-family: 'Baloo Chettan 2', cursive;
+  font-family: "Baloo Chettan 2", cursive;
   background: #f4f3f3;
   background: -webkit-gradient(linear, left bottom, left top, from(#f4f3f3), to(#6c757d));
   background: linear-gradient(0deg, #f4f3f3 0%, #6c757d 100%);
@@ -37,7 +44,7 @@ html body .body-big .project-visual-big {
 }
 
 .projects {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana;
 }
 
 .projects a:hover {
@@ -51,17 +58,17 @@ html body .body-big .project-visual-big {
 }
 
 .text-jamilia {
-  color: #F4F3F3;
+  color: #f4f3f3;
 }
 
 .badge-jamilia {
-  background-color: #F4F3F3;
+  background-color: #f4f3f3;
   color: #798794;
 }
 
 .bg-jamilia {
   background-color: #798794;
-  color: #F4F3F3;
+  color: #f4f3f3;
 }
 
 #vesika {
@@ -85,7 +92,7 @@ html body .body-big .project-visual-big {
 }
 
 .social-media-links a :hover {
-  color: #6C757D;
+  color: #6c757d;
 }
 
 .social-media-links a i {
