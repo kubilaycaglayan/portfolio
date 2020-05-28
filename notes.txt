@@ -1,0 +1,20 @@
+Requirements
+
+1-) Links To:
+  + Linkedin
+  + Github
+  + Twitter
+  + Cv
+
+2-) Name Surname
+
+3-) Photo
+
+4-) 6 of my Projects
+  + Screenshots
+  + Links to source
+  + Links to live demos
+
+5-) A call to action
+
+6-) choose fonts

@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html body {
+  background-color: #f4f3f3;
+  min-width: 350px;
+  color: #2c2c2c;
+}
+
+html body .body-big {
+  min-width: 750px;
+  max-width: 1120px;
+}
+
+html body .body-big .column-md-6 {
+  font-size: 25px;
+  background: #f4f3f3;
+  background: -webkit-gradient(linear, left bottom, left top, from(#6c757d), to(#f4f3f3));
+  background: linear-gradient(0deg, #6c757d 0%, #f4f3f3 100%);
+}
+
+html body .body-big .project-visual-big {
+  max-width: 500px;
+}
+
+.who-am-i {
+  font-family: "Baloo Chettan 2", cursive;
+  background: #f4f3f3;
+  background: -webkit-gradient(linear, left bottom, left top, from(#f4f3f3), to(#6c757d));
+  background: linear-gradient(0deg, #f4f3f3 0%, #6c757d 100%);
+}
+
+.who-am-i p {
+  font-weight: 600;
+}
+
+.who-am-i .stack-big {
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.projects {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana;
+}
+
+.projects a:hover {
+  color: #2c2c2c;
+}
+
+.projects li {
+  background: #f4f3f3;
+  background: -webkit-gradient(linear, left bottom, left top, from(#6c757d), to(#f4f3f3));
+  background: linear-gradient(0deg, #6c757d 0%, #f4f3f3 100%);
+}
+
+.text-jamilia {
+  color: #f4f3f3;
+}
+
+.badge-jamilia {
+  background-color: #f4f3f3;
+  color: #798794;
+}
+
+.bg-jamilia {
+  background-color: #798794;
+  color: #f4f3f3;
+}
+
+#vesika {
+  max-width: 170px;
+}
+
+#photo-big {
+  max-width: 250px;
+}
+
+.contact-card h2 {
+  font-size: 18px;
+}
+
+.contact-card p {
+  text-transform: uppercase;
+}
+
+.social-media-links a {
+  color: #2c2c2c;
+}
+
+.social-media-links a :hover {
+  color: #6c757d;
+}
+
+.social-media-links a i {
+  font-size: 35px;
+  width: 50px;
+  height: 50px;
+}
+
+.media .project-visual {
+  width: 100px;
+  height: 100px;
+}
+/*# sourceMappingURL=main.css.map */
