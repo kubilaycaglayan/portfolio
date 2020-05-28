@@ -1,11 +1,21 @@
-// * {
-//   border: 1px red solid;
-// }
+* {
+  // border: 1px red solid;
+}
 
 html body {
   background-color: #F4F3F3;
   min-width: 350px;
   color: rgb(44, 44, 44);
+  .body-big {
+    min-width: 750px;
+    max-width: 1120px;
+    .column-md-6 {
+      font-size: 25px;
+    }
+    .project-visual-big {
+      max-width: 500px;
+    }
+  }
 }
 
 #who-am-i {
@@ -16,6 +26,10 @@ html body {
   }
   background: rgb(244,243,243);
   background: linear-gradient(0deg, rgba(244,243,243,1) 0%, rgba(108,117,125,1) 100%);
+  .stack-big {
+    font-size: 20px;
+    font-weight: lighter;
+  }
 }
 
 .projects {
@@ -45,6 +59,9 @@ html body {
 
 #vesika { 
   max-width: 170px;
+}
+#photo-big {
+  max-width: 250px;
 }
 
 .contact-card {

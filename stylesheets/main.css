@@ -4,6 +4,19 @@ html body {
   color: #2c2c2c;
 }
 
+html body .body-big {
+  min-width: 750px;
+  max-width: 1120px;
+}
+
+html body .body-big .column-md-6 {
+  font-size: 25px;
+}
+
+html body .body-big .project-visual-big {
+  max-width: 500px;
+}
+
 #who-am-i {
   font-family: 'Baloo Chettan 2', cursive;
   background: #f4f3f3;
@@ -13,6 +26,11 @@ html body {
 
 #who-am-i p {
   font-weight: 600;
+}
+
+#who-am-i .stack-big {
+  font-size: 20px;
+  font-weight: lighter;
 }
 
 .projects {
@@ -45,6 +63,10 @@ html body {
 
 #vesika {
   max-width: 170px;
+}
+
+#photo-big {
+  max-width: 250px;
 }
 
 .contact-card h2 {
