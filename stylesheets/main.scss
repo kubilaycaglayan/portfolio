@@ -23,6 +23,10 @@ html body {
   a:hover {
     color:  rgb(44, 44, 44);
   }
+  li {
+    background: rgb(244,243,243);
+    background: linear-gradient(0deg, rgba(108,117,125,1) 0%, rgba(244,243,243,1) 100%);
+  }
 }
 
 .text-jamilia {

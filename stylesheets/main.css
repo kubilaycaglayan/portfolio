@@ -23,6 +23,12 @@ html body {
   color: #2c2c2c;
 }
 
+.projects li {
+  background: #f4f3f3;
+  background: -webkit-gradient(linear, left bottom, left top, from(#6c757d), to(#f4f3f3));
+  background: linear-gradient(0deg, #6c757d 0%, #f4f3f3 100%);
+}
+
 .text-jamilia {
   color: #F4F3F3;
 }
