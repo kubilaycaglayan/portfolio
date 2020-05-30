@@ -12,20 +12,30 @@ html body
   background-color: #f4f3f3
   min-width: 350px
   color: rgb(44, 44, 44)
+  .column-md-6 
+      @include linear-gradient(0deg, rgba(108,117,125,1) 0%, rgba(244,243,243,1) 75%,rgba(244,243,243,1) 80%, rgba(255,255,255,1) 97%, rgba(108,117,125,1) 100%)
+      .bg-private-events
+        background-color: #0561B3
+      .bg-conference
+        background-color: #ED5242
+      .bg-newsweek
+        background-color: #ED4631
+      .bg-ruby-linter
+        background-color: #DF4438
+      .bg-ruby
+        background-color: #D3B4EA
   .body-big 
     min-width: 750px
     max-width: 1120px
     header
       .who-am-i
         @include linear-gradient(30deg, rgba(108,117,125,1) 0%, rgba(244,243,243,1) 12%,rgba(255,255,255,1) ,18%,rgba(244,243,243,1) 50%, rgba(255,255,255,1) 55%, rgba(108,117,125,1) 100%)
-    .column-md-6 
-      font-size: 25px
-      @include linear-gradient(0deg, rgba(108,117,125,1) 0%, rgba(244,243,243,1) 75%,rgba(244,243,243,1) 80%, rgba(255,255,255,1) 97%, rgba(108,117,125,1) 100%)
-      .bg-newsweek
-        background-color: #ED4631
-      .summary-project 
-        font-size: 16px
-        max-width: 450px
+    .row
+      .column-md-6 
+        font-size: 25px
+        .summary-project 
+          font-size: 16px
+          max-width: 450px
     .project-visual-big 
       max-width: 450px
   .body-small
@@ -34,6 +44,11 @@ html body
         font-size: 1.75rem
       .who-am-i
         @include linear-gradient(0deg, rgba(244,243,243,1) 0%,rgba(244,243,243,1) 50%, rgba(255,255,255,1) 55%, rgba(108,117,125,1) 100%)
+    .row
+      .column-md-6
+        height: 95vh
+        img
+          height: 50vh
         
 
 @media screen and (min-width: 576px)
@@ -53,7 +68,6 @@ html body
   font-family: "Segoe UI", Tahoma, Geneva, Verdana
   a:hover
     color: rgb(44, 44, 44)
-  li
 .text-jamilia
   color: #f4f3f3
 
@@ -85,7 +99,3 @@ html body
     width: 50px
     height: 50px
     text-align: center
-
-.media .project-visual
-  width: 100px
-  height: 100px

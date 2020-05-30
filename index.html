@@ -119,8 +119,8 @@
           </div>
         </div>
       </header>
-      <div class="mt-5 pt-5">
-        <h3 class="text-center border-bottom mt-5 mb-3 mb-5 pb-5 rounded">
+      <div class="mt-5 pt-5 main-wrapper-big">
+        <h3 class="text-center border-bottom pb-5 rounded">
           <strong> PROJECTS:</strong>
         </h3>
 
@@ -129,7 +129,7 @@
             <div class="column-md-6 border rounded align-items-center m-1 p-3 d-flex flex-column justify-content-between">
               <h4 class="text-center text-dark">Private Events on Rails</h4>
 
-              <div class="d-flex align-items-center justify-content-center bg-primary rounded">
+              <div class="d-flex align-items-center justify-content-center bg-private-events rounded">
                 <a
                   class="badge badge-light m-2 p-2"
                   href="https://stormy-thicket-33445.herokuapp.com/"
@@ -160,7 +160,7 @@
             <div class="column-md-6 border rounded align-items-center m-1 p-3 d-flex flex-column justify-content-between">
               <h4 class="text-center">Conference Page</h4>
 
-              <div class="d-flex align-items-center justify-content-center bg-danger rounded">
+              <div class="d-flex align-items-center justify-content-center bg-conference rounded">
                 <a
                   class="badge badge-light m-2 p-2"
                   href="https://rawcdn.githack.com/kblycaglayan/HTML-CSS-capstone-project-Conference-page/65c0b4f71f46e41a66cc9ae49396506723a5d562/index.html"
@@ -192,7 +192,7 @@
             <div class="column-md-6 border rounded align-items-center m-1 p-3 d-flex flex-column justify-content-between">
               <h4 class="text-center">Ruby Linter</h4>
 
-              <div class="d-flex align-items-center justify-content-center bg-secondary rounded">
+              <div class="d-flex align-items-center justify-content-center bg-ruby-linter rounded">
                 <a
                   hidden
                   class="badge badge-light m-2 p-2"
@@ -221,7 +221,7 @@
             <div class="column-md-6 border rounded align-items-center m-1 p-3 d-flex flex-column justify-content-between">
               <h4 class="text-center">Ruby Enumerables</h4>
 
-              <div class="d-flex align-items-center justify-content-center bg-secondary rounded">
+              <div class="d-flex align-items-center justify-content-center bg-ruby rounded">
                 <a
                   hidden
                   class="badge badge-light m-2 p-2"
@@ -365,20 +365,12 @@
         <h3 class="text-center border-bottom mt-5 mb-3 rounded">
           <strong> PROJECTS:</strong>
         </h3>
-        <ul class="list-unstyled projects">
-          <li
-            class="media border border-light rounded align-items-center px-1 mb-2 mt-0 py-3 pl-3"
-          >
-            <img
-              src="images/PrivateEvents.png"
-              class="project-visual align-self-center mr-3 rounded"
-              alt="bootstrap-poject-image"
-            />
-
-            <div class="media-body">
+        <div class="projects container-fluid">
+          <div class="row justify-content-center">
+            <div class="column-md-6 border rounded align-items-center m-1 p-3 d-flex flex-column justify-content-between">
               <h4 class="text-center text-dark">Private Events on Rails</h4>
 
-              <div class="d-flex align-items-center justify-content-center">
+              <div class="d-flex align-items-center justify-content-center bg-private-events rounded">
                 <a
                   class="badge badge-light m-2 p-2"
                   href="https://stormy-thicket-33445.herokuapp.com/"
@@ -392,21 +384,24 @@
                   ><i class="fas fa-code"></i> Source
                 </a>
               </div>
+              <div class="summary-project p-3">
+                <p class="d-inline">In this Ruby on Rails project I am creating a website similar to Eventbrite. Users can create events and invite people to these events. </p>
+                <div class="badge badge-secondary d-inline">Ruby on Rails</div>
+                <div class="badge badge-secondary d-inline">Bootstrap</div>
+                
+              </div>
+              <div>
+                <img
+                  src="images/PrivateEvents.png"
+                  class="project-visual-big img-fluid align-self-center rounded"
+                  alt="bootstrap-poject-image"
+                />
+              </div>
             </div>
-          </li>
-          <li
-            class="media border rounded align-items-center px-1 my-2 py-3 pl-3"
-          >
-            <img
-              src="images/conferencepage.png"
-              class="project-visual align-self-center mr-3 rounded"
-              alt="bootstrap-poject-image"
-            />
-
-            <div class="media-body">
+            <div class="column-md-6 border rounded align-items-center m-1 p-3 d-flex flex-column justify-content-between">
               <h4 class="text-center">Conference Page</h4>
 
-              <div class="d-flex align-items-center justify-content-center">
+              <div class="d-flex align-items-center justify-content-center bg-conference rounded">
                 <a
                   class="badge badge-light m-2 p-2"
                   href="https://rawcdn.githack.com/kblycaglayan/HTML-CSS-capstone-project-Conference-page/65c0b4f71f46e41a66cc9ae49396506723a5d562/index.html"
@@ -420,22 +415,25 @@
                   ><i class="fas fa-code"></i> Source</a
                 >
               </div>
+                  <div class="summary-project p-3">
+                    <p class="d-inline">This is the project that I have completed my HTML&CSS course with. Visit this beautiful conference page that I only built in 48 hours!</p>
+                    <div class="badge badge-secondary d-inline">Html&Css</div>
+                    <div class="badge badge-secondary d-inline">Bootstrap</div>
+                    <div class="badge badge-secondary d-inline">Sass</div>
+                    
+                  </div>
+              <img
+                src="images/conferencepage.png"
+                class="project-visual-big img-fluid align-self-center rounded"
+                alt="bootstrap-poject-image"
+              />
             </div>
-          </li>
-
-          <li
-            class="media border rounded align-items-center px-1 my-2 py-3 pl-3"
-          >
-            <img
-              src="images/rubycapstone.png"
-              class="project-visual align-self-center rounded mr-3"
-              alt="bootstrap-poject-image"
-            />
-
-            <div class="media-body">
+          </div>
+          <div class="row justify-content-center my-5">
+            <div class="column-md-6 border rounded align-items-center m-1 p-3 d-flex flex-column justify-content-between">
               <h4 class="text-center">Ruby Linter</h4>
 
-              <div class="d-flex align-items-center justify-content-center">
+              <div class="d-flex align-items-center justify-content-center bg-ruby-linter rounded">
                 <a
                   hidden
                   class="badge badge-light m-2 p-2"
@@ -450,21 +448,21 @@
                   ><i class="fas fa-code"></i> Source</a
                 >
               </div>
+              <div class="summary-project p-3">
+                <p class="d-inline">Detecting ruby syntax errors now, are just that easy! In my Ruby capstone project I am helping you to detect syntax errors.</p>
+                <div class="badge badge-secondary d-inline">Ruby</div>
+                <div class="badge badge-secondary d-inline">Rspec</div>
+              </div>
+              <img
+                src="images/rubycapstone.png"
+                class="project-visual-big img-fluid align-self-center rounded"
+                alt="bootstrap-poject-image"
+              />
             </div>
-          </li>
-          <li
-            class="media border rounded align-items-center px-1 my-2 py-3 pl-3"
-          >
-            <img
-              src="images/enums.png"
-              class="project-visual align-self-center rounded mr-3"
-              alt="bootstrap-poject-image"
-            />
-
-            <div class="media-body">
+            <div class="column-md-6 border rounded align-items-center m-1 p-3 d-flex flex-column justify-content-between">
               <h4 class="text-center">Ruby Enumerables</h4>
 
-              <div class="d-flex align-items-center justify-content-center">
+              <div class="d-flex align-items-center justify-content-center bg-ruby rounded">
                 <a
                   hidden
                   class="badge badge-light m-2 p-2"
@@ -479,21 +477,23 @@
                   ><i class="fas fa-code"></i> Source</a
                 >
               </div>
+              <div class="summary-project p-3">
+                <p class="d-inline">Everything seems impossible until they are done! I recreated ruby enumerable methods in my study.</p>
+                <div class="badge badge-secondary d-inline">Ruby</div>
+                <div class="badge badge-secondary d-inline">Rspec</div>
+              </div>
+              <img
+                src="images/enums.png"
+                class="project-visual-big img-fluid align-self-center rounded"
+                alt="bootstrap-poject-image"
+              />
             </div>
-          </li>
-          <li
-            class="media border rounded align-items-center px-1 my-2 py-3 pl-3"
-          >
-            <img
-              src="images/usingbootstrap.png"
-              class="project-visual align-self-center rounded mr-3"
-              alt="bootstrap-poject-image"
-            />
-
-            <div class="media-body">
+          </div>
+          <div class="row justify-content-center">
+            <div class="column-md-6 border rounded align-items-center m-1 p-3 d-flex flex-column justify-content-between">
               <h4 class="text-center">Using Bootstrap</h4>
 
-              <div class="d-flex align-items-center justify-content-center">
+              <div class="d-flex align-items-center justify-content-center bg-newsweek rounded">
                 <a
                   class="badge badge-light m-2 p-2"
                   href="https://rawcdn.githack.com/kblycaglayan/Using-Bootstrap/2d269dc8053a1b991c826b0ef7f633cf3c2f7aa7/index.html"
@@ -507,14 +507,24 @@
                   ><i class="fas fa-code"></i> Source</a
                 >
               </div>
+              <div class="summary-project p-3">
+                <p class="d-inline">Using bootsrap is an excellent accelerator for your projects. Here I made an excellent copy of the newsweek website with bootsrap library.</p>
+                <div class="badge badge-secondary d-inline">Html&Css</div>
+                <div class="badge badge-secondary d-inline">Bootstrap</div>
+              </div>
+              <img
+                src="images/usingbootstrap.png"
+                class="project-visual-big img-fluid align-self-center rounded"
+                alt="bootstrap-poject-image"
+              />
             </div>
-          </li>
-        </ul>
+          </div>
+        </div>
       </main>
     </div>
 
-    <footer>
-      <p class="text-center text-muted mt-5">kblycaglayan@gmail.com</p>
+    <footer class="border-top mt-5">
+      <p class="text-center text-muted mt-3">kblycaglayan@gmail.com</p>
       <div
       class="social-media-links align-items-center justify-content-center d-flex mt-3"
     >
