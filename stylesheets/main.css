@@ -43,6 +43,7 @@ html body .body-big {
 }
 
 html body .body-big header .who-am-i {
+  height: 70vh;
   background: #6c757d;
   background: linear-gradient(30deg, #6c757d 0%, #f4f3f3 12%, white, 18%, #f4f3f3 50%, white 55%, #6c757d 100%);
 }
@@ -137,7 +138,10 @@ html body .body-small .row .column-md-6 img {
 
 .social-media-links a {
   color: #2c2c2c;
-  hover-color: #6c757d;
+}
+
+.social-media-links a:hover {
+  color: #B29D8A;
 }
 
 .social-media-links a i {
