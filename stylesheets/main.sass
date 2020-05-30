@@ -1,0 +1,102 @@
+@mixin linear-gradient($direction, $color-stops...)
+  background: nth(nth($color-stops, 1), 1)
+  background: -webkit-linear-gradient(legacy-direction($direction), $color-stops)
+  background: linear-gradient($direction, $color-stops)
+
+* 
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+html body 
+  background-color: #f4f3f3
+  min-width: 350px
+  color: rgb(44, 44, 44)
+  .column-md-6 
+      @include linear-gradient(0deg, rgba(108,117,125,1) 0%, rgba(244,243,243,1) 75%,rgba(244,243,243,1) 80%, rgba(255,255,255,1) 97%, rgba(108,117,125,1) 100%)
+      .bg-private-events
+        background-color: #0561B3
+      .bg-conference
+        background-color: #ED5242
+      .bg-newsweek
+        background-color: #ED4631
+      .bg-ruby-linter
+        background-color: #DF4438
+      .bg-ruby
+        background-color: #D3B4EA
+  .body-big 
+    min-width: 750px
+    max-width: 1120px
+    header
+      .who-am-i
+        height: 70vh
+        @include linear-gradient(30deg, rgba(108,117,125,1) 0%, rgba(244,243,243,1) 12%,rgba(255,255,255,1) ,18%,rgba(244,243,243,1) 50%, rgba(255,255,255,1) 55%, rgba(108,117,125,1) 100%)
+    .row
+      .column-md-6 
+        font-size: 25px
+        .summary-project 
+          font-size: 16px
+          max-width: 450px
+    .project-visual-big 
+      max-width: 450px
+  .body-small
+    header
+      h1
+        font-size: 1.75rem
+      .who-am-i
+        @include linear-gradient(0deg, rgba(244,243,243,1) 0%,rgba(244,243,243,1) 50%, rgba(255,255,255,1) 55%, rgba(108,117,125,1) 100%)
+    .row
+      .column-md-6
+        height: 95vh
+        img
+          height: 50vh
+        
+
+@media screen and (min-width: 576px)
+  footer
+    min-width: 750px
+
+  //font-family: 'Carrois Gothic SC', sans-serif;
+.who-am-i
+  font-family: "Baloo Chettan 2", cursive
+  p
+    font-weight: 600
+  .stack-big
+    font-size: 20px
+    font-weight: lighter
+
+.projects
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana
+  a:hover
+    color: rgb(44, 44, 44)
+.text-jamilia
+  color: #f4f3f3
+
+.badge-jamilia
+  background-color: #f4f3f3
+  color: rgb(121, 135, 148)
+
+.bg-jamilia
+  background-color: rgb(121, 135, 148)
+  color: #f4f3f3
+
+#vesika
+  max-width: 170px
+#photo-big 
+  max-width: 250px
+
+.contact-card
+  h2
+    font-size: 18px
+  p
+    text-transform: uppercase
+
+.social-media-links a
+  color: rgb(44, 44, 44)
+  &:hover
+    color: #B29D8A
+  i
+    font-size: 35px
+    width: 50px
+    height: 50px
+    text-align: center

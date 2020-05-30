@@ -11,32 +11,82 @@ html body {
   color: #2c2c2c;
 }
 
+html body .column-md-6 {
+  background: #6c757d;
+  background: -webkit-gradient(linear, left bottom, left top, from(#6c757d), color-stop(75%, #f4f3f3), color-stop(80%, #f4f3f3), color-stop(97%, white), to(#6c757d));
+  background: linear-gradient(0deg, #6c757d 0%, #f4f3f3 75%, #f4f3f3 80%, white 97%, #6c757d 100%);
+}
+
+html body .column-md-6 .bg-private-events {
+  background-color: #0561B3;
+}
+
+html body .column-md-6 .bg-conference {
+  background-color: #ED5242;
+}
+
+html body .column-md-6 .bg-newsweek {
+  background-color: #ED4631;
+}
+
+html body .column-md-6 .bg-ruby-linter {
+  background-color: #DF4438;
+}
+
+html body .column-md-6 .bg-ruby {
+  background-color: #D3B4EA;
+}
+
 html body .body-big {
   min-width: 750px;
   max-width: 1120px;
 }
 
-html body .body-big .column-md-6 {
-  font-size: 25px;
-  background: #f4f3f3;
-  background: -webkit-gradient(linear, left bottom, left top, from(#6c757d), to(#f4f3f3));
-  background: linear-gradient(0deg, #6c757d 0%, #f4f3f3 100%);
+html body .body-big header .who-am-i {
+  height: 70vh;
+  background: #6c757d;
+  background: linear-gradient(30deg, #6c757d 0%, #f4f3f3 12%, white, 18%, #f4f3f3 50%, white 55%, #6c757d 100%);
 }
 
-html body .body-big .column-md-6 .summary-project {
-  max-width: 500px;
+html body .body-big .row .column-md-6 {
+  font-size: 25px;
+}
+
+html body .body-big .row .column-md-6 .summary-project {
   font-size: 16px;
+  max-width: 450px;
 }
 
 html body .body-big .project-visual-big {
-  max-width: 500px;
+  max-width: 450px;
+}
+
+html body .body-small header h1 {
+  font-size: 1.75rem;
+}
+
+html body .body-small header .who-am-i {
+  background: #f4f3f3;
+  background: -webkit-gradient(linear, left bottom, left top, from(#f4f3f3), color-stop(50%, #f4f3f3), color-stop(55%, white), to(#6c757d));
+  background: linear-gradient(0deg, #f4f3f3 0%, #f4f3f3 50%, white 55%, #6c757d 100%);
+}
+
+html body .body-small .row .column-md-6 {
+  height: 95vh;
+}
+
+html body .body-small .row .column-md-6 img {
+  height: 50vh;
+}
+
+@media screen and (min-width: 576px) {
+  footer {
+    min-width: 750px;
+  }
 }
 
 .who-am-i {
   font-family: "Baloo Chettan 2", cursive;
-  background: #f4f3f3;
-  background: -webkit-gradient(linear, left bottom, left top, from(#f4f3f3), to(#6c757d));
-  background: linear-gradient(0deg, #f4f3f3 0%, #6c757d 100%);
 }
 
 .who-am-i p {
@@ -54,12 +104,6 @@ html body .body-big .project-visual-big {
 
 .projects a:hover {
   color: #2c2c2c;
-}
-
-.projects li {
-  background: #f4f3f3;
-  background: -webkit-gradient(linear, left bottom, left top, from(#6c757d), to(#f4f3f3));
-  background: linear-gradient(0deg, #6c757d 0%, #f4f3f3 100%);
 }
 
 .text-jamilia {
@@ -96,8 +140,8 @@ html body .body-big .project-visual-big {
   color: #2c2c2c;
 }
 
-.social-media-links a :hover {
-  color: #6c757d;
+.social-media-links a:hover {
+  color: #B29D8A;
 }
 
 .social-media-links a i {
@@ -105,10 +149,5 @@ html body .body-big .project-visual-big {
   width: 50px;
   height: 50px;
   text-align: center;
-}
-
-.media .project-visual {
-  width: 100px;
-  height: 100px;
 }
 /*# sourceMappingURL=main.css.map */
