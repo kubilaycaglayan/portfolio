@@ -44,6 +44,7 @@ html body .body-big {
 
 html body .body-big header .who-am-i {
   height: 70vh;
+  min-height: 470px;
   background: #6c757d;
   background: linear-gradient(30deg, #6c757d 0%, #f4f3f3 12%, white, 18%, #f4f3f3 50%, white 55%, #6c757d 100%);
 }
