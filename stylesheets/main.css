@@ -18,7 +18,7 @@ html body .column-md-6 {
 }
 
 html body .column-md-6 .bg-private-events {
-  background-color: #0561B3;
+  background-color: #01B8EC;
 }
 
 html body .column-md-6 .bg-conference {
@@ -26,11 +26,11 @@ html body .column-md-6 .bg-conference {
 }
 
 html body .column-md-6 .bg-newsweek {
-  background-color: #ED4631;
+  background-color: #FF0000;
 }
 
 html body .column-md-6 .bg-ruby-linter {
-  background-color: #DF4438;
+  background-color: #fdbf8d;
 }
 
 html body .column-md-6 .bg-ruby {
@@ -103,22 +103,9 @@ html body .body-small .row .column-md-6 img {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana;
 }
 
-.projects a:hover {
-  color: #2c2c2c;
-}
-
-.text-jamilia {
-  color: #f4f3f3;
-}
-
-.badge-jamilia {
-  background-color: #f4f3f3;
-  color: #798794;
-}
-
-.bg-jamilia {
-  background-color: #798794;
-  color: #f4f3f3;
+.projects a.badge-light:hover {
+  color: #F4F3F3;
+  background-color: #252575;
 }
 
 #vesika {
