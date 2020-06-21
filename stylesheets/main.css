@@ -1,24 +1,74 @@
 html * {
-  margin: 0;
   padding: 0;
+  margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+body {
+  min-width: 300px;
 }
 
 body .left_bar {
-  height: 99vh;
+  padding-right: 45px;
+  padding-left: 45px;
+  background-color: #FAFAFA;
+  height: 120vh;
+}
+
+@media (min-width: 540px) {
+  body .left_bar {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+  body .left_bar .my_name {
+    font-size: 35px;
+  }
+}
+
+@media (min-width: 720px) {
+  body .left_bar {
+    padding-right: 70px;
+    padding-left: 70px;
+  }
+  body .left_bar .my_name {
+    font-size: 5vw;
+  }
 }
 
 @media (min-width: 992px) {
   body .left_bar {
+    padding-right: 90px;
+    padding-left: 90px;
     position: fixed;
     left: 0;
     top: 0;
     bottom: 0;
-    background-color: gray;
     height: 100vh;
     width: 42%;
   }
+  body .left_bar .my_name {
+    font-size: 3.5vw;
+  }
+}
+
+body .btn-hello {
+  width: 175px;
+}
+
+body .my_name {
+  color: #4a4a4a;
+  font-weight: bolder;
+}
+
+body .my_motto {
+  color: #333;
+}
+
+body .social-media-links {
+  width: 220px;
+  font-size: 30px;
 }
 
 body section {

@@ -1,10 +1,19 @@
-$breaking_point: 992px
+$breaking_point1: 992px
+$breaking_point2: 720px
+$breaking_point3: 540px
 $bg_pj1: #FF0000
 $bg_pj2: #01B8EC
 $bg_pj3: #ED5242
 $bg_pj4: #fdbf8d
 $bg_pj5: #D3B4EA
 $bg_pj6: #D3B4EA
+
+$my_name: #4a4a4a
+$my_motto: #333
+
+@mixin padding-x($pad-x)
+  padding-right: $pad-x
+  padding-left: $pad-x
 
 @mixin linear-gradient($direction, $color-stops...)
   background: nth(nth($color-stops, 1), 1)
@@ -13,24 +22,48 @@ $bg_pj6: #D3B4EA
 
 html
   *
-    margin: 0
     padding: 0
+    margin: 0
     box-sizing: border-box
+    font-family: 'Fira Sans', sans-serif
 
 body
+  min-width: 300px
   .left_bar
-    height: 99vh
-    @media ( min-width: $breaking_point )
+    @include padding-x($pad-x: 45px )
+    background-color: #FAFAFA
+    height: 120vh
+    @media ( min-width: $breaking_point3 )
+      @include padding-x($pad-x: 60px )
+      .my_name
+        font-size: 35px
+    @media ( min-width: $breaking_point2 )
+      @include padding-x($pad-x: 70px )
+      .my_name
+        font-size: 5vw
+    @media ( min-width: $breaking_point1 )
+      @include padding-x($pad-x: 90px )
       position: fixed
       left: 0
       top: 0
       bottom: 0
-      background-color: gray
       height: 100vh
       width: 42%
+      .my_name
+        font-size: 3.5vw
+  .btn-hello
+    width: 175px
+  .my_name
+    color: $my_name
+    font-weight: bolder
+  .my_motto
+    color: $my_motto
+  .social-media-links
+    width: 220px
+    font-size: 30px
   section
     height: 75vh
-    @media ( min-width: $breaking_point )
+    @media ( min-width: $breaking_point1 )
       height: 85vh
   .project1
     background-color: $bg_pj1
