@@ -32,7 +32,7 @@ body
   .left_bar
     @include padding-x($pad-x: 45px )
     background-color: #FAFAFA
-    height: 120vh
+    height: auto
     @media ( min-width: $breaking_point3 )
       @include padding-x($pad-x: 60px )
       .my_name
@@ -71,10 +71,9 @@ body
     width: 175px
     font-size: 33px
   section
-    height: 90vh
+    height: auto
     width: 100%
     font-weight: 300
-    padding-top: calc( 15vh )
     .badges .badge
       font-weight: 200
       @media ( max-width: $breaking_point3 )
@@ -91,22 +90,28 @@ body
       height: 105vh
       padding-top: calc( 18vh )
     .overcapture
-      height: 80%
-      width: 80%
+      height: auto
+      width: 100%
       margin: 0 auto
       text-align: center
+      padding-top: 10vh
+      padding-bottom: 10vh
+      @media ( min-width: $breaking_point1 )
+        padding-bottom: 0
+        padding-top: 0
+        height: 80%
+      img
+        margin: 0 auto
+        margin-top: 3vh
+        width: 95vw
+        margin-top: 5vh
+        margin-bottom: 5vh
+        @media ( min-width: $breaking_point1 )
+          width: 45vw
+          margin-top: 3vh
+          margin-bottom: 3vh
   .project1
     background-color: $bg_pj1
-    img
-      width: 60vw
-      margin: 0 auto
-      @media ( max-width: $breaking_point2 )
-        width: 75vw
-      @media ( max-width: $breaking_point3 )
-        width: 85vw
-    @media ( min-width: $breaking_point1 )
-      img
-        width: 45vw
   .project2
     background-color: $bg_pj2
   .project3

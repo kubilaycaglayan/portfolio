@@ -14,7 +14,7 @@ body .left_bar {
   padding-right: 45px;
   padding-left: 45px;
   background-color: #FAFAFA;
-  height: 120vh;
+  height: auto;
 }
 
 @media (min-width: 540px) {
@@ -85,10 +85,9 @@ body .social-media-links {
 }
 
 body section {
-  height: 90vh;
+  height: auto;
   width: 100%;
   font-weight: 300;
-  padding-top: calc( 15vh);
 }
 
 body section .badges .badge {
@@ -125,37 +124,40 @@ body section a .fas:hover {
 }
 
 body section .overcapture {
-  height: 80%;
-  width: 80%;
+  height: auto;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+@media (min-width: 992px) {
+  body section .overcapture {
+    padding-bottom: 0;
+    padding-top: 0;
+    height: 80%;
+  }
+}
+
+body section .overcapture img {
+  margin: 0 auto;
+  margin-top: 3vh;
+  width: 95vw;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+@media (min-width: 992px) {
+  body section .overcapture img {
+    width: 45vw;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+  }
 }
 
 body .project1 {
   background-color: #01B8EC;
-}
-
-body .project1 img {
-  width: 60vw;
-  margin: 0 auto;
-}
-
-@media (max-width: 720px) {
-  body .project1 img {
-    width: 75vw;
-  }
-}
-
-@media (max-width: 540px) {
-  body .project1 img {
-    width: 85vw;
-  }
-}
-
-@media (min-width: 992px) {
-  body .project1 img {
-    width: 45vw;
-  }
 }
 
 body .project2 {
