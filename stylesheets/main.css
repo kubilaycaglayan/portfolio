@@ -35,6 +35,9 @@ body .left_bar {
   body .left_bar .my_name {
     font-size: 5vw;
   }
+  body .left_bar .my_motto, body .left_bar .skills {
+    width: 80%;
+  }
 }
 
 @media (min-width: 992px) {
@@ -51,6 +54,10 @@ body .left_bar {
   body .left_bar .my_name {
     font-size: 3.5vw;
   }
+  body .left_bar .my_motto,
+  body .left_bar .skills {
+    width: 100%;
+  }
 }
 
 body .btn-hello {
@@ -62,31 +69,97 @@ body .my_name {
   font-weight: bolder;
 }
 
+body .skills .badge {
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
 body .my_motto {
   color: #333;
+  font-weight: 300;
 }
 
 body .social-media-links {
-  width: 220px;
-  font-size: 30px;
+  width: 175px;
+  font-size: 33px;
 }
 
 body section {
-  height: 75vh;
+  height: 90vh;
+  width: 100%;
+  font-weight: 300;
+  padding-top: calc( 15vh);
+}
+
+body section .badges .badge {
+  font-weight: 200;
+}
+
+@media (max-width: 540px) {
+  body section .badges .badge {
+    font-size: 2.5vw;
+  }
+}
+
+body section a .fas {
+  font-size: 20px;
+  color: white;
+}
+
+body section a .fas:hover {
+  color: #20677a;
+}
+
+@media (min-width: 720px) {
+  body section {
+    height: 115vh;
+    padding-top: calc( 12vh);
+  }
 }
 
 @media (min-width: 992px) {
   body section {
-    height: 85vh;
+    height: 105vh;
+    padding-top: calc( 18vh);
   }
 }
 
+body section .overcapture {
+  height: 80%;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
 body .project1 {
-  background-color: #FF0000;
+  background-color: #01B8EC;
+}
+
+body .project1 img {
+  width: 60vw;
+  margin: 0 auto;
+}
+
+@media (max-width: 720px) {
+  body .project1 img {
+    width: 75vw;
+  }
+}
+
+@media (max-width: 540px) {
+  body .project1 img {
+    width: 85vw;
+  }
+}
+
+@media (min-width: 992px) {
+  body .project1 img {
+    width: 45vw;
+  }
 }
 
 body .project2 {
-  background-color: #01B8EC;
+  background-color: #20677a;
 }
 
 body .project3 {

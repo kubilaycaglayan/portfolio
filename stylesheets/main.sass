@@ -1,8 +1,8 @@
 $breaking_point1: 992px
 $breaking_point2: 720px
 $breaking_point3: 540px
-$bg_pj1: #FF0000
-$bg_pj2: #01B8EC
+$bg_pj1: #01B8EC
+$bg_pj2: #20677a
 $bg_pj3: #ED5242
 $bg_pj4: #fdbf8d
 $bg_pj5: #D3B4EA
@@ -41,6 +41,8 @@ body
       @include padding-x($pad-x: 70px )
       .my_name
         font-size: 5vw
+      .my_motto, .skills
+        width: 80%
     @media ( min-width: $breaking_point1 )
       @include padding-x($pad-x: 90px )
       position: fixed
@@ -51,22 +53,60 @@ body
       width: 42%
       .my_name
         font-size: 3.5vw
+      .my_motto, 
+      .skills
+        width: 100%
   .btn-hello
     width: 175px
   .my_name
     color: $my_name
     font-weight: bolder
+  .skills .badge
+    font-weight: 200
+    text-transform: uppercase
   .my_motto
     color: $my_motto
+    font-weight: 300
   .social-media-links
-    width: 220px
-    font-size: 30px
+    width: 175px
+    font-size: 33px
   section
-    height: 75vh
+    height: 90vh
+    width: 100%
+    font-weight: 300
+    padding-top: calc( 15vh )
+    .badges .badge
+      font-weight: 200
+      @media ( max-width: $breaking_point3 )
+        font-size: 2.5vw
+    a .fas
+      font-size: 20px
+      color: white
+      &:hover
+        color: #20677a
+    @media ( min-width: $breaking_point2 )
+      height: 115vh
+      padding-top: calc( 12vh )
     @media ( min-width: $breaking_point1 )
-      height: 85vh
+      height: 105vh
+      padding-top: calc( 18vh )
+    .overcapture
+      height: 80%
+      width: 80%
+      margin: 0 auto
+      text-align: center
   .project1
     background-color: $bg_pj1
+    img
+      width: 60vw
+      margin: 0 auto
+      @media ( max-width: $breaking_point2 )
+        width: 75vw
+      @media ( max-width: $breaking_point3 )
+        width: 85vw
+    @media ( min-width: $breaking_point1 )
+      img
+        width: 45vw
   .project2
     background-color: $bg_pj2
   .project3
