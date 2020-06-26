@@ -6,6 +6,10 @@ html * {
   font-family: 'Fira Sans', sans-serif;
 }
 
+html a:hover {
+  text-decoration: none;
+}
+
 body {
   min-width: 330px;
 }
@@ -100,12 +104,14 @@ body section .badges .badge {
   }
 }
 
-body section a .fas {
+body section a .fas,
+body section a .fab {
   font-size: 20px;
   color: white;
 }
 
-body section a .fas:hover {
+body section a .fas:hover,
+body section a .fab:hover {
   color: #20677a;
 }
 
@@ -119,6 +125,7 @@ body section a .fas:hover {
 @media (min-width: 992px) {
   body section {
     height: 105vh;
+    min-height: 520px;
     padding-top: calc( 13vh);
   }
 }
@@ -173,7 +180,7 @@ body .project3 {
 }
 
 body .project4 {
-  background-color: #fdbf8d;
+  background-color: #f72310dc;
 }
 
 body .project5 {

@@ -4,7 +4,7 @@ $breaking_point3: 540px
 $bg_pj1: #52A6E6
 $bg_pj2: #EC5242
 $bg_pj3: #0481C9
-$bg_pj4: #fdbf8d
+$bg_pj4: #f72310dc
 $bg_pj5: #D3B4EA
 $bg_pj6: #D3B4EA
 $bg-article: #292929
@@ -28,6 +28,9 @@ html
     margin: 0
     box-sizing: border-box
     font-family: 'Fira Sans', sans-serif
+  a
+    &:hover
+      text-decoration: none
 
 body
   min-width: 330px
@@ -80,7 +83,8 @@ body
       font-weight: 200
       @media ( max-width: $breaking_point3 )
         font-size: 2.5vw
-    a .fas
+    a .fas, 
+    a .fab
       font-size: 20px
       color: white
       &:hover
@@ -90,6 +94,7 @@ body
       padding-top: calc( 12vh )
     @media ( min-width: $breaking_point1 )
       height: 105vh
+      min-height: 520px
       padding-top: calc( 13vh )
     .overcapture
       height: auto
