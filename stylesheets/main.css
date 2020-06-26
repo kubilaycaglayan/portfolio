@@ -7,7 +7,7 @@ html * {
 }
 
 body {
-  min-width: 300px;
+  min-width: 330px;
 }
 
 body .left_bar {
@@ -178,5 +178,27 @@ body .project5 {
 
 body .project6 {
   background-color: #D3B4EA;
+}
+
+body .articles {
+  background-color: #292929;
+  color: white;
+  padding-bottom: 15%;
+}
+
+@media (max-width: 720px) {
+  body .articles {
+    padding-top: calc( 12vh);
+  }
+}
+
+body .footer {
+  color: white;
+  background-color: #292929bd;
+}
+
+body .thanks {
+  font-family: sans-serif;
+  font-size: 8px;
 }
 /*# sourceMappingURL=main.css.map */

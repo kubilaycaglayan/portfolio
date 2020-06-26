@@ -7,6 +7,8 @@ $bg_pj3: #ED5242
 $bg_pj4: #fdbf8d
 $bg_pj5: #D3B4EA
 $bg_pj6: #D3B4EA
+$bg-article: #292929
+$bg-footer: #292929bd
 
 $my_name: #4a4a4a
 $my_motto: #333
@@ -28,7 +30,7 @@ html
     font-family: 'Fira Sans', sans-serif
 
 body
-  min-width: 300px
+  min-width: 330px
   .left_bar
     @include padding-x($pad-x: 45px )
     background-color: #FAFAFA
@@ -122,3 +124,15 @@ body
     background-color: $bg_pj5
   .project6
     background-color: $bg_pj6
+  .articles
+    background-color: $bg-article
+    color: white
+    padding-bottom: 15%
+    @media ( max-width: $breaking_point2 )
+      padding-top: calc( 12vh )
+  .footer
+    color: white
+    background-color: $bg-footer
+  .thanks
+    font-family: sans-serif
+    font-size: 8px
