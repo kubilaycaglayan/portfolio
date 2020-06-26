@@ -111,7 +111,7 @@ body section a .fas:hover {
 
 @media (min-width: 720px) {
   body section {
-    height: 115vh;
+    height: auto;
     padding-top: calc( 12vh);
   }
 }
@@ -119,7 +119,7 @@ body section a .fas:hover {
 @media (min-width: 992px) {
   body section {
     height: 105vh;
-    padding-top: calc( 18vh);
+    padding-top: calc( 13vh);
   }
 }
 
@@ -156,16 +156,20 @@ body section .overcapture img {
   }
 }
 
+body section .project-spesific-skills div {
+  text-transform: uppercase;
+}
+
 body .project1 {
-  background-color: #01B8EC;
+  background-color: #52A6E6;
 }
 
 body .project2 {
-  background-color: #20677a;
+  background-color: #EC5242;
 }
 
 body .project3 {
-  background-color: #ED5242;
+  background-color: #0481C9;
 }
 
 body .project4 {
