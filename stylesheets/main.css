@@ -88,14 +88,6 @@ body .social-media-links {
   font-size: 33px;
 }
 
-body .social-media-links a {
-  color: #52A6E6;
-}
-
-body .social-media-links a:hover {
-  color: #0481C9;
-}
-
 body section {
   height: auto;
   width: 100%;
@@ -175,6 +167,16 @@ body section .project-spesific-skills div {
   text-transform: uppercase;
 }
 
+body .articles a .fas,
+body .articles a .fab {
+  color: #292929;
+}
+
+body .articles a .fas:hover,
+body .articles a .fab:hover {
+  color: black;
+}
+
 body .project1 {
   background-color: #52A6E6;
 }
@@ -200,8 +202,8 @@ body .project6 {
 }
 
 body .articles {
-  background-color: #292929;
-  color: white;
+  background-color: #F4F3F3;
+  color: #292929;
   padding-bottom: 15%;
 }
 
@@ -213,7 +215,7 @@ body .articles {
 
 body .footer {
   color: white;
-  background-color: #292929bd;
+  background-color: #292929;
 }
 
 body .thanks {

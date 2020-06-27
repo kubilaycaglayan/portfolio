@@ -7,8 +7,8 @@ $bg_pj3: #0481C9
 $bg_pj4: #f72310dc
 $bg_pj5: #D3B4EA
 $bg_pj6: #D3B4EA
-$bg-article: #292929
-$bg-footer: #292929bd
+$bg-article: #F4F3F3
+$bg-footer: #292929
 
 $my_name: #4a4a4a
 $my_motto: #333
@@ -75,10 +75,6 @@ body
   .social-media-links
     width: 175px
     font-size: 33px
-    a
-      color: $bg_pj1
-      &:hover
-        color: $bg_pj3
   section
     height: auto
     width: 100%
@@ -124,6 +120,12 @@ body
     .project-spesific-skills
       div
         text-transform: uppercase
+  .articles
+    a .fas, 
+    a .fab
+      color: $bg-footer
+      &:hover
+        color: black
   .project1
     background-color: $bg_pj1
   .project2
@@ -138,7 +140,7 @@ body
     background-color: $bg_pj6
   .articles
     background-color: $bg-article
-    color: white
+    color: $bg-footer
     padding-bottom: 15%
     @media ( max-width: $breaking_point2 )
       padding-top: calc( 12vh )
