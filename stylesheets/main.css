@@ -14,7 +14,7 @@ body {
   min-width: 330px;
 }
 
-body .left_bar {
+body .left-bar {
   padding-right: 45px;
   padding-left: 45px;
   background-color: #FAFAFA;
@@ -22,30 +22,30 @@ body .left_bar {
 }
 
 @media (min-width: 540px) {
-  body .left_bar {
+  body .left-bar {
     padding-right: 60px;
     padding-left: 60px;
   }
-  body .left_bar .my_name {
+  body .left-bar .my_name {
     font-size: 35px;
   }
 }
 
 @media (min-width: 720px) {
-  body .left_bar {
+  body .left-bar {
     padding-right: 70px;
     padding-left: 70px;
   }
-  body .left_bar .my_name {
+  body .left-bar .my_name {
     font-size: 5vw;
   }
-  body .left_bar .my_motto, body .left_bar .skills {
+  body .left-bar .my_motto, body .left-bar .skills {
     width: 80%;
   }
 }
 
 @media (min-width: 992px) {
-  body .left_bar {
+  body .left-bar {
     padding-right: 90px;
     padding-left: 90px;
     position: fixed;
@@ -55,11 +55,11 @@ body .left_bar {
     height: 100vh;
     width: 42%;
   }
-  body .left_bar .my_name {
+  body .left-bar .my_name {
     font-size: 3.5vw;
   }
-  body .left_bar .my_motto,
-  body .left_bar .skills {
+  body .left-bar .my_motto,
+  body .left-bar .skills {
     width: 100%;
   }
 }
@@ -86,6 +86,14 @@ body .my_motto {
 body .social-media-links {
   width: 175px;
   font-size: 33px;
+}
+
+body .social-media-links a {
+  color: #52A6E6;
+}
+
+body .social-media-links a:hover {
+  color: #0481C9;
 }
 
 body section {
