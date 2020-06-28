@@ -89,6 +89,7 @@ body
         width: 100%
     @media ( max-height: 620px )
       @media ( min-width: $breaking_point1 )
+        @include padding-x($pad-x: 40px )
         padding-top: 4%
         padding-bottom: 1%
         .say-hello-wrapper
@@ -99,22 +100,26 @@ body
           padding: 0
         .my-motto
           p
-            font-size: 1.1rem
+            font-size: 0.9rem
         .my-name
-          font-size: 2.7rem
+          font-size: 2.2rem
         .skills
           .badge
-            font-size: 0.9rem
+            font-size: 0.8rem
   .btn-hello
     width: 175px
   .my-name
     color: $my-name
     font-weight: bolder
-  .skills .badge
-    color: white
-    background-color: $bg_pj1
-    font-weight: 200
-    text-transform: uppercase
+  .skills 
+    .skill
+      color: white
+      background-color: $bg_pj1
+      font-weight: 300
+      text-transform: uppercase
+    .title
+      text-transform: uppercase
+      font-weight: 400
   .my-motto
     color: $my-motto
     font-weight: 300

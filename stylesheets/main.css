@@ -86,6 +86,8 @@ body .left-bar .say-hello {
 
 @media (max-height: 620px) and (min-width: 992px) {
   body .left-bar {
+    padding-right: 40px;
+    padding-left: 40px;
     padding-top: 4%;
     padding-bottom: 1%;
   }
@@ -98,13 +100,13 @@ body .left-bar .say-hello {
     padding: 0;
   }
   body .left-bar .my-motto p {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
   }
   body .left-bar .my-name {
-    font-size: 2.7rem;
+    font-size: 2.2rem;
   }
   body .left-bar .skills .badge {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 }
 
@@ -117,11 +119,16 @@ body .my-name {
   font-weight: bolder;
 }
 
-body .skills .badge {
+body .skills .skill {
   color: white;
   background-color: #52A6E6;
-  font-weight: 200;
+  font-weight: 300;
   text-transform: uppercase;
+}
+
+body .skills .title {
+  text-transform: uppercase;
+  font-weight: 400;
 }
 
 body .my-motto {
