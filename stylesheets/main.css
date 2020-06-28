@@ -29,13 +29,13 @@ body .left-bar .my-university {
   color: #52A6E6;
 }
 
-body .left-bar .social-medial-links a .fas,
-body .left-bar .social-medial-links a .fab {
+body .left-bar .social-media-links a {
   color: #52A6E6;
 }
 
 body .left-bar .say-hello {
   background-color: #52A6E6;
+  color: white;
 }
 
 @media (min-width: 540px) {
@@ -43,7 +43,7 @@ body .left-bar .say-hello {
     padding-right: 60px;
     padding-left: 60px;
   }
-  body .left-bar .my_name {
+  body .left-bar .my-name {
     font-size: 35px;
   }
 }
@@ -53,10 +53,10 @@ body .left-bar .say-hello {
     padding-right: 70px;
     padding-left: 70px;
   }
-  body .left-bar .my_name {
+  body .left-bar .my-name {
     font-size: 5vw;
   }
-  body .left-bar .my_motto, body .left-bar .skills {
+  body .left-bar .my-motto, body .left-bar .skills {
     width: 80%;
   }
 }
@@ -72,12 +72,36 @@ body .left-bar .say-hello {
     height: 100vh;
     width: 42%;
   }
-  body .left-bar .my_name {
+  body .left-bar .my-name {
     font-size: 3.5vw;
   }
-  body .left-bar .my_motto,
+  body .left-bar .my-motto,
   body .left-bar .skills {
     width: 100%;
+  }
+}
+
+@media (max-height: 590px) {
+  body .left-bar {
+    padding-top: 4%;
+    padding-bottom: 1%;
+  }
+  body .left-bar .say-hello-wrapper {
+    margin-bottom: 0;
+    padding: 0;
+  }
+  body .left-bar .say-hello {
+    margin-bottom: 0;
+    padding: 0;
+  }
+  body .left-bar .my-motto p {
+    font-size: 0.8rem;
+  }
+  body .left-bar .my-name {
+    font-size: 2rem;
+  }
+  body .left-bar .skills .badge {
+    font-size: 0.6rem;
   }
 }
 
@@ -85,7 +109,7 @@ body .btn-hello {
   width: 175px;
 }
 
-body .my_name {
+body .my-name {
   color: #4a4a4a;
   font-weight: bolder;
 }
@@ -95,7 +119,7 @@ body .skills .badge {
   text-transform: uppercase;
 }
 
-body .my_motto {
+body .my-motto {
   color: #333;
   font-weight: 300;
 }

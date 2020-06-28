@@ -10,8 +10,8 @@ $bg_pj6: #D3B4EA
 $bg-article: #F4F3F3
 $bg-footer: #292929
 
-$my_name: #4a4a4a
-$my_motto: #333
+$my-name: #4a4a4a
+$my-motto: #333
 
 @mixin padding-x($pad-x)
   padding-right: $pad-x
@@ -21,18 +21,6 @@ $my_motto: #333
   background: nth(nth($color-stops, 1), 1)
   background: -webkit-linear-gradient(legacy-direction($direction), $color-stops)
   background: linear-gradient($direction, $color-stops)
-
-@mixin set-color-of-left($color)
-  .my-school
-    color: $color
-  .my-university
-    color: $color
-  .social-medial-links
-    a .fas, 
-    a .fab
-      color: $color
-  .say-hello
-    background-color: $color
 
 html
   *
@@ -47,19 +35,28 @@ html
 body
   min-width: 330px
   .left-bar
-    @include set-color-of-left($bg_pj1)
+    .my-school
+      color: $bg_pj1
+    .my-university
+      color: $bg_pj1
+    .social-media-links
+      a
+        color: $bg_pj1
+    .say-hello
+      background-color: $bg_pj1
+      color: white
     @include padding-x($pad-x: 45px )
     background-color: #FAFAFA
     height: auto
     @media ( min-width: $breaking_point3 )
       @include padding-x($pad-x: 60px )
-      .my_name
+      .my-name
         font-size: 35px
     @media ( min-width: $breaking_point2 )
       @include padding-x($pad-x: 70px )
-      .my_name
+      .my-name
         font-size: 5vw
-      .my_motto, .skills
+      .my-motto, .skills
         width: 80%
     @media ( min-width: $breaking_point1 )
       @include padding-x($pad-x: 90px )
@@ -69,21 +66,38 @@ body
       bottom: 0
       height: 100vh
       width: 42%
-      .my_name
+      .my-name
         font-size: 3.5vw
-      .my_motto, 
+      .my-motto, 
       .skills
         width: 100%
+    @media ( max-height: 590px )
+      padding-top: 4%
+      padding-bottom: 1%
+      .say-hello-wrapper
+        margin-bottom: 0
+        padding: 0
+      .say-hello
+        margin-bottom: 0
+        padding: 0
+      .my-motto
+        p
+          font-size: 0.8rem
+      .my-name
+        font-size: 2rem
+      .skills
+        .badge
+          font-size: 0.6rem
   .btn-hello
     width: 175px
-  .my_name
-    color: $my_name
+  .my-name
+    color: $my-name
     font-weight: bolder
   .skills .badge
     font-weight: 200
     text-transform: uppercase
-  .my_motto
-    color: $my_motto
+  .my-motto
+    color: $my-motto
     font-weight: 300
   .social-media-links
     width: 175px
