@@ -4,15 +4,17 @@ const setColor = (function setColor() {
   let lastPosition = 1;
   const rightFlow = (rf = document.getElementsByTagName("section"));
   const lengthRightFlow = rightFlow.length;
-  const colorForArticleSection = "#292929";
+  const colorForArticleSection = "#6C757D";
 
   const myUniversity = document.getElementsByClassName("my-university")[0];
   const mySchool = document.getElementsByClassName("my-school")[0];
   const socialMediaLinks = document.querySelectorAll(".social-media-links a");
+  const skills = document.getElementsByClassName('skill');
 
   const sayHello = document.getElementsByClassName("say-hello")[0];
 
-  const targets = [myUniversity, mySchool, ...socialMediaLinks];
+  const targetsColor = [myUniversity, mySchool, ...socialMediaLinks];
+  const targetsBackgroundColor = [sayHello, ...skills]
 
   visibleProject = document.getElementsByClassName("project1")[0];
 
@@ -35,7 +37,7 @@ const setColor = (function setColor() {
     return Math.floor(getVerticalPosition() / getHeight());
   };
 
-  const colorChanger = function colorChanger() {
+  const colorChanger = function colorChanger(targets) {
     const position = getPosition();
     if (lengthRightFlow === position + 1) {
       targets.forEach((target) => {
@@ -49,21 +51,25 @@ const setColor = (function setColor() {
     }
   };
 
-  const backgroundChanger = function backgroundChanger() {
+  const backgroundChanger = function backgroundChanger(targets) {
     const position = getPosition();
     if (lengthRightFlow === position + 1) {
-      sayHello.style.backgroundColor = colorForArticleSection;
+      targets.forEach((target) => {
+        target.style.backgroundColor = colorForArticleSection;
+      });
     } else {
       const color = getVisibleColor(position);
-      sayHello.style.backgroundColor = color;
+      targets.forEach((target) => {
+        target.style.backgroundColor = color;
+      });
     }
   };
 
   const changeStyle = function changeStyle() {
     if (getPosition() !== lastPosition) {
       lastPosition = getPosition();
-      colorChanger();
-      backgroundChanger();
+      colorChanger(targetsColor);
+      backgroundChanger(targetsBackgroundColor);
     }
   };
 

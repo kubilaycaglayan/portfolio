@@ -1,17 +1,31 @@
 $breaking_point1: 992px
 $breaking_point2: 720px
 $breaking_point3: 540px
+
 $bg_pj1: #52A6E6
+$bg_bg_pj1: #20425c
+
 $bg_pj2: #EC5242
+$bg_bg_pj2: #a31000
+
 $bg_pj3: #0481C9
-$bg_pj4: #f72310dc
+$bg_bg_pj3: #003e61
+
+$bg_pj4: #ED4631
+$bg_bg_pj4: #941001
+
 $bg_pj5: #D3B4EA
+$bg_bg_pj5: white
+
 $bg_pj6: #D3B4EA
+$bg_bg_pj6: white
+
 $bg-article: #F4F3F3
 $bg-footer: #292929
 
 $my-name: #4a4a4a
 $my-motto: #333
+$bootsrap-secondary: #6C757D
 
 @mixin padding-x($pad-x)
   padding-right: $pad-x
@@ -35,6 +49,7 @@ html
 body
   min-width: 330px
   .left-bar
+    @include padding-x( $pad-x: 45px )
     .my-school
       color: $bg_pj1
     .my-university
@@ -45,21 +60,21 @@ body
     .say-hello
       background-color: $bg_pj1
       color: white
-    @include padding-x($pad-x: 45px )
-    background-color: #FAFAFA
-    height: auto
+      height: auto
     @media ( min-width: $breaking_point3 )
-      @include padding-x($pad-x: 60px )
+      @include padding-x( $pad-x: 60px )
       .my-name
         font-size: 35px
     @media ( min-width: $breaking_point2 )
-      @include padding-x($pad-x: 70px )
+      @include padding-x( $pad-x: 70px )
       .my-name
         font-size: 5vw
       .my-motto, .skills
         width: 80%
+      .skills
+        font-size: 0.9rem
     @media ( min-width: $breaking_point1 )
-      @include padding-x($pad-x: 90px )
+      @include padding-x( $pad-x: 90px )
       position: fixed
       left: 0
       top: 0
@@ -68,32 +83,36 @@ body
       width: 42%
       .my-name
         font-size: 3.5vw
-      .my-motto, 
+      .my-motto,
       .skills
+        font-size: 1.2rem
         width: 100%
     @media ( max-height: 590px )
-      padding-top: 4%
-      padding-bottom: 1%
-      .say-hello-wrapper
-        margin-bottom: 0
-        padding: 0
-      .say-hello
-        margin-bottom: 0
-        padding: 0
-      .my-motto
-        p
-          font-size: 0.8rem
-      .my-name
-        font-size: 2rem
-      .skills
-        .badge
-          font-size: 0.6rem
+      @media ( min-width: $breaking_point1 )
+        padding-top: 4%
+        padding-bottom: 1%
+        .say-hello-wrapper
+          margin-bottom: 0
+          padding: 0
+        .say-hello
+          margin-bottom: 0
+          padding: 0
+        .my-motto
+          p
+            font-size: 0.8rem
+        .my-name
+          font-size: 2rem
+        .skills
+          .badge
+            font-size: 0.6rem
   .btn-hello
     width: 175px
   .my-name
     color: $my-name
     font-weight: bolder
   .skills .badge
+    color: white
+    background-color: $bg_pj1
     font-weight: 200
     text-transform: uppercase
   .my-motto
@@ -110,7 +129,7 @@ body
       font-weight: 200
       @media ( max-width: $breaking_point3 )
         font-size: 2.5vw
-    a .fas, 
+    a .fas,
     a .fab
       font-size: 20px
       color: white
@@ -145,32 +164,80 @@ body
           margin-top: 3vh
           margin-bottom: 3vh
     .project-spesific-skills
+      .badge
+        color: white
       div
         text-transform: uppercase
   .articles
-    a .fas, 
+    a .fas,
     a .fab
       color: $bg-footer
       &:hover
         color: black
+    .article-separator
   .project1
     background-color: $bg_pj1
+    .project-spesific-skills
+      .badge
+        background-color: $bg_bg_pj1
+    a .fas,
+    a .fab
+      &:hover
+        color: $bg_bg_pj1
   .project2
     background-color: $bg_pj2
+    .project-spesific-skills
+      .badge
+        background-color: $bg_bg_pj2
+    a .fas,
+    a .fab
+      &:hover
+        color: $bg_bg_pj2
   .project3
     background-color: $bg_pj3
+    .project-spesific-skills
+      .badge
+        background-color: $bg_bg_pj3
+    a .fas,
+    a .fab
+      &:hover
+        color: $bg_bg_pj3
   .project4
     background-color: $bg_pj4
+    .project-spesific-skills
+      .badge
+        background-color: $bg_bg_pj4
+    a .fas,
+    a .fab
+      &:hover
+        color: $bg_bg_pj4
   .project5
     background-color: $bg_pj5
+    .project-spesific-skills
+      .badge
+        background-color: $bg_bg_pj5
+    a .fas,
+    a .fab
+      &:hover
+        color: $bg_bg_pj5
   .project6
     background-color: $bg_pj6
+    .project-spesific-skills
+      .badge
+        background-color: $bg_bg_pj6
+    a .fas,
+    a .fab
+      &:hover
+        color: $bg_bg_pj6
   .articles
     background-color: $bg-article
     color: $bg-footer
     padding-bottom: 15%
     @media ( max-width: $breaking_point2 )
       padding-top: calc( 12vh )
+    a .fas
+      &:hover
+        color: $bootsrap-secondary
   .footer
     color: white
     background-color: $bg-footer

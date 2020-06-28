@@ -17,8 +17,6 @@ body {
 body .left-bar {
   padding-right: 45px;
   padding-left: 45px;
-  background-color: #FAFAFA;
-  height: auto;
 }
 
 body .left-bar .my-school {
@@ -36,6 +34,7 @@ body .left-bar .social-media-links a {
 body .left-bar .say-hello {
   background-color: #52A6E6;
   color: white;
+  height: auto;
 }
 
 @media (min-width: 540px) {
@@ -59,6 +58,9 @@ body .left-bar .say-hello {
   body .left-bar .my-motto, body .left-bar .skills {
     width: 80%;
   }
+  body .left-bar .skills {
+    font-size: 0.9rem;
+  }
 }
 
 @media (min-width: 992px) {
@@ -77,11 +79,12 @@ body .left-bar .say-hello {
   }
   body .left-bar .my-motto,
   body .left-bar .skills {
+    font-size: 1.2rem;
     width: 100%;
   }
 }
 
-@media (max-height: 590px) {
+@media (max-height: 590px) and (min-width: 992px) {
   body .left-bar {
     padding-top: 4%;
     padding-bottom: 1%;
@@ -115,6 +118,8 @@ body .my-name {
 }
 
 body .skills .badge {
+  color: white;
+  background-color: #52A6E6;
   font-weight: 200;
   text-transform: uppercase;
 }
@@ -204,6 +209,10 @@ body section .overcapture img {
   }
 }
 
+body section .project-spesific-skills .badge {
+  color: white;
+}
+
 body section .project-spesific-skills div {
   text-transform: uppercase;
 }
@@ -222,24 +231,78 @@ body .project1 {
   background-color: #52A6E6;
 }
 
+body .project1 .project-spesific-skills .badge {
+  background-color: #20425c;
+}
+
+body .project1 a .fas:hover,
+body .project1 a .fab:hover {
+  color: #20425c;
+}
+
 body .project2 {
   background-color: #EC5242;
+}
+
+body .project2 .project-spesific-skills .badge {
+  background-color: #a31000;
+}
+
+body .project2 a .fas:hover,
+body .project2 a .fab:hover {
+  color: #a31000;
 }
 
 body .project3 {
   background-color: #0481C9;
 }
 
+body .project3 .project-spesific-skills .badge {
+  background-color: #003e61;
+}
+
+body .project3 a .fas:hover,
+body .project3 a .fab:hover {
+  color: #003e61;
+}
+
 body .project4 {
-  background-color: #f72310dc;
+  background-color: #ED4631;
+}
+
+body .project4 .project-spesific-skills .badge {
+  background-color: #941001;
+}
+
+body .project4 a .fas:hover,
+body .project4 a .fab:hover {
+  color: #941001;
 }
 
 body .project5 {
   background-color: #D3B4EA;
 }
 
+body .project5 .project-spesific-skills .badge {
+  background-color: white;
+}
+
+body .project5 a .fas:hover,
+body .project5 a .fab:hover {
+  color: white;
+}
+
 body .project6 {
   background-color: #D3B4EA;
+}
+
+body .project6 .project-spesific-skills .badge {
+  background-color: white;
+}
+
+body .project6 a .fas:hover,
+body .project6 a .fab:hover {
+  color: white;
 }
 
 body .articles {
@@ -252,6 +315,10 @@ body .articles {
   body .articles {
     padding-top: calc( 12vh);
   }
+}
+
+body .articles a .fas:hover {
+  color: #6C757D;
 }
 
 body .footer {
