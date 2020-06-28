@@ -21,6 +21,23 @@ body .left-bar {
   height: auto;
 }
 
+body .left-bar .my-school {
+  color: #52A6E6;
+}
+
+body .left-bar .my-university {
+  color: #52A6E6;
+}
+
+body .left-bar .social-medial-links a .fas,
+body .left-bar .social-medial-links a .fab {
+  color: #52A6E6;
+}
+
+body .left-bar .say-hello {
+  background-color: #52A6E6;
+}
+
 @media (min-width: 540px) {
   body .left-bar {
     padding-right: 60px;

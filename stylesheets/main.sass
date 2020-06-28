@@ -22,6 +22,18 @@ $my_motto: #333
   background: -webkit-linear-gradient(legacy-direction($direction), $color-stops)
   background: linear-gradient($direction, $color-stops)
 
+@mixin set-color-of-left($color)
+  .my-school
+    color: $color
+  .my-university
+    color: $color
+  .social-medial-links
+    a .fas, 
+    a .fab
+      color: $color
+  .say-hello
+    background-color: $color
+
 html
   *
     padding: 0
@@ -35,6 +47,7 @@ html
 body
   min-width: 330px
   .left-bar
+    @include set-color-of-left($bg_pj1)
     @include padding-x($pad-x: 45px )
     background-color: #FAFAFA
     height: auto
