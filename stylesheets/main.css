@@ -84,7 +84,7 @@ body .left-bar .say-hello {
   }
 }
 
-@media (max-height: 590px) and (min-width: 992px) {
+@media (max-height: 620px) and (min-width: 992px) {
   body .left-bar {
     padding-top: 4%;
     padding-bottom: 1%;
@@ -98,13 +98,13 @@ body .left-bar .say-hello {
     padding: 0;
   }
   body .left-bar .my-motto p {
-    font-size: 0.8rem;
+    font-size: 1.1rem;
   }
   body .left-bar .my-name {
-    font-size: 2rem;
+    font-size: 2.7rem;
   }
   body .left-bar .skills .badge {
-    font-size: 0.6rem;
+    font-size: 0.9rem;
   }
 }
 
