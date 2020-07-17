@@ -234,6 +234,10 @@ body .articles a .fab:hover {
   color: black;
 }
 
+body .articles .article-separator {
+  border-bottom: 10px solid #6C757D;
+}
+
 body .project1 {
   background-color: #52A6E6;
 }
