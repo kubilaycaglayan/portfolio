@@ -2,7 +2,7 @@ const setColor = (function setColor() {
   const leftBar = document.getElementsByClassName("left-bar")[0];
   let position = 1;
   let lastPosition = 1;
-  const rightFlow = (rf = document.getElementsByTagName("section"));
+  const rightFlow = document.getElementsByTagName("section");
   const lengthRightFlow = rightFlow.length;
   const colorForArticleSection = "#6C757D";
 
@@ -16,17 +16,14 @@ const setColor = (function setColor() {
   const targetsColor = [myUniversity, mySchool, ...socialMediaLinks];
   const targetsBackgroundColor = [sayHello, ...skills]
 
-  visibleProject = document.getElementsByClassName("project1")[0];
-
-  visibleProjectBackgroundColor = window.getComputedStyle(visibleProject)
-    .backgroundColor;
+  const firstProject = document.getElementsByClassName("project1")[0];
 
   const getVisibleColor = function getVisibleColor(index) {
     return window.getComputedStyle(rightFlow[index]).backgroundColor;
   };
 
   const getHeight = function getHeight() {
-    return window.visualViewport.height;
+    return parseInt(window.getComputedStyle(firstProject).height);
   };
 
   const getVerticalPosition = function getVerticalPosition() {
