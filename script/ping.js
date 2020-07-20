@@ -44,15 +44,12 @@ const wakeUp = async function wakeUp(project) {
   fetch(project.href, {
     mode: 'no-cors'
   })
-  .then(
-    function(response){
-      removeSpinner(project)
-    }
-  )
-  .catch(
-      function(err){
-    }
-  )
+  .then(function(response){
+    removeSpinner(project)
+  })
+  .catch(function(err){
+    removeSpinner(project)
+  })
 }
 
 const startWakeUpProcess = function startWakeUpProcess() {
