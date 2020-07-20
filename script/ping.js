@@ -26,21 +26,38 @@ const projectObjects = function projectObjects() {
   return projectsObjectArray
 }
 
+const attachCountDownMessage = function(element) {
+  let count = 30;
+  const countDown = setInterval(() => {
+    element.title = `Firing up Heroku Dynos...(~${count}s)`
+    if (count === 0) {
+      element.title = `Firing up Heroku Dynos...(soon)`
+      clearInterval(countDown)
+    }
+    count -= 1
+  }, 1000)
+  return countDown
+}
+
 const addSpinner = function(project) {
   const spinner = document.createElement('i')
   spinner.className = 'spinner fas fa-sync-alt'
   spinner.style.color = project.spinnerColor
-  spinner.title = 'Firing up Heroku dynos...'
+  const countDown = attachCountDownMessage(spinner)
   project.linkContainer.append(spinner)
+  return {
+    countDown
+  }
 }
 
 const removeSpinner = function(project) {
   const spinnerIcon = document.querySelector(`.${project.projectClassName} .spinner`)
+  clearInterval(project.countDown)
   spinnerIcon.remove()
 }
 
 const wakeUp = async function wakeUp(project) {
-  addSpinner(project)
+  project.countDown = addSpinner(project)
   fetch(project.href, {
     mode: 'no-cors'
   })
