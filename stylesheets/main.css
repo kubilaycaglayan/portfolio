@@ -254,10 +254,6 @@ body section .live-link {
   position: relative;
 }
 
-body section .live-link .fa-link {
-  position: absolute;
-}
-
 body section .live-link .spinner {
   position: absolute;
   -webkit-animation-name: spinning;
