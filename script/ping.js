@@ -1,13 +1,32 @@
-const wakeUp = function wakeUp() {
-  const url = 'https://reporting-scientists-bykubilay.herokuapp.com/'
-  var xhttp = new XMLHttpRequest();
-  xhttp.open('GET', url, true)
-  console.log('sending')
-  xhttp.send()
+let result;
+const addresses = [
+  'http://reporting-scientists-bykubilay.herokuapp.com/',
+  'https://private-events-lotr.herokuapp.com/'
+]
 
-  xhttp.onload = () => {
-    console.log('laod successful')
-  }
+const wakeUp = async function wakeUp(address) {
+  fetch(address, {
+    mode: 'no-cors'
+  })
+  .then(
+    function(response){
+      // console.log('Success:', address)
+      // console.log(response)
+      // result = response;
+    }
+  )
+  .catch(
+    function(err){
+      // console.log('fail')
+      // console.log(err)
+    }
+  )
 }
 
-window.addEventListener('load', wakeUp)
+const startWakeUpProcess = function startWakeUpProcess() {
+  addresses.forEach((address) => {
+    wakeUp(address)
+  });
+}
+
+window.addEventListener('load', startWakeUpProcess)
