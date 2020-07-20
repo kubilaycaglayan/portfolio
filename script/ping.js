@@ -1,31 +1,63 @@
 let result;
-const addresses = [
-  'http://reporting-scientists-bykubilay.herokuapp.com/',
-  'https://private-events-lotr.herokuapp.com/'
+const classNamesOfProjectsWillBeWokenUp = [
+  'project1',
+  'project3',
 ]
+const projectElements = function (projectClassName) {
+  const href = document.querySelector(`.${projectClassName} .live-link`).href
+  const linkContainer = document.querySelector(`.${projectClassName} .live-link`)
+  const linkIcon = document.querySelector(`.${projectClassName} .fa-link`)
+  const spinnerIcon = document.querySelector(`.${projectClassName} .fa-snowflake`)
+  const spinnerColor = getComputedStyle(document.querySelector(`.${projectClassName} .project-spesific-skills .badge`)).backgroundColor
 
-const wakeUp = async function wakeUp(address) {
-  fetch(address, {
+  return {
+    href,
+    linkContainer,
+    linkIcon,
+    spinnerIcon,
+    spinnerColor,
+  }
+}
+
+const projectObjects = function projectObjects() {
+  const projectsObjectArray = []
+  classNamesOfProjectsWillBeWokenUp.forEach((projectClassName) => {
+    projectsObjectArray.push(projectElements(projectClassName))
+  })
+  return projectsObjectArray
+}
+
+const addSpinner = function(project) {
+  const spinner = document.createElement('i')
+  spinner.className = 'spinner far fa-snowflake'
+  spinner.style.color = project.spinnerColor
+  spinner.title = 'Firing up Heroku dynos...'
+  project.linkContainer.append(spinner)
+}
+
+const removeSpinner = function(project) {
+  project.linkContainer.children[1].remove()
+}
+
+const wakeUp = async function wakeUp(project) {
+  addSpinner(project)
+  fetch(project.href, {
     mode: 'no-cors'
   })
   .then(
     function(response){
-      // console.log('Success:', address)
-      // console.log(response)
-      // result = response;
+      // removeSpinner(project)
     }
   )
   .catch(
-    function(err){
-      // console.log('fail')
-      // console.log(err)
+      function(err){
     }
   )
 }
 
 const startWakeUpProcess = function startWakeUpProcess() {
-  addresses.forEach((address) => {
-    wakeUp(address)
+  projectObjects().forEach((project) => {
+    wakeUp(project)
   });
 }
 

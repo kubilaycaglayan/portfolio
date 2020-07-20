@@ -36,6 +36,15 @@ $bootsrap-secondary: #6C757D
   background: -webkit-linear-gradient(legacy-direction($direction), $color-stops)
   background: linear-gradient($direction, $color-stops)
 
+@keyframes spinning
+  0%
+    font-size: 1em
+    transform: rotate(0deg)
+  100%
+    font-size: 1em
+    transform: rotate(360deg)
+
+
 html
   *
     padding: 0
@@ -111,7 +120,7 @@ body
   .my-name
     color: $my-name
     font-weight: bolder
-  .skills 
+  .skills
     .skill
       color: white
       background-color: $bg_pj1
@@ -173,6 +182,18 @@ body
         color: white
       div
         text-transform: uppercase
+    .live-link
+      position: relative
+      .fa-link
+        position: absolute
+      .spinner
+        position: absolute
+        animation-name: spinning
+        animation-duration: 6s
+        animation-iteration-count: infinite
+        animation-timing-function: linear
+        left: 14px
+        top: 11px
   .articles
     a .fas,
     a .fab
