@@ -46,7 +46,7 @@ const wakeUp = async function wakeUp(project) {
   })
   .then(
     function(response){
-      // removeSpinner(project)
+      removeSpinner(project)
     }
   )
   .catch(
