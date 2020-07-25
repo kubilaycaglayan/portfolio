@@ -44,8 +44,100 @@ $bootsrap-secondary: #6C757D
     font-size: 1em
     transform: rotate(360deg)
 
+@keyframes hover_cv
+  0%
+    color: white
+  100%
+    color: #57BA86
+
+@keyframes hover_twitter
+  0%
+    color: white
+  100%
+    color: #1DA1F2
+
+@keyframes hover_github
+  0%
+    color: white
+  100%
+    color: #24292e
+
+@keyframes hover_linkedin
+  0%
+    color: white
+  100%
+    color: #0e76a8
+
+@keyframes hover_say-hello
+  0%
+    transform: rotateZ(0deg)
+    background-color: white
+    color: #4A4A4A
+  25%
+    transform: rotateZ(7deg)
+  50%
+    transform: rotateZ(-7deg)
+  100%
+    font-stretch: extra-expanded
+    transform: rotateZ(0deg)
+    background-color: #57BA86
+
+@keyframes hover_technical
+  0%
+    transform: rotateZ(0deg)
+    background-color: white
+    color: #4A4A4A
+    font-weight: 100
+  25%
+    font-weight: bolder
+    transform: rotateZ(1deg)
+  75%
+    font-weight: bold
+    transform: rotateZ(-1deg)
+  100%
+    font-weight: bold
+    font-stretch: extra-expanded
+    transform: rotateZ(0deg)
+    background-color: #F72210
+
+@keyframes hover_soft
+  0%
+    transform: rotateZ(0deg)
+    background-color: white
+    color: #4A4A4A
+    font-weight: 100
+  25%
+    font-weight: bolder
+    transform: rotateZ(1deg)
+  75%
+    font-weight: bold
+    transform: rotateZ(-1deg)
+  100%
+    font-weight: bold
+    font-stretch: extra-expanded
+    transform: rotateZ(0deg)
+    background-color: #57BA86
+
+@keyframes hover_framework
+  0%
+    transform: rotateZ(0deg)
+    background-color: white
+    color: #4A4A4A
+    font-weight: 100
+  25%
+    font-weight: bolder
+    transform: rotateZ(1deg)
+  75%
+    font-weight: bold
+    transform: rotateZ(-1deg)
+  100%
+    font-weight: bold
+    font-stretch: extra-expanded
+    transform: rotateZ(0deg)
+    background-color: #4A4A4A
 
 html
+  user-select: none
   *
     padding: 0
     margin: 0
@@ -66,10 +158,35 @@ body
     .social-media-links
       a
         color: $bg_pj1
-    .say-hello
-      background-color: $bg_pj1
-      color: white
-      height: auto
+      .link-cv
+        &:hover
+          animation-name: hover_cv
+          animation-duration: 2s
+          animation-fill-mode: forwards
+      .link-twitter
+        &:hover
+          animation-name: hover_twitter
+          animation-duration: 2s
+          animation-fill-mode: forwards
+      .link-linkedin
+        &:hover
+          animation-name: hover_linkedin
+          animation-duration: 2s
+          animation-fill-mode: forwards
+      .link-github
+        &:hover
+          animation-name: hover_github
+          animation-duration: 2s
+          animation-fill-mode: forwards
+    .say-hello-wrapper
+      .say-hello
+        background-color: $bg_pj1
+        color: white
+        height: auto
+        &:hover
+          animation-name: hover_say-hello
+          animation-duration: 1s
+          animation-fill-mode: forwards
     @media ( min-width: $breaking_point3 )
       @include padding-x( $pad-x: 60px )
       .my-name
@@ -82,6 +199,22 @@ body
         width: 80%
       .skills
         font-size: 0.9rem
+        cursor: default
+        .technical
+          &:hover
+            animation-name: hover_technical
+            animation-duration: 0.5s
+            animation-fill-mode: forwards
+        .soft
+          &:hover
+            animation-name: hover_soft
+            animation-duration: 0.5s
+            animation-fill-mode: forwards
+        .framework
+          &:hover
+            animation-name: hover_framework
+            animation-duration: 0.5s
+            animation-fill-mode: forwards
     @media ( min-width: $breaking_point1 )
       @include padding-x( $pad-x: 90px )
       position: fixed

@@ -24,6 +24,293 @@
   }
 }
 
+@-webkit-keyframes hover_cv {
+  0% {
+    color: white;
+  }
+  100% {
+    color: #57BA86;
+  }
+}
+
+@keyframes hover_cv {
+  0% {
+    color: white;
+  }
+  100% {
+    color: #57BA86;
+  }
+}
+
+@-webkit-keyframes hover_twitter {
+  0% {
+    color: white;
+  }
+  100% {
+    color: #1DA1F2;
+  }
+}
+
+@keyframes hover_twitter {
+  0% {
+    color: white;
+  }
+  100% {
+    color: #1DA1F2;
+  }
+}
+
+@-webkit-keyframes hover_github {
+  0% {
+    color: white;
+  }
+  100% {
+    color: #24292e;
+  }
+}
+
+@keyframes hover_github {
+  0% {
+    color: white;
+  }
+  100% {
+    color: #24292e;
+  }
+}
+
+@-webkit-keyframes hover_linkedin {
+  0% {
+    color: white;
+  }
+  100% {
+    color: #0e76a8;
+  }
+}
+
+@keyframes hover_linkedin {
+  0% {
+    color: white;
+  }
+  100% {
+    color: #0e76a8;
+  }
+}
+
+@-webkit-keyframes hover_say-hello {
+  0% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+    background-color: white;
+    color: #4A4A4A;
+  }
+  25% {
+    -webkit-transform: rotateZ(7deg);
+            transform: rotateZ(7deg);
+  }
+  50% {
+    -webkit-transform: rotateZ(-7deg);
+            transform: rotateZ(-7deg);
+  }
+  100% {
+    font-stretch: extra-expanded;
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+    background-color: #57BA86;
+  }
+}
+
+@keyframes hover_say-hello {
+  0% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+    background-color: white;
+    color: #4A4A4A;
+  }
+  25% {
+    -webkit-transform: rotateZ(7deg);
+            transform: rotateZ(7deg);
+  }
+  50% {
+    -webkit-transform: rotateZ(-7deg);
+            transform: rotateZ(-7deg);
+  }
+  100% {
+    font-stretch: extra-expanded;
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+    background-color: #57BA86;
+  }
+}
+
+@-webkit-keyframes hover_technical {
+  0% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+    background-color: white;
+    color: #4A4A4A;
+    font-weight: 100;
+  }
+  25% {
+    font-weight: bolder;
+    -webkit-transform: rotateZ(1deg);
+            transform: rotateZ(1deg);
+  }
+  75% {
+    font-weight: bold;
+    -webkit-transform: rotateZ(-1deg);
+            transform: rotateZ(-1deg);
+  }
+  100% {
+    font-weight: bold;
+    font-stretch: extra-expanded;
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+    background-color: #F72210;
+  }
+}
+
+@keyframes hover_technical {
+  0% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+    background-color: white;
+    color: #4A4A4A;
+    font-weight: 100;
+  }
+  25% {
+    font-weight: bolder;
+    -webkit-transform: rotateZ(1deg);
+            transform: rotateZ(1deg);
+  }
+  75% {
+    font-weight: bold;
+    -webkit-transform: rotateZ(-1deg);
+            transform: rotateZ(-1deg);
+  }
+  100% {
+    font-weight: bold;
+    font-stretch: extra-expanded;
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+    background-color: #F72210;
+  }
+}
+
+@-webkit-keyframes hover_soft {
+  0% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+    background-color: white;
+    color: #4A4A4A;
+    font-weight: 100;
+  }
+  25% {
+    font-weight: bolder;
+    -webkit-transform: rotateZ(1deg);
+            transform: rotateZ(1deg);
+  }
+  75% {
+    font-weight: bold;
+    -webkit-transform: rotateZ(-1deg);
+            transform: rotateZ(-1deg);
+  }
+  100% {
+    font-weight: bold;
+    font-stretch: extra-expanded;
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+    background-color: #57BA86;
+  }
+}
+
+@keyframes hover_soft {
+  0% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+    background-color: white;
+    color: #4A4A4A;
+    font-weight: 100;
+  }
+  25% {
+    font-weight: bolder;
+    -webkit-transform: rotateZ(1deg);
+            transform: rotateZ(1deg);
+  }
+  75% {
+    font-weight: bold;
+    -webkit-transform: rotateZ(-1deg);
+            transform: rotateZ(-1deg);
+  }
+  100% {
+    font-weight: bold;
+    font-stretch: extra-expanded;
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+    background-color: #57BA86;
+  }
+}
+
+@-webkit-keyframes hover_framework {
+  0% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+    background-color: white;
+    color: #4A4A4A;
+    font-weight: 100;
+  }
+  25% {
+    font-weight: bolder;
+    -webkit-transform: rotateZ(1deg);
+            transform: rotateZ(1deg);
+  }
+  75% {
+    font-weight: bold;
+    -webkit-transform: rotateZ(-1deg);
+            transform: rotateZ(-1deg);
+  }
+  100% {
+    font-weight: bold;
+    font-stretch: extra-expanded;
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+    background-color: #4A4A4A;
+  }
+}
+
+@keyframes hover_framework {
+  0% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+    background-color: white;
+    color: #4A4A4A;
+    font-weight: 100;
+  }
+  25% {
+    font-weight: bolder;
+    -webkit-transform: rotateZ(1deg);
+            transform: rotateZ(1deg);
+  }
+  75% {
+    font-weight: bold;
+    -webkit-transform: rotateZ(-1deg);
+            transform: rotateZ(-1deg);
+  }
+  100% {
+    font-weight: bold;
+    font-stretch: extra-expanded;
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+    background-color: #4A4A4A;
+  }
+}
+
+html {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
 html * {
   padding: 0;
   margin: 0;
@@ -57,10 +344,55 @@ body .left-bar .social-media-links a {
   color: #52A6E6;
 }
 
-body .left-bar .say-hello {
+body .left-bar .social-media-links .link-cv:hover {
+  -webkit-animation-name: hover_cv;
+          animation-name: hover_cv;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+body .left-bar .social-media-links .link-twitter:hover {
+  -webkit-animation-name: hover_twitter;
+          animation-name: hover_twitter;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+body .left-bar .social-media-links .link-linkedin:hover {
+  -webkit-animation-name: hover_linkedin;
+          animation-name: hover_linkedin;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+body .left-bar .social-media-links .link-github:hover {
+  -webkit-animation-name: hover_github;
+          animation-name: hover_github;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+body .left-bar .say-hello-wrapper .say-hello {
   background-color: #52A6E6;
   color: white;
   height: auto;
+}
+
+body .left-bar .say-hello-wrapper .say-hello:hover {
+  -webkit-animation-name: hover_say-hello;
+          animation-name: hover_say-hello;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 @media (min-width: 540px) {
@@ -86,6 +418,31 @@ body .left-bar .say-hello {
   }
   body .left-bar .skills {
     font-size: 0.9rem;
+    cursor: default;
+  }
+  body .left-bar .skills .technical:hover {
+    -webkit-animation-name: hover_technical;
+            animation-name: hover_technical;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  body .left-bar .skills .soft:hover {
+    -webkit-animation-name: hover_soft;
+            animation-name: hover_soft;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  body .left-bar .skills .framework:hover {
+    -webkit-animation-name: hover_framework;
+            animation-name: hover_framework;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
   }
 }
 
