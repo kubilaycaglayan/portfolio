@@ -304,6 +304,60 @@
   }
 }
 
+@-webkit-keyframes hover_i-letter {
+  0% {
+    color: white;
+  }
+  25% {
+    color: #EC5242;
+  }
+  30% {
+    color: white;
+  }
+  50% {
+    color: #0481C9;
+  }
+  55% {
+    color: white;
+  }
+  75% {
+    color: #ED4631;
+  }
+  80% {
+    color: white;
+  }
+  100% {
+    color: #333;
+  }
+}
+
+@keyframes hover_i-letter {
+  0% {
+    color: white;
+  }
+  25% {
+    color: #EC5242;
+  }
+  30% {
+    color: white;
+  }
+  50% {
+    color: #0481C9;
+  }
+  55% {
+    color: white;
+  }
+  75% {
+    color: #ED4631;
+  }
+  80% {
+    color: white;
+  }
+  100% {
+    color: #333;
+  }
+}
+
 html {
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -412,6 +466,17 @@ body .left-bar .say-hello-wrapper .say-hello:hover {
   }
   body .left-bar .my-name {
     font-size: 5vw;
+  }
+  body .left-bar .my-name #i-letter {
+    color: #52A6E6;
+  }
+  body .left-bar .my-name #i-letter:hover {
+    -webkit-animation-name: hover_i-letter;
+            animation-name: hover_i-letter;
+    -webkit-animation-duration: 4s;
+            animation-duration: 4s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
   }
   body .left-bar .my-motto, body .left-bar .skills {
     width: 80%;

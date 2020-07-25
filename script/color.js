@@ -10,10 +10,11 @@ const setColor = (function setColor() {
   const mySchool = document.getElementsByClassName("my-school")[0];
   const socialMediaLinks = document.querySelectorAll(".social-media-links a");
   const skills = document.getElementsByClassName('skill');
+  const iLetter = document.getElementById('i-letter');
 
   const sayHello = document.getElementsByClassName("say-hello")[0];
 
-  const targetsColor = [myUniversity, mySchool, ...socialMediaLinks];
+  const targetsColor = [myUniversity, mySchool, iLetter, ...socialMediaLinks];
   const targetsBackgroundColor = [sayHello, ...skills]
 
   const firstProject = document.getElementsByClassName("project1")[0];

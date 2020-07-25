@@ -136,6 +136,24 @@ $bootsrap-secondary: #6C757D
     transform: rotateZ(0deg)
     background-color: #4A4A4A
 
+@keyframes hover_i-letter
+  0%
+    color: white
+  25%
+    color: $bg_pj2
+  30%
+    color: white
+  50%
+    color: $bg_pj3
+  55%
+    color: white
+  75%
+    color: $bg_pj4
+  80%
+    color: white
+  100%
+    color: $my-motto
+
 html
   user-select: none
   *
@@ -195,6 +213,12 @@ body
       @include padding-x( $pad-x: 70px )
       .my-name
         font-size: 5vw
+        #i-letter
+          color: $bg_pj1
+          &:hover
+            animation-name: hover_i-letter
+            animation-duration: 4s
+            animation-iteration-count: infinite
       .my-motto, .skills
         width: 80%
       .skills
