@@ -27,72 +27,104 @@
 @-webkit-keyframes hover_cv {
   0% {
     color: white;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   100% {
     color: #57BA86;
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
   }
 }
 
 @keyframes hover_cv {
   0% {
     color: white;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   100% {
     color: #57BA86;
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
   }
 }
 
 @-webkit-keyframes hover_twitter {
   0% {
     color: white;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   100% {
     color: #1DA1F2;
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
   }
 }
 
 @keyframes hover_twitter {
   0% {
     color: white;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   100% {
     color: #1DA1F2;
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
   }
 }
 
 @-webkit-keyframes hover_github {
   0% {
     color: white;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   100% {
     color: #24292e;
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
   }
 }
 
 @keyframes hover_github {
   0% {
     color: white;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   100% {
     color: #24292e;
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
   }
 }
 
 @-webkit-keyframes hover_linkedin {
   0% {
     color: white;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   100% {
     color: #0e76a8;
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
   }
 }
 
 @keyframes hover_linkedin {
   0% {
     color: white;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   100% {
     color: #0e76a8;
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
   }
 }
 
@@ -144,217 +176,231 @@
 
 @-webkit-keyframes hover_technical {
   0% {
-    -webkit-transform: rotateZ(0deg);
-            transform: rotateZ(0deg);
+    -webkit-transform: scale(1);
+            transform: scale(1);
     background-color: white;
     color: #4A4A4A;
-    font-weight: 100;
-  }
-  25% {
-    font-weight: bolder;
-    -webkit-transform: rotateZ(1deg);
-            transform: rotateZ(1deg);
-  }
-  75% {
-    font-weight: bold;
-    -webkit-transform: rotateZ(-1deg);
-            transform: rotateZ(-1deg);
   }
   100% {
-    font-weight: bold;
-    font-stretch: extra-expanded;
-    -webkit-transform: rotateZ(0deg);
-            transform: rotateZ(0deg);
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
     background-color: #F72210;
   }
 }
 
 @keyframes hover_technical {
   0% {
-    -webkit-transform: rotateZ(0deg);
-            transform: rotateZ(0deg);
+    -webkit-transform: scale(1);
+            transform: scale(1);
     background-color: white;
     color: #4A4A4A;
-    font-weight: 100;
-  }
-  25% {
-    font-weight: bolder;
-    -webkit-transform: rotateZ(1deg);
-            transform: rotateZ(1deg);
-  }
-  75% {
-    font-weight: bold;
-    -webkit-transform: rotateZ(-1deg);
-            transform: rotateZ(-1deg);
   }
   100% {
-    font-weight: bold;
-    font-stretch: extra-expanded;
-    -webkit-transform: rotateZ(0deg);
-            transform: rotateZ(0deg);
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
     background-color: #F72210;
   }
 }
 
 @-webkit-keyframes hover_soft {
   0% {
-    -webkit-transform: rotateZ(0deg);
-            transform: rotateZ(0deg);
+    -webkit-transform: scale(1);
+            transform: scale(1);
     background-color: white;
     color: #4A4A4A;
-    font-weight: 100;
-  }
-  25% {
-    font-weight: bolder;
-    -webkit-transform: rotateZ(1deg);
-            transform: rotateZ(1deg);
-  }
-  75% {
-    font-weight: bold;
-    -webkit-transform: rotateZ(-1deg);
-            transform: rotateZ(-1deg);
   }
   100% {
-    font-weight: bold;
-    font-stretch: extra-expanded;
-    -webkit-transform: rotateZ(0deg);
-            transform: rotateZ(0deg);
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
     background-color: #57BA86;
   }
 }
 
 @keyframes hover_soft {
   0% {
-    -webkit-transform: rotateZ(0deg);
-            transform: rotateZ(0deg);
+    -webkit-transform: scale(1);
+            transform: scale(1);
     background-color: white;
     color: #4A4A4A;
-    font-weight: 100;
-  }
-  25% {
-    font-weight: bolder;
-    -webkit-transform: rotateZ(1deg);
-            transform: rotateZ(1deg);
-  }
-  75% {
-    font-weight: bold;
-    -webkit-transform: rotateZ(-1deg);
-            transform: rotateZ(-1deg);
   }
   100% {
-    font-weight: bold;
-    font-stretch: extra-expanded;
-    -webkit-transform: rotateZ(0deg);
-            transform: rotateZ(0deg);
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
     background-color: #57BA86;
   }
 }
 
 @-webkit-keyframes hover_framework {
   0% {
-    -webkit-transform: rotateZ(0deg);
-            transform: rotateZ(0deg);
+    -webkit-transform: scale(1);
+            transform: scale(1);
     background-color: white;
     color: #4A4A4A;
     font-weight: 100;
   }
-  25% {
-    font-weight: bolder;
-    -webkit-transform: rotateZ(1deg);
-            transform: rotateZ(1deg);
-  }
-  75% {
-    font-weight: bold;
-    -webkit-transform: rotateZ(-1deg);
-            transform: rotateZ(-1deg);
-  }
   100% {
-    font-weight: bold;
-    font-stretch: extra-expanded;
-    -webkit-transform: rotateZ(0deg);
-            transform: rotateZ(0deg);
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
     background-color: #4A4A4A;
   }
 }
 
 @keyframes hover_framework {
   0% {
-    -webkit-transform: rotateZ(0deg);
-            transform: rotateZ(0deg);
+    -webkit-transform: scale(1);
+            transform: scale(1);
     background-color: white;
     color: #4A4A4A;
     font-weight: 100;
   }
-  25% {
-    font-weight: bolder;
-    -webkit-transform: rotateZ(1deg);
-            transform: rotateZ(1deg);
-  }
-  75% {
-    font-weight: bold;
-    -webkit-transform: rotateZ(-1deg);
-            transform: rotateZ(-1deg);
-  }
   100% {
-    font-weight: bold;
-    font-stretch: extra-expanded;
-    -webkit-transform: rotateZ(0deg);
-            transform: rotateZ(0deg);
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
     background-color: #4A4A4A;
   }
 }
 
 @-webkit-keyframes hover_i-letter {
   0% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
     color: white;
+  }
+  20% {
+    color: #57BA86;
+    -webkit-transform: rotateZ(180deg);
+            transform: rotateZ(180deg);
   }
   25% {
+    color: white;
+  }
+  40% {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
     color: #EC5242;
   }
-  30% {
+  45% {
     color: white;
   }
-  50% {
+  60% {
+    -webkit-transform: rotateZ(540deg);
+            transform: rotateZ(540deg);
     color: #0481C9;
   }
-  55% {
+  65% {
     color: white;
   }
-  75% {
+  80% {
+    -webkit-transform: rotateZ(720deg);
+            transform: rotateZ(720deg);
     color: #ED4631;
   }
-  80% {
+  85% {
     color: white;
   }
   100% {
-    color: #333;
+    -webkit-transform: rotateZ(900deg);
+            transform: rotateZ(900deg);
+    color: #4a4a4a;
   }
 }
 
 @keyframes hover_i-letter {
   0% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
     color: white;
+  }
+  20% {
+    color: #57BA86;
+    -webkit-transform: rotateZ(180deg);
+            transform: rotateZ(180deg);
   }
   25% {
+    color: white;
+  }
+  40% {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
     color: #EC5242;
   }
-  30% {
+  45% {
     color: white;
   }
-  50% {
+  60% {
+    -webkit-transform: rotateZ(540deg);
+            transform: rotateZ(540deg);
     color: #0481C9;
   }
-  55% {
+  65% {
     color: white;
   }
-  75% {
+  80% {
+    -webkit-transform: rotateZ(720deg);
+            transform: rotateZ(720deg);
     color: #ED4631;
   }
-  80% {
+  85% {
     color: white;
   }
   100% {
-    color: #333;
+    -webkit-transform: rotateZ(900deg);
+            transform: rotateZ(900deg);
+    color: #4a4a4a;
+  }
+}
+
+@-webkit-keyframes hover_my-university {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    background-color: white;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    background-color: #dd001a;
+    color: white;
+  }
+}
+
+@keyframes hover_my-university {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    background-color: white;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    background-color: #dd001a;
+    color: white;
+  }
+}
+
+@-webkit-keyframes hover_my-school {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    background-color: #6F23FF;
+    color: white;
+  }
+}
+
+@keyframes hover_my-school {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    background-color: #6F23FF;
+    color: white;
   }
 }
 
@@ -387,6 +433,7 @@ body .left-bar {
 }
 
 body .left-bar #i-letter {
+  display: inline-block;
   color: #52A6E6;
 }
 
@@ -400,11 +447,33 @@ body .left-bar #i-letter:hover {
 }
 
 body .left-bar .my-school {
+  display: inline-block;
   color: #52A6E6;
 }
 
+body .left-bar .my-school:hover {
+  border-radius: 2px;
+  -webkit-animation-name: hover_my-school;
+          animation-name: hover_my-school;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
 body .left-bar .my-university {
+  display: inline-block;
   color: #52A6E6;
+}
+
+body .left-bar .my-university:hover {
+  border-radius: 2px;
+  -webkit-animation-name: hover_my-university;
+          animation-name: hover_my-university;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 body .left-bar .social-media-links a {
@@ -414,8 +483,8 @@ body .left-bar .social-media-links a {
 body .left-bar .social-media-links .link-cv:hover {
   -webkit-animation-name: hover_cv;
           animation-name: hover_cv;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -423,8 +492,8 @@ body .left-bar .social-media-links .link-cv:hover {
 body .left-bar .social-media-links .link-twitter:hover {
   -webkit-animation-name: hover_twitter;
           animation-name: hover_twitter;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -432,8 +501,8 @@ body .left-bar .social-media-links .link-twitter:hover {
 body .left-bar .social-media-links .link-linkedin:hover {
   -webkit-animation-name: hover_linkedin;
           animation-name: hover_linkedin;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -441,8 +510,8 @@ body .left-bar .social-media-links .link-linkedin:hover {
 body .left-bar .social-media-links .link-github:hover {
   -webkit-animation-name: hover_github;
           animation-name: hover_github;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
