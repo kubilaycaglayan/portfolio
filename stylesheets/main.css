@@ -476,6 +476,37 @@ body .left-bar .my-university:hover {
           animation-fill-mode: forwards;
 }
 
+body .left-bar .skills {
+  cursor: default;
+}
+
+body .left-bar .skills .technical:hover {
+  -webkit-animation-name: hover_technical;
+          animation-name: hover_technical;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+body .left-bar .skills .soft:hover {
+  -webkit-animation-name: hover_soft;
+          animation-name: hover_soft;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+body .left-bar .skills .framework:hover {
+  -webkit-animation-name: hover_framework;
+          animation-name: hover_framework;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
 body .left-bar .social-media-links a {
   color: #52A6E6;
 }
@@ -554,31 +585,6 @@ body .left-bar .say-hello-wrapper .say-hello:hover {
   }
   body .left-bar .skills {
     font-size: 0.9rem;
-    cursor: default;
-  }
-  body .left-bar .skills .technical:hover {
-    -webkit-animation-name: hover_technical;
-            animation-name: hover_technical;
-    -webkit-animation-duration: 0.5s;
-            animation-duration: 0.5s;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
-  }
-  body .left-bar .skills .soft:hover {
-    -webkit-animation-name: hover_soft;
-            animation-name: hover_soft;
-    -webkit-animation-duration: 0.5s;
-            animation-duration: 0.5s;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
-  }
-  body .left-bar .skills .framework:hover {
-    -webkit-animation-name: hover_framework;
-            animation-name: hover_framework;
-    -webkit-animation-duration: 0.5s;
-            animation-duration: 0.5s;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
   }
 }
 

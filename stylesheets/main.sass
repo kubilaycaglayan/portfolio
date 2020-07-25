@@ -201,6 +201,23 @@ body
         animation-name: hover_my-university
         animation-duration: 1s
         animation-fill-mode: forwards
+    .skills
+        cursor: default
+        .technical
+          &:hover
+            animation-name: hover_technical
+            animation-duration: 0.5s
+            animation-fill-mode: forwards
+        .soft
+          &:hover
+            animation-name: hover_soft
+            animation-duration: 0.5s
+            animation-fill-mode: forwards
+        .framework
+          &:hover
+            animation-name: hover_framework
+            animation-duration: 0.5s
+            animation-fill-mode: forwards
     .social-media-links
       a
         color: $bg_pj1
@@ -245,22 +262,6 @@ body
         width: 80%
       .skills
         font-size: 0.9rem
-        cursor: default
-        .technical
-          &:hover
-            animation-name: hover_technical
-            animation-duration: 0.5s
-            animation-fill-mode: forwards
-        .soft
-          &:hover
-            animation-name: hover_soft
-            animation-duration: 0.5s
-            animation-fill-mode: forwards
-        .framework
-          &:hover
-            animation-name: hover_framework
-            animation-duration: 0.5s
-            animation-fill-mode: forwards
     @media ( min-width: $breaking_point1 )
       @include padding-x( $pad-x: 90px )
       position: fixed
