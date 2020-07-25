@@ -169,6 +169,12 @@ body
   min-width: 330px
   .left-bar
     @include padding-x( $pad-x: 45px )
+    #i-letter
+      color: $bg_pj1
+      &:hover
+        animation-name: hover_i-letter
+        animation-duration: 4s
+        animation-iteration-count: infinite
     .my-school
       color: $bg_pj1
     .my-university
@@ -213,12 +219,6 @@ body
       @include padding-x( $pad-x: 70px )
       .my-name
         font-size: 5vw
-        #i-letter
-          color: $bg_pj1
-          &:hover
-            animation-name: hover_i-letter
-            animation-duration: 4s
-            animation-iteration-count: infinite
       .my-motto, .skills
         width: 80%
       .skills
