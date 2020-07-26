@@ -12,7 +12,6 @@ function addAnimations() {
 };
 
 window.onload = () => {
-  console.log('yüklendik miiiiiiiiiiiiiiiii')
   addAnimations()
   loading.className = 'loading fade-out';
   setTimeout(() => {
