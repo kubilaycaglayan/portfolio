@@ -120,31 +120,38 @@ $my_green: #57BA86
 
 @keyframes hover_i-letter
   0%
+    position: relative
     transform: rotateZ(0deg)
     color: white
   20%
     color: $my_green
     transform: rotateZ(180deg)
+    top: -3px
   25%
     color: white
   40%
     transform: rotateZ(360deg)
     color: $bg_pj2
+    top: 0
   45%
     color: white
   60%
     transform: rotateZ(540deg)
     color: $bg_pj3
+    top: -3px
   65%
     color: white
   80%
     transform: rotateZ(720deg)
     color: $bg_pj4
+    top: 0
   85%
     color: white
   100%
     transform: rotateZ(900deg)
     color: $my-name
+    top: -3px
+    position: relative
 
 @keyframes hover_my-university
   0%
@@ -203,13 +210,14 @@ body
   min-width: 330px
   .left-bar
     @include padding-x( $pad-x: 45px )
-    #i-letter
-      display: inline-block
-      color: $bg_pj1
-      &:hover
+    .hovering-area
+      &:hover > #i-letter
         animation-name: hover_i-letter
         animation-duration: 4s
         animation-iteration-count: infinite
+    #i-letter
+      display: inline-block
+      color: $bg_pj1
     #play
       position: relative
       top: 8px
