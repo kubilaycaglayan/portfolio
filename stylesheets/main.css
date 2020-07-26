@@ -444,6 +444,32 @@
   }
 }
 
+@-webkit-keyframes swing_from_left {
+  0% {
+    visibility: hidden;
+    left: -500px;
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    left: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes swing_from_left {
+  0% {
+    visibility: hidden;
+    left: -500px;
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    left: 0;
+    opacity: 1;
+  }
+}
+
 html {
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -980,5 +1006,20 @@ body .thanks {
           animation-duration: 1s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+}
+
+.swing-from-left {
+  -webkit-animation-name: swing_from_left;
+          animation-name: swing_from_left;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.hidden {
+  position: relative;
+  left: -500px;
+  visibility: hidden;
 }
 /*# sourceMappingURL=main.css.map */

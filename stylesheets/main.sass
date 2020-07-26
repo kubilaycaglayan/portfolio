@@ -178,6 +178,15 @@ $my_green: #57BA86
     display: block
     opacity: 1
 
+@keyframes swing_from_left
+  0%
+    visibility: hidden
+    left: -500px
+    opacity: 0
+  100%
+    visibility: visible
+    left: 0
+    opacity: 1
 
 
 html
@@ -502,3 +511,12 @@ body
   animation-duration: 1s
   animation-fill-mode: forwards
 
+.swing-from-left
+  animation-name: swing_from_left
+  animation-duration: 1.5s
+  animation-fill-mode: forwards
+
+.hidden
+  position: relative
+  left: -500px
+  visibility: hidden
