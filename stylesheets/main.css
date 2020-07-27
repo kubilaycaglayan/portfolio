@@ -701,7 +701,7 @@ body .left-bar .say-hello-wrapper .say-hello:hover {
   }
 }
 
-@media (max-height: 620px) and (min-width: 992px) {
+@media (max-height: 745px) and (min-width: 992px) {
   body .left-bar {
     padding-right: 40px;
     padding-left: 40px;
