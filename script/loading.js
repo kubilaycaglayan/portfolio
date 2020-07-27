@@ -3,18 +3,18 @@ const leftBar = document.getElementsByClassName('left-bar')[0];
 
 function addAnimations() {
   let timeOut = 0;
-  [...leftBar.children].forEach( (element) => {
-    setTimeout(() => {
+  [...leftBar.children].forEach( function(element) {
+    setTimeout(function() {
       element.className += ' swing-from-left'
     }, timeOut)
     timeOut += 200;
   })
 };
 
-window.onload = () => {
+window.addEventListener('load', function() {
   addAnimations()
   loading.className = 'loading fade-out';
-  setTimeout(() => {
+  setTimeout(function() {
     loading.style.display = 'none'
   }, 1000)
-}
+})
