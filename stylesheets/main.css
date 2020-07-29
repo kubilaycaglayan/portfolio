@@ -871,6 +871,10 @@ body .project1 {
   background-color: #52A6E6;
 }
 
+body .project1 .number {
+  color: #113855;
+}
+
 body .project1 .project-spesific-skills .badge {
   background-color: #113855;
 }
@@ -882,6 +886,10 @@ body .project1 a .fab:hover {
 
 body .project2 {
   background-color: #EC5242;
+}
+
+body .project2 .number {
+  color: #751d13;
 }
 
 body .project2 .project-spesific-skills .badge {
@@ -897,6 +905,10 @@ body .project3 {
   background-color: #0481C9;
 }
 
+body .project3 .number {
+  color: #0f374e;
+}
+
 body .project3 .project-spesific-skills .badge {
   background-color: #0f374e;
 }
@@ -908,6 +920,10 @@ body .project3 a .fab:hover {
 
 body .project4 {
   background-color: #ED4631;
+}
+
+body .project4 .number {
+  color: #611c14;
 }
 
 body .project4 .project-spesific-skills .badge {
@@ -923,6 +939,10 @@ body .project5 {
   background-color: #D3B4EA;
 }
 
+body .project5 .number {
+  color: white;
+}
+
 body .project5 .project-spesific-skills .badge {
   background-color: white;
 }
@@ -934,6 +954,10 @@ body .project5 a .fab:hover {
 
 body .project6 {
   background-color: #D3B4EA;
+}
+
+body .project6 .number {
+  color: white;
 }
 
 body .project6 .project-spesific-skills .badge {
