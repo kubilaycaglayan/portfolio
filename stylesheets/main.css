@@ -1010,6 +1010,10 @@ body .articles .article-separator {
 }
 
 body .footer {
+  -webkit-user-select: text;
+     -moz-user-select: text;
+      -ms-user-select: text;
+          user-select: text;
   color: white;
   background-color: #292929;
 }
