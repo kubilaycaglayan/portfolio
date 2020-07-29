@@ -19,12 +19,13 @@ function afterWindowLoad() {
   }, 1000)
 };
 
-window.addEventListener('load', function() {
+/* window.addEventListener('load', function() {
   setTimeout( () => {
     afterWindowLoad()
   }, 0)
-})
+}) */
 
 window.onload = function(){
-  afterWindowLoad()
+  //afterWindowLoad()
+  loading.innerHTML = 'Onload Method is working fine.'
 };
