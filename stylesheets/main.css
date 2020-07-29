@@ -758,6 +758,10 @@ body section {
   font-weight: 300;
 }
 
+body section .number {
+  color: black;
+}
+
 body section .badges .badge {
   font-weight: 200;
 }
