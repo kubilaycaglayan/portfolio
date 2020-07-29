@@ -24,3 +24,7 @@ window.addEventListener('load', function() {
     afterWindowLoad()
   }, 0)
 })
+
+window.onload = function(){
+  afterWindowLoad()
+};
