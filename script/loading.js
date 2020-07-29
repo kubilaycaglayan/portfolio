@@ -11,10 +11,16 @@ function addAnimations() {
   })
 };
 
-window.addEventListener('load', function() {
+function afterWindowLoad() {
   addAnimations()
   loading.className = 'loading fade-out';
   setTimeout(function() {
     loading.style.display = 'none'
   }, 1000)
+};
+
+window.addEventListener('load', function() {
+  setTimeout( () => {
+    afterWindowLoad()
+  }, 0)
 })
