@@ -413,14 +413,6 @@ body
         left: 14px
         top: 11px
 
-  .articles
-    a .fas,
-    a .fab
-      color: $bg-footer
-      &:hover
-        color: black
-    .article-separator
-      border-bottom: 10px solid $bootsrap-secondary
   .project1
     .include-text-color
       color: $bg_bg_pj1
@@ -493,9 +485,14 @@ body
     padding-bottom: 15%
     @media ( max-width: $breaking_point2 )
       padding-top: calc( 12vh )
-    a .fas
+    a,
+    a .fas,
+    a .fab
+      color: $bg-footer
       &:hover
         color: $bootsrap-secondary
+    .article-separator
+      border-bottom: 10px solid $bootsrap-secondary
   .footer
     color: white
     background-color: $bg-footer

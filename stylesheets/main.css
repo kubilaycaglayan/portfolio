@@ -857,20 +857,6 @@ body section .live-link .spinner {
   top: 11px;
 }
 
-body .articles a .fas,
-body .articles a .fab {
-  color: #292929;
-}
-
-body .articles a .fas:hover,
-body .articles a .fab:hover {
-  color: black;
-}
-
-body .articles .article-separator {
-  border-bottom: 10px solid #6C757D;
-}
-
 body .project1 {
   background-color: #52A6E6;
 }
@@ -985,8 +971,20 @@ body .articles {
   }
 }
 
-body .articles a .fas:hover {
+body .articles a,
+body .articles a .fas,
+body .articles a .fab {
+  color: #292929;
+}
+
+body .articles a:hover,
+body .articles a .fas:hover,
+body .articles a .fab:hover {
   color: #6C757D;
+}
+
+body .articles .article-separator {
+  border-bottom: 10px solid #6C757D;
 }
 
 body .footer {
