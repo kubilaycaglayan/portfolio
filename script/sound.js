@@ -1,5 +1,7 @@
+const src = require('../sound/kubilay.mp3');
+
 const play = document.getElementById('play')
-const voiceOver = new Audio('../sound/kubilay.mp3')
+const voiceOver = new Audio(src)
 
 play.addEventListener('click', () => {
   voiceOver.play();

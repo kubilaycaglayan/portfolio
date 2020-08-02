@@ -20,5 +20,6 @@ function afterWindowLoad() {
 };
 loading.innerHTML = 'Trying to put something inside loading class'
 window.addEventListener('load', function() {
-  loading.innerHTML = 'Onload Method is working fine.'
+  afterWindowLoad()
+  loading.innerHTML = 'Onload Method iss working fine.'
 })

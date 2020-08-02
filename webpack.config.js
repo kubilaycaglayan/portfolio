@@ -1,5 +1,7 @@
 const path = require('path');
 
+const SRC = path.resolve(__dirname, './script/');
+
 module.exports = {
   entry: './script/index.js',
   output: {
@@ -17,7 +19,16 @@ module.exports = {
             presets: ['@babel/preset-env']
           }
         }
-      }
+      },
+      {
+        test: /\.(jpg|JPG|jpeg|png|gif|mp3|svg|ttf|woff2|woff|eot)$/gi,
+        include: SRC,
+        use: [
+          {
+            loader: 'file-loader',
+          },
+        ],
+      },
     ]
   },
 };
