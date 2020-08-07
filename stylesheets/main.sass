@@ -183,13 +183,9 @@ $my_green: #57BA86
 
 @keyframes swing_from_left
   0%
-    visibility: hidden
-    left: -500px
-    opacity: 0
+    transform: translateX(-25px)
   100%
-    visibility: visible
-    left: 0
-    opacity: 1
+    transform: translateX(0px)
 
 
 html
@@ -519,10 +515,10 @@ body
   width: 100vw
   height: 100vh
   .spinner
-    width: 40px;
-    height: 40px;
-    position: relative;
-    margin: 100px auto;
+    width: 40px
+    height: 40px
+    position: relative
+    margin: 100px auto
 
 .fade-out
   animation-name: fade_out
@@ -534,15 +530,16 @@ body
   animation-duration: 1s
   animation-fill-mode: forwards
 
-.swing-from-left
-  animation-name: swing_from_left
-  animation-duration: 1.5s
-  animation-fill-mode: forwards
+.left-bar
+  .swing-from-left
+    opacity: 1
+    transform: translateX(0px)
+
 
 .hidden
-  position: relative
-  left: -500px
-  visibility: hidden
+  transform: translateX(-40px)
+  opacity: 0.2
+  transition: opacity 1s, transform 1s
 
 .double-bounce1, .double-bounce2
   width: 100%

@@ -14,16 +14,42 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 
 var loading = document.getElementsByClassName('loading')[0];
 var leftBar = document.getElementsByClassName('left-bar')[0];
+var leftChildren = [];
+for (var i = 0; i < leftBar.children.length; i += 1) {
+  leftChildren.push(leftBar.children[i]);
+}
+
+function setTrans(element, timeOut) {
+  setTimeout(function () {
+    console.log(element)
+    element.style.opacity = '1'
+    element.style.transform = 'translateX(0px)'
+  }, timeOut)
+}
 
 function addAnimations() {
-  var timeOut = 0;
+  try {
+    var timeOut = 0;
+    for (var i = 0; i < leftBar.children.length; i += 1) {
+      setTrans(leftChildren[i], timeOut)
+      timeOut += 200;
+    }
 
-  _toConsumableArray(leftBar.children).forEach(function (element) {
-    setTimeout(function () {
-      element.className += ' swing-from-left';
-    }, timeOut);
-    timeOut += 200;
-  });
+  /*   _toConsumableArray(leftBar.).forEach(function (element) {
+      setTimeout(function () {
+        //element.className += ' swing-from-left';
+        element.style.opacity = '1'
+        element.style.transform = 'translateX(0px)'
+      }, timeOut);
+      timeOut += 200;
+
+    });*/
+  } catch (error) {
+    // Handler
+    var motto = document.getElementsByClassName('my-motto')[0]
+    motto.innerHTML = error
+  }
+
 }
 
 ;
@@ -33,12 +59,16 @@ function afterWindowLoad() {
   loading.className = 'loading fade-out';
   setTimeout(function () {
     loading.style.display = 'none';
+    var resultField = document.getElementsByClassName('overcapture text-white')[0]
+    resultField.innerText = '';
+    _toConsumableArray(leftBar.children).forEach(function (element) {
+      resultField.innerText += element.className + ' --' + "\n";
+    });
   }, 1000);
 }
 
 ;
-loading.innerHTML = 'Trying to put something inside loading class';
+
 window.addEventListener('load', function () {
   afterWindowLoad();
-  loading.innerHTML = 'Onload Method iss working fine.';
 });

@@ -452,27 +452,23 @@
 
 @-webkit-keyframes swing_from_left {
   0% {
-    visibility: hidden;
-    left: -500px;
-    opacity: 0;
+    -webkit-transform: translateX(-25px);
+            transform: translateX(-25px);
   }
   100% {
-    visibility: visible;
-    left: 0;
-    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
   }
 }
 
 @keyframes swing_from_left {
   0% {
-    visibility: hidden;
-    left: -500px;
-    opacity: 0;
+    -webkit-transform: translateX(-25px);
+            transform: translateX(-25px);
   }
   100% {
-    visibility: visible;
-    left: 0;
-    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
   }
 }
 
@@ -1066,19 +1062,20 @@ body .thanks {
           animation-fill-mode: forwards;
 }
 
-.swing-from-left {
-  -webkit-animation-name: swing_from_left;
-          animation-name: swing_from_left;
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+.left-bar .swing-from-left {
+  opacity: 1;
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
 }
 
 .hidden {
-  position: relative;
-  left: -500px;
-  visibility: hidden;
+  -webkit-transform: translateX(-40px);
+          transform: translateX(-40px);
+  opacity: 0.2;
+  -webkit-transition: opacity 1s, -webkit-transform 1s;
+  transition: opacity 1s, -webkit-transform 1s;
+  transition: opacity 1s, transform 1s;
+  transition: opacity 1s, transform 1s, -webkit-transform 1s;
 }
 
 .double-bounce1, .double-bounce2 {
