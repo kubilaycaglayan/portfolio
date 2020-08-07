@@ -1,3 +1,5 @@
+try {
+
 const loading = document.getElementsByClassName('loading')[0];
 const leftBar = document.getElementsByClassName('left-bar')[0];
 const leftChildren = [];
@@ -35,3 +37,8 @@ window.addEventListener('load', function() {
     afterWindowLoad()
   }, 0)
 })
+
+} catch (error) {
+  const loading = document.getElementsByClassName('loading')[0];
+  loading.innerText = error
+}
