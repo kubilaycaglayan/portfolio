@@ -1,4 +1,4 @@
 import './color';
-//import './loading';
+import './loading';
+import './sound';
 import './ping';
-//import './sound';

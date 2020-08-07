@@ -21,6 +21,8 @@
   },
   "homepage": "https://github.com/kubilaycaglayan/portfolio#readme",
   "dependencies": {
+    "@babel/plugin-transform-runtime": "^7.11.0",
+    "@babel/runtime": "^7.11.2",
     "npm": "^6.14.7"
   },
   "devDependencies": {

@@ -1,78 +1,77 @@
-let result;
-const classNamesOfProjectsWillBeWokenUp = [
-  'project1',
-  'project3',
-]
-const projectElements = function (projectClassName) {
-  const href = document.querySelector(`.${projectClassName} .live-link`).href
-  const linkContainer = document.querySelector(`.${projectClassName} .live-link`)
-  const spinnerIcon = document.querySelector(`.${projectClassName} .spinner`)
-  const spinnerColor = getComputedStyle(document.querySelector(`.${projectClassName} .project-spesific-skills .badge`)).backgroundColor
+"use strict";
 
+var result;
+var classNamesOfProjectsWillBeWokenUp = ['project1', 'project3'];
+
+var projectElements = function projectElements(projectClassName) {
+  var href = document.querySelector(".".concat(projectClassName, " .live-link")).href;
+  var linkContainer = document.querySelector(".".concat(projectClassName, " .live-link"));
+  var spinnerIcon = document.querySelector(".".concat(projectClassName, " .spinner"));
+  var spinnerColor = getComputedStyle(document.querySelector(".".concat(projectClassName, " .project-spesific-skills .badge"))).backgroundColor;
   return {
-    href,
-    linkContainer,
-    spinnerIcon,
-    spinnerColor,
-    projectClassName,
-  }
-}
+    href: href,
+    linkContainer: linkContainer,
+    spinnerIcon: spinnerIcon,
+    spinnerColor: spinnerColor,
+    projectClassName: projectClassName
+  };
+};
 
-const projectObjects = function projectObjects() {
-  const projectsObjectArray = []
-  classNamesOfProjectsWillBeWokenUp.forEach((projectClassName) => {
-    projectsObjectArray.push(projectElements(projectClassName))
-  })
-  return projectsObjectArray
-}
+var projectObjects = function projectObjects() {
+  var projectsObjectArray = [];
+  classNamesOfProjectsWillBeWokenUp.forEach(function (projectClassName) {
+    projectsObjectArray.push(projectElements(projectClassName));
+  });
+  return projectsObjectArray;
+};
 
-const attachCountDownMessage = function(element) {
-  let count = 30;
-  const countDown = setInterval(() => {
-    element.title = `Firing up Heroku Dynos...(~${count}s)`
+var attachCountDownMessage = function attachCountDownMessage(element) {
+  var count = 30;
+  var countDown = setInterval(function () {
+    element.title = "Firing up Heroku Dynos...(~".concat(count, "s)");
+
     if (count === 0) {
-      element.title = `Firing up Heroku Dynos...(soon)`
-      clearInterval(countDown)
+      element.title = "Firing up Heroku Dynos...(soon)";
+      clearInterval(countDown);
     }
-    count -= 1
-  }, 1000)
-  return countDown
-}
 
-const addSpinner = function(project) {
-  const spinner = document.createElement('i')
-  spinner.className = 'spinner fas fa-sync-alt'
-  spinner.style.color = project.spinnerColor
-  const countDown = attachCountDownMessage(spinner)
-  project.linkContainer.append(spinner)
+    count -= 1;
+  }, 1000);
+  return countDown;
+};
+
+var addSpinner = function addSpinner(project) {
+  var spinner = document.createElement('i');
+  spinner.className = 'spinner fas fa-sync-alt';
+  spinner.style.color = project.spinnerColor;
+  var countDown = attachCountDownMessage(spinner);
+  project.linkContainer.append(spinner);
   return {
-    countDown
-  }
-}
+    countDown: countDown
+  };
+};
 
-const removeSpinner = function(project) {
-  const spinnerIcon = document.querySelector(`.${project.projectClassName} .spinner`)
-  clearInterval(project.countDown)
-  spinnerIcon.remove()
-}
+var removeSpinner = function removeSpinner(project) {
+  var spinnerIcon = document.querySelector(".".concat(project.projectClassName, " .spinner"));
+  clearInterval(project.countDown);
+  spinnerIcon.remove();
+};
 
-const wakeUp = async function wakeUp(project) {
-  project.countDown = addSpinner(project)
+var wakeUp = async function wakeUp(project) {
+  project.countDown = addSpinner(project);
   fetch(project.href, {
     mode: 'no-cors'
-  })
-  .then(function(response){
-    removeSpinner(project)
-  })
-  .catch(function(err){
-    removeSpinner(project)
-  })
-}
-
-const startWakeUpProcess = function startWakeUpProcess() {
-  projectObjects().forEach((project) => {
-    wakeUp(project)
+  }).then(function (response) {
+    removeSpinner(project);
+  }).catch(function (err) {
+    removeSpinner(project);
   });
-}
+};
 
-window.addEventListener('load', startWakeUpProcess)
+var startWakeUpProcess = function startWakeUpProcess() {
+  projectObjects().forEach(function (project) {
+    wakeUp(project);
+  });
+};
+
+window.addEventListener('load', startWakeUpProcess);
