@@ -1,29 +1,43 @@
-const loading = document.getElementsByClassName('loading')[0];
-const leftBar = document.getElementsByClassName('left-bar')[0];
+"use strict";
 
-function addAnimations() {
-  try {
-    let timeOut = 0;
-    [...leftBar.children].forEach( function(element) {
-      setTimeout(function() {
-        element.className += ' swing-from-left'
-      }, timeOut)
+try {
+  var addClassTimeOut = function addClassTimeOut(element, cName, timeOut) {
+    setTimeout(function () {
+      element.className += ' ' + cName;
+    }, timeOut);
+  };
+
+  var addAnimations = function addAnimations() {
+    var timeOut = 0;
+
+    for (var _i = 0; _i < leftChildren.length; _i += 1) {
+      addClassTimeOut(leftChildren[_i], 'swing-from-left', timeOut);
       timeOut += 200;
-    })
-  } catch (error) {
-    // Handler
-  }
-};
+    }
+  };
 
-function afterWindowLoad() {
-  addAnimations()
-  loading.className = 'loading fade-out';
-  setTimeout(function() {
-    loading.style.display = 'none'
-  }, 1000)
-};
-loading.innerHTML = 'Trying to put something inside loading class'
-window.addEventListener('load', function() {
-  afterWindowLoad()
-  loading.innerHTML = 'Onload Method iss working fine.'
-})
+  var afterWindowLoad = function afterWindowLoad() {
+    addAnimations();
+    loading.className = 'loading fade-out';
+    setTimeout(function () {
+      loading.style.display = 'none';
+    }, 1000);
+  };
+
+  var loading = document.getElementsByClassName('loading')[0];
+  var leftBar = document.getElementsByClassName('left-bar')[0];
+  var leftChildren = [];
+
+  for (var i = 0; i < leftBar.children.length; i += 1) {
+    leftChildren.push(leftBar.children[i]);
+  }
+  ;
+  ;
+  window.addEventListener('load', function () {
+    setTimeout(function () {
+      afterWindowLoad();
+    }, 0);
+  });
+} catch (error) {
+  //handler
+}
