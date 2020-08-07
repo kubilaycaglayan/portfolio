@@ -1,44 +1,43 @@
+"use strict";
+
 try {
+  var addClassTimeOut = function addClassTimeOut(element, cName, timeOut) {
+    setTimeout(function () {
+      element.className += ' ' + cName;
+    }, timeOut);
+  };
 
-const loading = document.getElementsByClassName('loading')[0];
-const leftBar = document.getElementsByClassName('left-bar')[0];
-const leftChildren = [];
-for (let i = 0; i < leftBar.children.length; i += 1) {
-  leftChildren.push(leftBar.children[i])
-}
+  var addAnimations = function addAnimations() {
+    var timeOut = 0;
 
-function addClassTimeOut(element, cName, timeOut) {
-  setTimeout(
-    function() {
-      element.className += ' ' + cName
-    }, timeOut
-  )
-}
+    for (var _i = 0; _i < leftChildren.length; _i += 1) {
+      addClassTimeOut(leftChildren[_i], 'swing-from-left', timeOut);
+      timeOut += 200;
+    }
+  };
 
-function addAnimations() {
-  let timeOut = 0;
+  var afterWindowLoad = function afterWindowLoad() {
+    addAnimations();
+    loading.className = 'loading fade-out';
+    setTimeout(function () {
+      loading.style.display = 'none';
+    }, 1000);
+  };
 
-  for (let i = 0; i < leftChildren.length; i += 1) {
-    addClassTimeOut(leftChildren[i], 'swing-from-left', timeOut)
-    timeOut += 200;
+  var loading = document.getElementsByClassName('loading')[0];
+  var leftBar = document.getElementsByClassName('left-bar')[0];
+  var leftChildren = [];
+
+  for (var i = 0; i < leftBar.children.length; i += 1) {
+    leftChildren.push(leftBar.children[i]);
   }
-};
-
-function afterWindowLoad() {
-  addAnimations()
-  loading.className = 'loading fade-out';
-  setTimeout(function() {
-    loading.style.display = 'none'
-  }, 1000)
-};
-
-window.addEventListener('load', function() {
-  setTimeout( () => {
-    afterWindowLoad()
-  }, 0)
-})
-
+  ;
+  ;
+  window.addEventListener('load', function () {
+    setTimeout(function () {
+      afterWindowLoad();
+    }, 0);
+  });
 } catch (error) {
-  const loading = document.getElementsByClassName('loading')[0];
-  loading.innerText = error
+  //handler
 }
