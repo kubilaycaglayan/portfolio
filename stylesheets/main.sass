@@ -215,7 +215,7 @@ body
         animation-iteration-count: infinite
     #i-letter
       display: inline-block
-      color: $bg_pj1
+      color: $bg_bg_pj1
     #play
       position: relative
       top: 8px
@@ -324,7 +324,7 @@ body
       @include padding-x( $pad-x: 80px )
     @media ( min-width: 1300px )
       @include padding-x( $pad-x: 90px )
-    @media ( max-height: 600px )
+    @media ( max-height: 710px )
       @media ( min-width: $breaking_point1 )
         @include padding-x($pad-x: 40px )
         padding-top: 4%
@@ -337,12 +337,28 @@ body
           padding: 0
         .my-motto
           p
-            font-size: 0.9rem
+            font-size: 1.1rem
         .my-name
           font-size: 2.2rem
         .skills
           .badge
             font-size: 0.8rem
+    @media ( max-height: 580px )
+      .my-motto
+        p
+          font-size: 1.0rem
+    @media ( max-height: 580px )
+      .my-motto
+        p
+          font-size: 0.9rem
+    @media ( max-height: 520px )
+      .skills
+          .badge
+            font-size: 0.7rem
+    @media ( max-height: 480px )
+      .my-motto
+        p
+          font-size: 0.8rem
   .btn-hello
     width: 175px
   .my-name

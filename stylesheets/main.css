@@ -516,7 +516,7 @@ body .left-bar .hovering-area:hover > #i-letter {
 
 body .left-bar #i-letter {
   display: inline-block;
-  color: #52A6E6;
+  color: #113855;
 }
 
 body .left-bar #play {
@@ -719,7 +719,7 @@ body .left-bar .say-hello-wrapper .say-hello:hover {
   }
 }
 
-@media (max-height: 600px) and (min-width: 992px) {
+@media (max-height: 710px) and (min-width: 992px) {
   body .left-bar {
     padding-right: 40px;
     padding-left: 40px;
@@ -735,12 +735,36 @@ body .left-bar .say-hello-wrapper .say-hello:hover {
     padding: 0;
   }
   body .left-bar .my-motto p {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
   }
   body .left-bar .my-name {
     font-size: 2.2rem;
   }
   body .left-bar .skills .badge {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-height: 580px) {
+  body .left-bar .my-motto p {
+    font-size: 1.0rem;
+  }
+}
+
+@media (max-height: 580px) {
+  body .left-bar .my-motto p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-height: 520px) {
+  body .left-bar .skills .badge {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-height: 480px) {
+  body .left-bar .my-motto p {
     font-size: 0.8rem;
   }
 }
