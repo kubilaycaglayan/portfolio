@@ -285,7 +285,7 @@
   60% {
     -webkit-transform: rotateZ(540deg);
             transform: rotateZ(540deg);
-    color: #0481C9;
+    color: #3097d3;
   }
   65% {
     color: white;
@@ -334,7 +334,7 @@
   60% {
     -webkit-transform: rotateZ(540deg);
             transform: rotateZ(540deg);
-    color: #0481C9;
+    color: #3097d3;
   }
   65% {
     color: white;
@@ -535,7 +535,8 @@ body .left-bar #play:hover {
 
 body .left-bar .my-school {
   display: inline-block;
-  color: #52A6E6;
+  color: #113855;
+  font-weight: 500;
 }
 
 body .left-bar .my-school:hover {
@@ -550,7 +551,8 @@ body .left-bar .my-school:hover {
 
 body .left-bar .my-university {
   display: inline-block;
-  color: #52A6E6;
+  color: #113855;
+  font-weight: 500;
 }
 
 body .left-bar .my-university:hover {
@@ -595,7 +597,7 @@ body .left-bar .skills .framework:hover {
 }
 
 body .left-bar .social-media-links a {
-  color: #52A6E6;
+  color: #113855;
 }
 
 body .left-bar .social-media-links .link-cv:hover {
@@ -635,7 +637,7 @@ body .left-bar .social-media-links .link-github:hover {
 }
 
 body .left-bar .say-hello-wrapper .say-hello {
-  background-color: #52A6E6;
+  background-color: #113855;
   color: white;
   height: auto;
 }
@@ -754,8 +756,8 @@ body .my-name {
 
 body .skills .skill {
   color: white;
-  background-color: #52A6E6;
-  font-weight: 300;
+  background-color: #113855;
+  font-weight: 400;
   text-transform: uppercase;
 }
 
@@ -854,6 +856,7 @@ body section .project-spesific-skills {
 }
 
 body section .project-spesific-skills .badge {
+  font-weight: 400;
   color: white;
 }
 
@@ -914,7 +917,7 @@ body .project2 a .fab:hover {
 }
 
 body .project3 {
-  background-color: #0481C9;
+  background-color: #3097d3;
 }
 
 body .project3 .include-text-color {

@@ -18,6 +18,8 @@ const setColor = (function setColor() {
   const targetsBackgroundColor = [sayHello, ...skills]
 
   const firstProject = document.getElementsByClassName("project1")[0];
+  const firstProjectBadge = document.querySelector('.project-spesific-skills .badge');
+  const firstProjectBadgeBGColor = window.getComputedStyle(firstProjectBadge).backgroundColor;
 
   const getVisibleColor = function getVisibleColor(index) {
     return window.getComputedStyle(rightFlow[index]).backgroundColor;
@@ -35,31 +37,39 @@ const setColor = (function setColor() {
     return Math.floor(getVerticalPosition() / getHeight());
   };
 
+  const changeColor = function changeColor(targets, color) {
+    targets.forEach((target) => {
+      target.style.color = color;
+    });
+  }
+
   const colorChanger = function colorChanger(targets) {
     const position = getPosition();
     if (lengthRightFlow === position + 1) {
-      targets.forEach((target) => {
-        target.style.color = colorForArticleSection;
-      });
+      changeColor(targets, colorForArticleSection)
+    } else if (position === 0) {
+      changeColor(targets, firstProjectBadgeBGColor)
     } else {
       const color = getVisibleColor(position);
-      targets.forEach((target) => {
-        target.style.color = color;
-      });
+      changeColor(targets, color)
     }
   };
+
+  const changeBackground = function changeBackground(targets, color) {
+    targets.forEach((target) => {
+      target.style.backgroundColor = color;
+    });
+  }
 
   const backgroundChanger = function backgroundChanger(targets) {
     const position = getPosition();
     if (lengthRightFlow === position + 1) {
-      targets.forEach((target) => {
-        target.style.backgroundColor = colorForArticleSection;
-      });
+      changeBackground(targets, colorForArticleSection)
+    } else if (position === 0) {
+      changeBackground(targets, firstProjectBadgeBGColor)
     } else {
       const color = getVisibleColor(position);
-      targets.forEach((target) => {
-        target.style.backgroundColor = color;
-      });
+      changeBackground(targets, color)
     }
   };
 
