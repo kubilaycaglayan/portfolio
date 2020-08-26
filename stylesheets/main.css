@@ -302,7 +302,7 @@
   100% {
     -webkit-transform: rotateZ(900deg);
             transform: rotateZ(900deg);
-    color: #4a4a4a;
+    color: #113855;
     position: relative;
   }
 }
@@ -351,7 +351,7 @@
   100% {
     -webkit-transform: rotateZ(900deg);
             transform: rotateZ(900deg);
-    color: #4a4a4a;
+    color: #113855;
     position: relative;
   }
 }
@@ -524,7 +524,7 @@ body .left-bar #play {
   top: 8px;
   left: -5px;
   cursor: pointer;
-  color: #4a4a4a;
+  color: #113855;
 }
 
 body .left-bar #play:hover {
@@ -774,7 +774,7 @@ body .btn-hello {
 }
 
 body .my-name {
-  color: #4a4a4a;
+  color: #113855;
   font-weight: bolder;
 }
 
@@ -792,7 +792,7 @@ body .skills .title {
 
 body .my-motto {
   color: #333;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 body .social-media-links {
@@ -804,6 +804,10 @@ body section {
   height: auto;
   width: 100%;
   font-weight: 300;
+}
+
+body section p {
+  font-weight: 500;
 }
 
 body section .badges .badge {
