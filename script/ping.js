@@ -1,8 +1,12 @@
 let result;
 const classNamesOfProjectsWillBeWokenUp = [
   'project1',
+  'project2',
   'project3',
+  'project4',
+  'project6',
 ]
+
 const projectElements = function (projectClassName) {
   const href = document.querySelector(`.${projectClassName} .live-link`).href
   const linkContainer = document.querySelector(`.${projectClassName} .live-link`)
@@ -62,10 +66,10 @@ const wakeUp = async function wakeUp(project) {
     mode: 'no-cors'
   })
   .then(function(response){
-    removeSpinner(project)
+    // removeSpinner(project)
   })
   .catch(function(err){
-    removeSpinner(project)
+    // removeSpinner(project)
   })
 }
 
