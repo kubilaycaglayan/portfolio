@@ -66,10 +66,10 @@ const wakeUp = async function wakeUp(project) {
     mode: 'no-cors'
   })
   .then(function(response){
-    // removeSpinner(project)
+    removeSpinner(project)
   })
   .catch(function(err){
-    // removeSpinner(project)
+    removeSpinner(project)
   })
 }
 
