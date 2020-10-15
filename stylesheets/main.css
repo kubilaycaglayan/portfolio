@@ -979,53 +979,70 @@ body .project4 a .fab:hover {
 }
 
 body .project5 {
-  background-color: #EC5242;
+  background-color: #e7c54b;
 }
 
 body .project5 .include-text-color {
-  color: #291B19;
+  color: #2b240e;
 }
 
 body .project5 .project-spesific-skills .badge {
-  background-color: #291B19;
+  background-color: #2b240e;
 }
 
 body .project5 a .fas:hover,
 body .project5 a .fab:hover {
-  color: #291B19;
+  color: #2b240e;
 }
 
 body .project6 {
-  background-color: #3097d3;
+  background-color: #EC5242;
 }
 
 body .project6 .include-text-color {
-  color: #0F1010;
+  color: #291B19;
 }
 
 body .project6 .project-spesific-skills .badge {
-  background-color: #0F1010;
+  background-color: #291B19;
 }
 
 body .project6 a .fas:hover,
 body .project6 a .fab:hover {
-  color: #0F1010;
+  color: #291B19;
 }
 
 body .project7 {
-  background-color: #ED4631;
+  background-color: #3097d3;
 }
 
 body .project7 .include-text-color {
-  color: #1C1717;
+  color: #0F1010;
 }
 
 body .project7 .project-spesific-skills .badge {
-  background-color: #1C1717;
+  background-color: #0F1010;
 }
 
 body .project7 a .fas:hover,
 body .project7 a .fab:hover {
+  color: #0F1010;
+}
+
+body .project8 {
+  background-color: #ED4631;
+}
+
+body .project8 .include-text-color {
+  color: #1C1717;
+}
+
+body .project8 .project-spesific-skills .badge {
+  background-color: #1C1717;
+}
+
+body .project8 a .fas:hover,
+body .project8 a .fab:hover {
   color: #1C1717;
 }
 
