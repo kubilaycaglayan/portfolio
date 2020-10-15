@@ -276,7 +276,7 @@
   40% {
     -webkit-transform: rotateZ(360deg);
             transform: rotateZ(360deg);
-    color: #EC5242;
+    color: #47CCFB;
     top: 0;
   }
   45% {
@@ -285,7 +285,7 @@
   60% {
     -webkit-transform: rotateZ(540deg);
             transform: rotateZ(540deg);
-    color: #3097d3;
+    color: #292929;
   }
   65% {
     color: white;
@@ -293,7 +293,7 @@
   80% {
     -webkit-transform: rotateZ(720deg);
             transform: rotateZ(720deg);
-    color: #ED4631;
+    color: #52A6E6;
     top: 0;
   }
   85% {
@@ -302,7 +302,7 @@
   100% {
     -webkit-transform: rotateZ(900deg);
             transform: rotateZ(900deg);
-    color: #113855;
+    color: #160906;
     position: relative;
   }
 }
@@ -325,7 +325,7 @@
   40% {
     -webkit-transform: rotateZ(360deg);
             transform: rotateZ(360deg);
-    color: #EC5242;
+    color: #47CCFB;
     top: 0;
   }
   45% {
@@ -334,7 +334,7 @@
   60% {
     -webkit-transform: rotateZ(540deg);
             transform: rotateZ(540deg);
-    color: #3097d3;
+    color: #292929;
   }
   65% {
     color: white;
@@ -342,7 +342,7 @@
   80% {
     -webkit-transform: rotateZ(720deg);
             transform: rotateZ(720deg);
-    color: #ED4631;
+    color: #52A6E6;
     top: 0;
   }
   85% {
@@ -351,7 +351,7 @@
   100% {
     -webkit-transform: rotateZ(900deg);
             transform: rotateZ(900deg);
-    color: #113855;
+    color: #160906;
     position: relative;
   }
 }
@@ -516,7 +516,7 @@ body .left-bar .hovering-area:hover > #i-letter {
 
 body .left-bar #i-letter {
   display: inline-block;
-  color: #113855;
+  color: #160906;
 }
 
 body .left-bar #play {
@@ -524,7 +524,7 @@ body .left-bar #play {
   top: 8px;
   left: -5px;
   cursor: pointer;
-  color: #113855;
+  color: #160906;
 }
 
 body .left-bar #play:hover {
@@ -535,7 +535,7 @@ body .left-bar #play:hover {
 
 body .left-bar .my-school {
   display: inline-block;
-  color: #113855;
+  color: #160906;
   font-weight: 500;
 }
 
@@ -551,7 +551,7 @@ body .left-bar .my-school:hover {
 
 body .left-bar .my-university {
   display: inline-block;
-  color: #113855;
+  color: #160906;
   font-weight: 500;
 }
 
@@ -597,7 +597,7 @@ body .left-bar .skills .framework:hover {
 }
 
 body .left-bar .social-media-links a {
-  color: #113855;
+  color: #160906;
 }
 
 body .left-bar .social-media-links .link-cv:hover {
@@ -637,7 +637,7 @@ body .left-bar .social-media-links .link-github:hover {
 }
 
 body .left-bar .say-hello-wrapper .say-hello {
-  background-color: #113855;
+  background-color: #160906;
   color: white;
   height: auto;
 }
@@ -774,13 +774,13 @@ body .btn-hello {
 }
 
 body .my-name {
-  color: #113855;
+  color: #160906;
   font-weight: bolder;
 }
 
 body .skills .skill {
   color: white;
-  background-color: #113855;
+  background-color: #160906;
   font-weight: 400;
   text-transform: uppercase;
 }
@@ -911,105 +911,122 @@ body section .live-link .spinner {
 }
 
 body .project1 {
-  background-color: #52A6E6;
+  background-color: #EF5C32;
 }
 
 body .project1 .include-text-color {
-  color: #113855;
+  color: #160906;
 }
 
 body .project1 .project-spesific-skills .badge {
-  background-color: #113855;
+  background-color: #160906;
 }
 
 body .project1 a .fas:hover,
 body .project1 a .fab:hover {
-  color: #113855;
+  color: #160906;
 }
 
 body .project2 {
-  background-color: #EC5242;
+  background-color: #47CCFB;
 }
 
 body .project2 .include-text-color {
-  color: #291B19;
+  color: #071825;
 }
 
 body .project2 .project-spesific-skills .badge {
-  background-color: #291B19;
+  background-color: #071825;
 }
 
 body .project2 a .fas:hover,
 body .project2 a .fab:hover {
-  color: #291B19;
+  color: #071825;
 }
 
 body .project3 {
-  background-color: #3097d3;
+  background-color: #292929;
 }
 
 body .project3 .include-text-color {
-  color: #0F1010;
+  color: #888888;
 }
 
 body .project3 .project-spesific-skills .badge {
-  background-color: #0F1010;
+  background-color: #888888;
 }
 
 body .project3 a .fas:hover,
 body .project3 a .fab:hover {
-  color: #0F1010;
+  color: #888888;
 }
 
 body .project4 {
-  background-color: #ED4631;
+  background-color: #52A6E6;
 }
 
 body .project4 .include-text-color {
-  color: #1C1717;
+  color: #113855;
 }
 
 body .project4 .project-spesific-skills .badge {
-  background-color: #1C1717;
+  background-color: #113855;
 }
 
 body .project4 a .fas:hover,
 body .project4 a .fab:hover {
-  color: #1C1717;
+  color: #113855;
 }
 
 body .project5 {
-  background-color: #D3B4EA;
+  background-color: #EC5242;
 }
 
 body .project5 .include-text-color {
-  color: white;
+  color: #291B19;
 }
 
 body .project5 .project-spesific-skills .badge {
-  background-color: white;
+  background-color: #291B19;
 }
 
 body .project5 a .fas:hover,
 body .project5 a .fab:hover {
-  color: white;
+  color: #291B19;
 }
 
 body .project6 {
-  background-color: #D3B4EA;
+  background-color: #3097d3;
 }
 
 body .project6 .include-text-color {
-  color: white;
+  color: #0F1010;
 }
 
 body .project6 .project-spesific-skills .badge {
-  background-color: white;
+  background-color: #0F1010;
 }
 
 body .project6 a .fas:hover,
 body .project6 a .fab:hover {
-  color: white;
+  color: #0F1010;
+}
+
+body .project7 {
+  background-color: #ED4631;
+}
+
+body .project7 .include-text-color {
+  color: #1C1717;
+}
+
+body .project7 .project-spesific-skills .badge {
+  background-color: #1C1717;
+}
+
+body .project7 a .fas:hover,
+body .project7 a .fab:hover {
+  color: #1C1717;
 }
 
 body .articles {
@@ -1066,7 +1083,7 @@ body .thanks {
           align-items: center;
   position: fixed;
   font-size: 3em;
-  background: linear-gradient(115deg, #ffffff 0%, #52A6E6 50%, #52A6E6 100%);
+  background: linear-gradient(115deg, #ffffff 0%, #EF5C32 50%, #EF5C32 100%);
   z-index: 199;
   width: 100vw;
   height: 100vh;
