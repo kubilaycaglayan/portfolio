@@ -50,6 +50,32 @@
   }
 }
 
+@-webkit-keyframes hover_angel {
+  0% {
+    color: white;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    color: black;
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+}
+
+@keyframes hover_angel {
+  0% {
+    color: white;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    color: black;
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+}
+
 @-webkit-keyframes hover_twitter {
   0% {
     color: white;
@@ -609,6 +635,15 @@ body .left-bar .social-media-links .link-cv:hover {
           animation-fill-mode: forwards;
 }
 
+body .left-bar .social-media-links .link-angel:hover {
+  -webkit-animation-name: hover_angel;
+          animation-name: hover_angel;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
 body .left-bar .social-media-links .link-twitter:hover {
   -webkit-animation-name: hover_twitter;
           animation-name: hover_twitter;
@@ -796,7 +831,7 @@ body .my-motto {
 }
 
 body .social-media-links {
-  width: 175px;
+  width: 225px;
   font-size: 33px;
 }
 
