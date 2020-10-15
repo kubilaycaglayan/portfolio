@@ -5,7 +5,8 @@ const classNamesOfProjectsWillBeWokenUp = [
   'project3',
   'project4',
   'project5',
-  'project7',
+  'project6',
+  'project8',
 ]
 
 const projectElements = function (projectClassName) {
