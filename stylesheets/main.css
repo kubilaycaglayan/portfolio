@@ -852,10 +852,13 @@ body .social-media-links {
 }
 
 body section {
-  scroll-snap-align: center;
   height: auto;
   width: 100%;
   font-weight: 300;
+}
+
+body section .projects {
+  scroll-snap-align: center;
 }
 
 body section p {
@@ -1146,13 +1149,16 @@ body .articles .article-separator {
 }
 
 body footer {
-  -webkit-user-select: text;
-     -moz-user-select: text;
-      -ms-user-select: text;
-          user-select: text;
   scroll-snap-align: center;
   color: white;
   background-color: #292929;
+}
+
+body footer .email {
+  -webkit-user-select: all;
+     -moz-user-select: all;
+      -ms-user-select: all;
+          user-select: all;
 }
 
 body .thanks {
