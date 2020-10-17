@@ -223,7 +223,8 @@ html
 body
   min-width: 330px
   .left-bar
-    max-height: 750px
+    overflow-y: auto
+    max-height: 850px
     @include padding-x( $pad-x: 45px )
     .hovering-area
       &:hover > #i-letter
@@ -331,6 +332,7 @@ body
         font-size: 0.9rem
     @media ( min-width: $breaking_point1 )
       @include padding-x( $pad-x: 60px )
+      max-width: 650px
       position: fixed
       left: 0
       top: 0
