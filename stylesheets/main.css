@@ -622,6 +622,11 @@ body .left-bar .skills .framework:hover {
           animation-fill-mode: forwards;
 }
 
+body .left-bar .open-for-job {
+  color: #EF5C32;
+  font-weight: bold;
+}
+
 body .left-bar .social-media-links a {
   color: #160906;
 }
