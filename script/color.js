@@ -2,24 +2,26 @@ const setColor = (function setColor() {
   const leftBar = document.getElementsByClassName("left-bar")[0];
   let position = 1;
   let lastPosition = 1;
-  const rightFlow = document.getElementsByTagName("section");
+  const rightFlow = document.querySelectorAll('section section');
   const lengthRightFlow = rightFlow.length;
   const colorForArticleSection = "#6C757D";
 
   const myUniversity = document.getElementsByClassName("my-university")[0];
   const mySchool = document.getElementsByClassName("my-school")[0];
+  const openForJob = document.getElementsByClassName("open-for-job")[0];
   const socialMediaLinks = document.querySelectorAll(".social-media-links a");
   const skills = document.getElementsByClassName('skill');
   const iLetter = document.getElementById('i-letter');
 
   const sayHello = document.getElementsByClassName("say-hello")[0];
 
-  const targetsColor = [myUniversity, mySchool, iLetter, ...socialMediaLinks];
-  const targetsBackgroundColor = [sayHello, ...skills]
+  // const targetsColor = [myUniversity, mySchool, iLetter, ...socialMediaLinks];
+  const targetsColor = [openForJob];
+  //const targetsBackgroundColor = [sayHello, ...skills];
+  const targetsBackgroundColor = [];
 
   const firstProject = document.getElementsByClassName("project1")[0];
-  const firstProjectBadge = document.querySelector('.project-spesific-skills .badge');
-  const firstProjectBadgeBGColor = window.getComputedStyle(firstProjectBadge).backgroundColor;
+  const firstProjectBGColor = window.getComputedStyle(firstProject).backgroundColor;
 
   const getVisibleColor = function getVisibleColor(index) {
     return window.getComputedStyle(rightFlow[index]).backgroundColor;
@@ -48,7 +50,7 @@ const setColor = (function setColor() {
     if (lengthRightFlow === position + 1) {
       changeColor(targets, colorForArticleSection)
     } else if (position === 0) {
-      changeColor(targets, firstProjectBadgeBGColor)
+      changeColor(targets, firstProjectBGColor)
     } else {
       const color = getVisibleColor(position);
       changeColor(targets, color)
@@ -66,7 +68,7 @@ const setColor = (function setColor() {
     if (lengthRightFlow === position + 1) {
       changeBackground(targets, colorForArticleSection)
     } else if (position === 0) {
-      changeBackground(targets, firstProjectBadgeBGColor)
+      changeBackground(targets, firstProjectBGColor)
     } else {
       const color = getVisibleColor(position);
       changeBackground(targets, color)
