@@ -261,12 +261,12 @@
     -webkit-transform: scale(1);
             transform: scale(1);
     background-color: white;
-    color: #4A4A4A;
+    color: #47CCFB;
   }
   100% {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
-    background-color: #4A4A4A;
+    background-color: #47CCFB;
   }
 }
 
@@ -275,12 +275,12 @@
     -webkit-transform: scale(1);
             transform: scale(1);
     background-color: white;
-    color: #4A4A4A;
+    color: #47CCFB;
   }
   100% {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
-    background-color: #4A4A4A;
+    background-color: #47CCFB;
   }
 }
 
@@ -515,6 +515,7 @@ html * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: 'Fira Sans', sans-serif;
+  outline: 0;
 }
 
 html a:hover {
