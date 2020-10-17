@@ -876,7 +876,7 @@ body section a .fab:hover {
 @media (min-width: 992px) {
   body section {
     height: 105vh;
-    min-height: 520px;
+    min-height: 620px;
     padding-top: calc( 13vh);
   }
 }
@@ -884,6 +884,7 @@ body section a .fab:hover {
 body section .overcapture {
   height: auto;
   width: 100%;
+  max-width: 900px;
   margin: 0 auto;
   text-align: center;
   padding-top: 10vh;
@@ -909,6 +910,7 @@ body section .overcapture img {
 @media (min-width: 992px) {
   body section .overcapture img {
     width: 45vw;
+    max-width: 650px;
     margin-top: 3vh;
     margin-bottom: 3vh;
   }
