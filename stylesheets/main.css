@@ -531,7 +531,7 @@ html a:hover {
 }
 
 body {
-  min-width: 330px;
+  min-width: 300px;
 }
 
 body .left-bar {
@@ -1145,11 +1145,12 @@ body .articles .article-separator {
   border-bottom: 10px solid #6C757D;
 }
 
-body .footer {
+body footer {
   -webkit-user-select: text;
      -moz-user-select: text;
       -ms-user-select: text;
           user-select: text;
+  scroll-snap-align: center;
   color: white;
   background-color: #292929;
 }
