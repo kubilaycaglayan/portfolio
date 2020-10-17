@@ -731,7 +731,7 @@ body .left-bar .say-hello-wrapper .say-hello:hover {
     width: 42%;
   }
   body .left-bar .my-name {
-    font-size: 3.5vw;
+    font-size: 3rem;
   }
   body .left-bar .my-motto,
   body .left-bar .skills {
