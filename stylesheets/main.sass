@@ -219,6 +219,11 @@ html
   a
     &:hover
       text-decoration: none
+  @media ( min-width: 0 )
+    scroll-behavior: smooth
+    overflow-y: scroll
+    scroll-snap-type: y proximity
+
 
 body
   min-width: 330px
@@ -407,6 +412,7 @@ body
     width: 225px
     font-size: 33px
   section
+    scroll-snap-align: center
     p
       font-weight: 500
     height: auto
@@ -426,7 +432,7 @@ body
       height: auto
       padding-top: calc( 12vh )
     @media ( min-width: $breaking_point1 )
-      height: 105vh
+      height: 100vh
       min-height: 620px
       padding-top: calc( 13vh )
     .overcapture

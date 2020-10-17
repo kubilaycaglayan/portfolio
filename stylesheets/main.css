@@ -521,6 +521,15 @@ html a:hover {
   text-decoration: none;
 }
 
+@media (min-width: 0) {
+  html {
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    -ms-scroll-snap-type: y proximity;
+        scroll-snap-type: y proximity;
+  }
+}
+
 body {
   min-width: 330px;
 }
@@ -843,6 +852,7 @@ body .social-media-links {
 }
 
 body section {
+  scroll-snap-align: center;
   height: auto;
   width: 100%;
   font-weight: 300;
@@ -882,7 +892,7 @@ body section a .fab:hover {
 
 @media (min-width: 992px) {
   body section {
-    height: 105vh;
+    height: 100vh;
     min-height: 620px;
     padding-top: calc( 13vh);
   }
