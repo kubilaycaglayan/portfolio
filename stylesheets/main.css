@@ -625,7 +625,7 @@ body .left-bar .skills .framework:hover {
 
 body .left-bar .open-for-job {
   color: #EF5C32;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 body .left-bar .social-media-links a {
