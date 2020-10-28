@@ -559,7 +559,7 @@ body .left-bar #i-letter {
 body .left-bar #play {
   position: relative;
   top: 8px;
-  left: -5px;
+  left: 10px;
   cursor: pointer;
   color: #160906;
 }
@@ -568,6 +568,12 @@ body .left-bar #play:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   color: #57BA86;
+}
+
+@media (max-width: 410px) {
+  body .left-bar #play {
+    left: -35px;
+  }
 }
 
 body .left-bar .my-school {
@@ -734,8 +740,6 @@ body .left-bar .say-hello-wrapper .say-hello:hover {
     padding-left: 60px;
     max-width: 650px;
     position: fixed;
-    left: 0;
-    top: 0;
     bottom: 0;
     height: 100vh;
     width: 42%;

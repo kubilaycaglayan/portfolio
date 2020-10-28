@@ -243,12 +243,15 @@ body
     #play
       position: relative
       top: 8px
-      left: -5px
+      left: 10px
       cursor: pointer
       color: $my-name
       &:hover
         transform: scale(1.1)
         color: $my_green
+      @media ( max-width: 410px )
+        left: -35px
+
     .my-school
       display: inline-block
       color: $bg_bg_pj1
@@ -340,8 +343,6 @@ body
       @include padding-x( $pad-x: 60px )
       max-width: 650px
       position: fixed
-      left: 0
-      top: 0
       bottom: 0
       height: 100vh
       width: 42%
