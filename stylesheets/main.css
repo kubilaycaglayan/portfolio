@@ -311,7 +311,7 @@
   60% {
     -webkit-transform: rotateZ(540deg);
             transform: rotateZ(540deg);
-    color: #292929d3;
+    color: #292929;
   }
   65% {
     color: white;
@@ -360,7 +360,7 @@
   60% {
     -webkit-transform: rotateZ(540deg);
             transform: rotateZ(540deg);
-    color: #292929d3;
+    color: #292929;
   }
   65% {
     color: white;
@@ -973,8 +973,7 @@ body section .live-link .spinner {
 }
 
 body .project1 {
-  background: #EF5C32;
-  background: radial-gradient(circle, #EF5C32 15%, #ef5b3231 45%, #ffffff 90%);
+  background-color: #EF5C32;
 }
 
 body .project1 .include-text-color {
@@ -985,11 +984,6 @@ body .project1 .project-spesific-skills .badge {
   background-color: #160906;
 }
 
-body .project1 a .fas,
-body .project1 a .fab {
-  color: #EF5C32;
-}
-
 body .project1 a .fas:hover,
 body .project1 a .fab:hover {
   color: #160906;
@@ -997,7 +991,6 @@ body .project1 a .fab:hover {
 
 body .project2 {
   background-color: #47CCFB;
-  background: radial-gradient(circle, #47CCFB 15%, #47cbfb3a 45%, #ffffff 90%);
 }
 
 body .project2 .include-text-color {
@@ -1008,42 +1001,30 @@ body .project2 .project-spesific-skills .badge {
   background-color: #071825;
 }
 
-body .project2 a .fas,
-body .project2 a .fab {
-  color: #47CCFB;
-}
-
 body .project2 a .fas:hover,
 body .project2 a .fab:hover {
   color: #071825;
 }
 
 body .project3 {
-  background-color: #292929d3;
-  background: radial-gradient(circle, #292929d3 15%, #2929293b 45%, #ffffff 90%);
+  background-color: #292929;
 }
 
 body .project3 .include-text-color {
-  color: #4b4b4b;
+  color: #B8B8B8;
 }
 
 body .project3 .project-spesific-skills .badge {
-  background-color: #4b4b4b;
-}
-
-body .project3 a .fas,
-body .project3 a .fab {
-  color: #292929d3;
+  background-color: #B8B8B8;
 }
 
 body .project3 a .fas:hover,
 body .project3 a .fab:hover {
-  color: #4b4b4b;
+  color: #B8B8B8;
 }
 
 body .project4 {
   background-color: #52A6E6;
-  background: radial-gradient(circle, #52A6E6 15%, #52a6e62c 45%, #ffffff 90%);
 }
 
 body .project4 .include-text-color {
@@ -1054,19 +1035,13 @@ body .project4 .project-spesific-skills .badge {
   background-color: #113855;
 }
 
-body .project4 a .fas,
-body .project4 a .fab {
-  color: #52A6E6;
-}
-
 body .project4 a .fas:hover,
 body .project4 a .fab:hover {
   color: #113855;
 }
 
 body .project5 {
-  background-color: #fbd852;
-  background: radial-gradient(circle, #fbd852 15%, #e7c54b28 45%, #ffffff 90%);
+  background-color: #e7c54b;
 }
 
 body .project5 .include-text-color {
@@ -1077,11 +1052,6 @@ body .project5 .project-spesific-skills .badge {
   background-color: #2b240e;
 }
 
-body .project5 a .fas,
-body .project5 a .fab {
-  color: #fbd852;
-}
-
 body .project5 a .fas:hover,
 body .project5 a .fab:hover {
   color: #2b240e;
@@ -1089,7 +1059,6 @@ body .project5 a .fab:hover {
 
 body .project6 {
   background-color: #F3C9AE;
-  background: radial-gradient(circle, #F3C9AE 15%, #f3c8ae25 45%, #ffffff 90%);
 }
 
 body .project6 .include-text-color {
@@ -1100,11 +1069,6 @@ body .project6 .project-spesific-skills .badge {
   background-color: #291B19;
 }
 
-body .project6 a .fas,
-body .project6 a .fab {
-  color: #F3C9AE;
-}
-
 body .project6 a .fas:hover,
 body .project6 a .fab:hover {
   color: #291B19;
@@ -1112,7 +1076,6 @@ body .project6 a .fab:hover {
 
 body .project7 {
   background-color: #EC5242;
-  background: radial-gradient(circle, #EC5242 15%, #ec534228 45%, #ffffff 90%);
 }
 
 body .project7 .include-text-color {
@@ -1123,11 +1086,6 @@ body .project7 .project-spesific-skills .badge {
   background-color: #291B19;
 }
 
-body .project7 a .fas,
-body .project7 a .fab {
-  color: #EC5242;
-}
-
 body .project7 a .fas:hover,
 body .project7 a .fab:hover {
   color: #291B19;
@@ -1135,7 +1093,6 @@ body .project7 a .fab:hover {
 
 body .project8 {
   background-color: #3097d3;
-  background: radial-gradient(circle, #3097d3 15%, #3097d328 45%, #ffffff 90%);
 }
 
 body .project8 .include-text-color {
@@ -1146,11 +1103,6 @@ body .project8 .project-spesific-skills .badge {
   background-color: #0F1010;
 }
 
-body .project8 a .fas,
-body .project8 a .fab {
-  color: #3097d3;
-}
-
 body .project8 a .fas:hover,
 body .project8 a .fab:hover {
   color: #0F1010;
@@ -1158,7 +1110,6 @@ body .project8 a .fab:hover {
 
 body .project9 {
   background-color: #ED4631;
-  background: radial-gradient(circle, #ED4631 15%, #ed47312a 45%, #ffffff 90%);
 }
 
 body .project9 .include-text-color {
@@ -1167,11 +1118,6 @@ body .project9 .include-text-color {
 
 body .project9 .project-spesific-skills .badge {
   background-color: #1C1717;
-}
-
-body .project9 a .fas,
-body .project9 a .fab {
-  color: #ED4631;
 }
 
 body .project9 a .fas:hover,
