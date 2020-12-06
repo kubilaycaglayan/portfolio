@@ -1245,7 +1245,7 @@ body .thanks {
           align-items: center;
   position: fixed;
   font-size: 3em;
-  background: linear-gradient(115deg, #ffffff 0%, #CDDC39 50%, #CDDC39 100%);
+  background: linear-gradient(115deg, #8bc34a 0%, #8bc34a 50%, #27292D 100%);
   z-index: 199;
   width: 100vw;
   height: 100vh;
@@ -1256,6 +1256,14 @@ body .thanks {
   height: 40px;
   position: relative;
   margin: 100px auto;
+}
+
+.loading .spinner .double-bounce1 {
+  background-color: #CDDC39;
+}
+
+.loading .spinner .double-bounce2 {
+  background-color: #CDDC39;
 }
 
 .fade-out {

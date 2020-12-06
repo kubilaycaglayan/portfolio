@@ -643,15 +643,19 @@ body
   align-items: center
   position: fixed
   font-size: 3em
-  background: linear-gradient(115deg, #ffffff 0%, $torre-yellow 50%, $torre-yellow 100%)
+  background: linear-gradient(115deg, $torre-green 0%, $torre-green 50%, $torre-black 100%)
   z-index: 199
   width: 100vw
   height: 100vh
   .spinner
-    width: 40px;
-    height: 40px;
-    position: relative;
-    margin: 100px auto;
+    width: 40px
+    height: 40px
+    position: relative
+    margin: 100px auto
+    .double-bounce1
+      background-color: $torre-yellow
+    .double-bounce2
+      background-color: $torre-yellow
 
 .fade-out
   animation-name: fade_out
