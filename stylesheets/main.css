@@ -328,7 +328,7 @@
   100% {
     -webkit-transform: rotateZ(900deg);
             transform: rotateZ(900deg);
-    color: #160906;
+    color: #8bc34a;
     position: relative;
   }
 }
@@ -377,7 +377,7 @@
   100% {
     -webkit-transform: rotateZ(900deg);
             transform: rotateZ(900deg);
-    color: #160906;
+    color: #8bc34a;
     position: relative;
   }
 }
@@ -433,6 +433,34 @@
             transform: scale(1);
     background-color: #6F23FF;
     color: white;
+  }
+}
+
+@-webkit-keyframes hover_my-work {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    color: #27292D;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    background-color: #8bc34a;
+    color: #CDDC39;
+  }
+}
+
+@keyframes hover_my-work {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    color: #27292D;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    background-color: #8bc34a;
+    color: #CDDC39;
   }
 }
 
@@ -516,6 +544,11 @@ html * {
           box-sizing: border-box;
   font-family: 'Fira Sans', sans-serif;
   outline: 0;
+  color: #8bc34a;
+}
+
+html a {
+  color: #8bc34a;
 }
 
 html a:hover {
@@ -553,7 +586,7 @@ body .left-bar .hovering-area:hover > #i-letter {
 
 body .left-bar #i-letter {
   display: inline-block;
-  color: #160906;
+  color: #8bc34a;
 }
 
 body .left-bar #play {
@@ -561,7 +594,7 @@ body .left-bar #play {
   top: 8px;
   left: 10px;
   cursor: pointer;
-  color: #160906;
+  color: #8bc34a;
 }
 
 body .left-bar #play:hover {
@@ -578,7 +611,7 @@ body .left-bar #play:hover {
 
 body .left-bar .my-school {
   display: inline-block;
-  color: #160906;
+  color: #CDDC39;
   font-weight: 500;
 }
 
@@ -594,7 +627,7 @@ body .left-bar .my-school:hover {
 
 body .left-bar .my-university {
   display: inline-block;
-  color: #160906;
+  color: #CDDC39;
   font-weight: 500;
 }
 
@@ -608,8 +641,29 @@ body .left-bar .my-university:hover {
           animation-fill-mode: forwards;
 }
 
+body .left-bar .my-work {
+  display: inline-block;
+  color: #CDDC39;
+  font-weight: 500;
+}
+
+body .left-bar .my-work:hover {
+  border-radius: 2px;
+  -webkit-animation-name: hover_my-work;
+          animation-name: hover_my-work;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
 body .left-bar .skills {
   cursor: default;
+}
+
+body .left-bar .skills .badge {
+  background-color: #CDDC39;
+  color: white;
 }
 
 body .left-bar .skills .technical:hover {
@@ -645,7 +699,7 @@ body .left-bar .open-for-job {
 }
 
 body .left-bar .social-media-links a {
-  color: #160906;
+  color: #8bc34a;
 }
 
 body .left-bar .social-media-links .link-cv:hover {
@@ -694,7 +748,7 @@ body .left-bar .social-media-links .link-github:hover {
 }
 
 body .left-bar .say-hello-wrapper .say-hello {
-  background-color: #160906;
+  background-color: #CDDC39;
   color: white;
   height: auto;
 }
@@ -830,7 +884,7 @@ body .btn-hello {
 }
 
 body .my-name {
-  color: #160906;
+  color: #8bc34a;
   font-weight: bolder;
 }
 
@@ -1156,7 +1210,7 @@ body .articles .article-separator {
 body footer {
   scroll-snap-align: center;
   color: white;
-  background-color: #292929;
+  background-color: #8bc34a;
 }
 
 body footer .email {
@@ -1183,7 +1237,7 @@ body .thanks {
           align-items: center;
   position: fixed;
   font-size: 3em;
-  background: linear-gradient(115deg, #ffffff 0%, #EF5C32 50%, #EF5C32 100%);
+  background: linear-gradient(115deg, #ffffff 0%, #CDDC39 50%, #CDDC39 100%);
   z-index: 199;
   width: 100vw;
   height: 100vh;

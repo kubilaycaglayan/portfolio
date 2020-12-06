@@ -32,10 +32,16 @@ $bg_bg_pj9: #1C1717
 $bg-article: #F4F3F3
 $bg-footer: #292929
 
-$my-name: $bg_bg_pj1
 $my-motto: #333
 $bootsrap-secondary: #6C757D
 $my_green: #57BA86
+
+$torre-yellow: #CDDC39
+$torre-green: #8bc34a
+$torre-black: #27292D
+$torre-orange: #D69600
+
+$my-name: $torre-green
 
 @mixin padding-x($pad-x)
   padding-right: $pad-x
@@ -184,6 +190,15 @@ $my_green: #57BA86
     background-color: #6F23FF
     color: white
 
+@keyframes hover_my-work
+  0%
+    transform: scale(1)
+    color: $torre-black
+  100%
+    transform: scale(1)
+    background-color: $torre-green
+    color: $torre-yellow
+
 @keyframes fade_out
   0%
     opacity: 1
@@ -217,7 +232,9 @@ html
     box-sizing: border-box
     font-family: 'Fira Sans', sans-serif
     outline: 0
+    color: $torre-green
   a
+    color: $torre-green
     &:hover
       text-decoration: none
   @media ( min-width: 0 )
@@ -239,7 +256,7 @@ body
         animation-iteration-count: infinite
     #i-letter
       display: inline-block
-      color: $bg_bg_pj1
+      color: $my-name
     #play
       position: relative
       top: 8px
@@ -253,7 +270,7 @@ body
         left: -35px
     .my-school
       display: inline-block
-      color: $bg_bg_pj1
+      color: $torre-yellow
       font-weight: 500
       &:hover
         border-radius: 2px
@@ -262,15 +279,27 @@ body
         animation-fill-mode: forwards
     .my-university
       display: inline-block
-      color: $bg_bg_pj1
+      color: $torre-yellow
       font-weight: 500
       &:hover
         border-radius: 2px
         animation-name: hover_my-university
         animation-duration: 1s
         animation-fill-mode: forwards
+    .my-work
+      display: inline-block
+      color: $torre-yellow
+      font-weight: 500
+      &:hover
+        border-radius: 2px
+        animation-name: hover_my-work
+        animation-duration: 1s
+        animation-fill-mode: forwards
     .skills
         cursor: default
+        .badge
+          background-color: $torre-yellow
+          color: white
         .technical
           &:hover
             animation-name: hover_technical
@@ -291,7 +320,7 @@ body
       font-weight: 600
     .social-media-links
       a
-        color: $bg_bg_pj1
+        color: $torre-green
       .link-cv
         &:hover
           animation-name: hover_cv
@@ -319,7 +348,7 @@ body
           animation-fill-mode: forwards
     .say-hello-wrapper
       .say-hello
-        background-color: $bg_bg_pj1
+        background-color: $torre-yellow
         color: white
         height: auto
         &:hover
@@ -596,7 +625,7 @@ body
       user-select: all
     scroll-snap-align: center
     color: white
-    background-color: $bg-footer
+    background-color: $torre-green
   .thanks
     font-family: sans-serif
     font-size: 8px
@@ -607,7 +636,7 @@ body
   align-items: center
   position: fixed
   font-size: 3em
-  background: linear-gradient(115deg, #ffffff 0%, $bg_pj1 50%, $bg_pj1 100%)
+  background: linear-gradient(115deg, #ffffff 0%, $torre-yellow 50%, $torre-yellow 100%)
   z-index: 199
   width: 100vw
   height: 100vh
