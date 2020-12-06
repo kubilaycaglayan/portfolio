@@ -544,11 +544,6 @@ html * {
           box-sizing: border-box;
   font-family: 'Fira Sans', sans-serif;
   outline: 0;
-  color: #8bc34a;
-}
-
-html a {
-  color: #8bc34a;
 }
 
 html a:hover {
@@ -901,7 +896,7 @@ body .skills .title {
 }
 
 body .my-motto {
-  color: #333;
+  color: #8bc34a;
   font-weight: 500;
 }
 
@@ -1194,17 +1189,17 @@ body .articles {
 body .articles a,
 body .articles a .fas,
 body .articles a .fab {
-  color: #292929;
+  color: #8bc34a;
 }
 
 body .articles a:hover,
 body .articles a .fas:hover,
 body .articles a .fab:hover {
-  color: #6C757D;
+  color: #CDDC39;
 }
 
 body .articles .article-separator {
-  border-bottom: 10px solid #6C757D;
+  border-bottom: 10px solid #8bc34a;
 }
 
 body footer {
