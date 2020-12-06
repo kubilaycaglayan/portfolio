@@ -242,6 +242,7 @@ html
 
 
 body
+  background-color: $torre-black
   min-width: 300px
   .left-bar
     overflow-y: auto
@@ -297,7 +298,7 @@ body
         cursor: default
         .badge
           background-color: $torre-yellow
-          color: white
+          color: $torre-black
         .technical
           &:hover
             animation-name: hover_technical
@@ -347,7 +348,7 @@ body
     .say-hello-wrapper
       .say-hello
         background-color: $torre-yellow
-        color: white
+        color: $torre-black
         height: auto
         &:hover
           animation-name: hover_say-hello
@@ -605,7 +606,7 @@ body
       &:hover
         color: $bg_bg_pj9
   .articles
-    background-color: $bg-article
+    background-color: $torre-black
     color: $bg-footer
     padding-bottom: 15%
     @media ( max-width: $breaking_point2 )
@@ -621,9 +622,17 @@ body
   footer
     .email
       user-select: all
+      color: $torre-black
+    .fas
+      color: $torre-black
     scroll-snap-align: center
-    color: white
+    p
+      color: $torre-black
     background-color: $torre-green
+    .social-media-links
+      a
+        i
+          color: $torre-black
   .thanks
     font-family: sans-serif
     font-size: 8px

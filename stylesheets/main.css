@@ -560,6 +560,7 @@ html a:hover {
 }
 
 body {
+  background-color: #27292D;
   min-width: 300px;
 }
 
@@ -658,7 +659,7 @@ body .left-bar .skills {
 
 body .left-bar .skills .badge {
   background-color: #CDDC39;
-  color: white;
+  color: #27292D;
 }
 
 body .left-bar .skills .technical:hover {
@@ -744,7 +745,7 @@ body .left-bar .social-media-links .link-github:hover {
 
 body .left-bar .say-hello-wrapper .say-hello {
   background-color: #CDDC39;
-  color: white;
+  color: #27292D;
   height: auto;
 }
 
@@ -1175,7 +1176,7 @@ body .project9 a .fab:hover {
 }
 
 body .articles {
-  background-color: #F4F3F3;
+  background-color: #27292D;
   color: #292929;
   padding-bottom: 15%;
 }
@@ -1204,7 +1205,6 @@ body .articles .article-separator {
 
 body footer {
   scroll-snap-align: center;
-  color: white;
   background-color: #8bc34a;
 }
 
@@ -1213,6 +1213,19 @@ body footer .email {
      -moz-user-select: all;
       -ms-user-select: all;
           user-select: all;
+  color: #27292D;
+}
+
+body footer .fas {
+  color: #27292D;
+}
+
+body footer p {
+  color: #27292D;
+}
+
+body footer .social-media-links a i {
+  color: #27292D;
 }
 
 body .thanks {
