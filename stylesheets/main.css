@@ -578,10 +578,7 @@ html a:hover {
 
 @media (min-width: 0) {
   html {
-    scroll-behavior: smooth;
     overflow-y: scroll;
-    -ms-scroll-snap-type: y proximity;
-        scroll-snap-type: y proximity;
   }
 }
 
