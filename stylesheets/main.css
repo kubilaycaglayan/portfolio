@@ -245,11 +245,20 @@ html a:hover {
 }
 
 body {
-  background-color: #FCE4EC;
+  min-width: 300px;
+}
+body .background-pattern {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
   background-image: radial-gradient(#FF4081 10%, transparent 10%), radial-gradient(#FF4081 10%, transparent 10%);
   background-size: 10px 10px;
   background-position: 0 0 5px 5px;
-  min-width: 300px;
+  background-color: #FCE4EC;
 }
 body .left-bar {
   padding-right: 45px;
@@ -720,10 +729,6 @@ body .project9 a .fab:hover {
   color: #1C1717;
 }
 body .articles {
-  background-color: #FCE4EC;
-  background-image: radial-gradient(#FF4081 10%, transparent 10%), radial-gradient(#FF4081 10%, transparent 10%);
-  background-size: 10px 10px;
-  background-position: "0 0, 5px 5px";
   color: #292929;
   padding-bottom: 15%;
 }
