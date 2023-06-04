@@ -36,12 +36,12 @@ $my-motto: #333
 $bootsrap-secondary: #6C757D
 $my_green: #57BA86
 
-$torre-yellow: #CDDC39
-$torre-green: #8bc34a
-$torre-black: #27292D
-$torre-orange: #D69600
+$lime-yellow: #70a724
+$kc-green: #8bc34a
+$kc-black: #27292D
+$kc-orange: #D69600
 
-$my-name: $torre-green
+$my-name: $kc-green
 
 @mixin padding-x($pad-x)
   padding-right: $pad-x
@@ -51,6 +51,11 @@ $my-name: $torre-green
   background: nth(nth($color-stops, 1), 1)
   background: -webkit-linear-gradient(legacy-direction($direction), $color-stops)
   background: linear-gradient($direction, $color-stops)
+
+@mixin subtle-background-pattern($color, $size, $position)
+  background-image: radial-gradient(#{$color} 10%, transparent 10%), radial-gradient(#{$color} 10%, transparent 10%)
+  background-size: $size
+  background-position: $position
 
 @keyframes spinning
   0%
@@ -70,7 +75,7 @@ $my-name: $torre-green
 
 @keyframes hover_angel
   0%
-    color: $torre-green
+    color: $kc-green
     transform: scale(1)
   100%
     color: white
@@ -86,7 +91,7 @@ $my-name: $torre-green
 
 @keyframes hover_github
   0%
-    color: $torre-green
+    color: $kc-green
     transform: scale(1)
   100%
     color: white
@@ -105,7 +110,7 @@ $my-name: $torre-green
     color: white
     transform: scale(1)
   100%
-    color: $torre-orange
+    color: $kc-orange
     transform: scale(1.3)
 
 @keyframes hover_say-hello
@@ -120,7 +125,7 @@ $my-name: $torre-green
   100%
     font-stretch: extra-expanded
     transform: rotateZ(0deg)
-    background-color: $torre-yellow
+    background-color: $lime-yellow
 
 @keyframes hover_technical
   0%
@@ -184,7 +189,7 @@ $my-name: $torre-green
 @keyframes hover_my-university
   0%
     transform: scale(1)
-    background-color: $torre-black
+    background-color: $kc-black
   100%
     transform: scale(1)
     background-color: #6A449A
@@ -201,11 +206,11 @@ $my-name: $torre-green
 @keyframes hover_my-work
   0%
     transform: scale(1)
-    color: $torre-yellow
+    color: $lime-yellow
   100%
     transform: scale(1)
-    background-color: $torre-green
-    color: $torre-yellow
+    background-color: $kc-green
+    color: $lime-yellow
 
 @keyframes fade_out
   0%
@@ -247,7 +252,8 @@ html
     overflow-y: scroll
 
 body
-  background-color: $torre-black
+  background-color: #FCE4EC
+  @include subtle-background-pattern(#FF4081, 10px 10px, 0 0 5px 5px)
   min-width: 300px
   .left-bar
     overflow-y: auto
@@ -274,7 +280,7 @@ body
         left: -35px
     .my-school
       display: inline-block
-      color: $torre-yellow
+      color: $lime-yellow
       font-weight: 500
       &:hover
         border-radius: 2px
@@ -283,7 +289,7 @@ body
         animation-fill-mode: forwards
     .my-university
       display: inline-block
-      color: $torre-yellow
+      color: $lime-yellow
       font-weight: 500
       &:hover
         border-radius: 2px
@@ -292,7 +298,7 @@ body
         animation-fill-mode: forwards
     .my-work
       display: inline-block
-      color: $torre-yellow
+      color: $lime-yellow
       font-weight: 500
       &:hover
         border-radius: 2px
@@ -302,8 +308,8 @@ body
     .skills
         cursor: default
         .badge
-          background-color: $torre-yellow
-          color: $torre-black
+          background-color: $lime-yellow
+          color: #FCE4EC
         .technical
           &:hover
             animation-name: hover_technical
@@ -324,7 +330,7 @@ body
       font-weight: 600
     .social-media-links
       a
-        color: $torre-green
+        color: $kc-green
       .link-cv
         &:hover
           animation-name: hover_cv
@@ -357,8 +363,8 @@ body
           animation-fill-mode: forwards
     .say-hello-wrapper
       .say-hello
-        background-color: $torre-green
-        color: $torre-black
+        background-color: $kc-green
+        color: $kc-black
         height: auto
         &:hover
           animation-name: hover_say-hello
@@ -445,7 +451,7 @@ body
       text-transform: uppercase
       font-weight: 400
   .my-motto
-    color: $torre-green
+    color: $kc-green
     font-weight: 500
   .social-media-links
     width: 225px
@@ -616,7 +622,8 @@ body
       &:hover
         color: $bg_bg_pj9
   .articles
-    background-color: $torre-black
+    background-color: #FCE4EC
+    @include subtle-background-pattern(#FF4081, 10px 10px, "0 0, 5px 5px")
     color: $bg-footer
     padding-bottom: 15%
     @media ( max-width: $breaking_point2 )
@@ -624,27 +631,27 @@ body
     a,
     a .fas,
     a .fab
-      color: $torre-green
+      color: $kc-green
       &:hover
-        color: $torre-yellow
+        color: $lime-yellow
     .article-separator
-      border-bottom: 10px solid $torre-green
+      border-bottom: 10px solid $kc-green
   footer
     .email
       user-select: all
-      color: $torre-black
+      color: $kc-black
     .fas
-      color: $torre-black
+      color: $kc-black
     p
-      color: $torre-black
+      color: $kc-black
     scroll-snap-align: center
-    background-color: $torre-green
+    background-color: $kc-green
     .social-media-links
       a
         i
-          color: $torre-black
+          color: $kc-black
           &:hover
-            color: $torre-yellow
+            color: $lime-yellow
   .thanks
     font-family: sans-serif
     font-size: 8px
@@ -655,7 +662,7 @@ body
   align-items: center
   position: fixed
   font-size: 3em
-  background: linear-gradient(115deg, $torre-green 0%, $torre-green 50%, $torre-black 100%)
+  background: linear-gradient(115deg, $kc-green 0%, $kc-green 50%, $kc-black 100%)
   z-index: 199
   width: 100vw
   height: 100vh
@@ -665,9 +672,9 @@ body
     position: relative
     margin: 100px auto
     .double-bounce1
-      background-color: $torre-yellow
+      background-color: $lime-yellow
     .double-bounce2
-      background-color: $torre-yellow
+      background-color: $lime-yellow
 
 .fade-out
   animation-name: fade_out

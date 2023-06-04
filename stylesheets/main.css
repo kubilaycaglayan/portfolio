@@ -1,382 +1,139 @@
-@-webkit-keyframes spinning {
-  0% {
-    font-size: 1em;
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    font-size: 1em;
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
 @keyframes spinning {
   0% {
     font-size: 1em;
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
     font-size: 1em;
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
-
-@-webkit-keyframes hover_cv {
-  0% {
-    color: white;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  100% {
-    color: #57BA86;
-    -webkit-transform: scale(1.3);
-            transform: scale(1.3);
-  }
-}
-
 @keyframes hover_cv {
   0% {
     color: white;
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
   100% {
     color: #57BA86;
-    -webkit-transform: scale(1.3);
-            transform: scale(1.3);
+    transform: scale(1.3);
   }
 }
-
-@-webkit-keyframes hover_angel {
-  0% {
-    color: #8bc34a;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  100% {
-    color: white;
-    -webkit-transform: scale(1.3);
-            transform: scale(1.3);
-  }
-}
-
 @keyframes hover_angel {
   0% {
     color: #8bc34a;
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
   100% {
     color: white;
-    -webkit-transform: scale(1.3);
-            transform: scale(1.3);
+    transform: scale(1.3);
   }
 }
-
-@-webkit-keyframes hover_twitter {
-  0% {
-    color: white;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  100% {
-    color: #1DA1F2;
-    -webkit-transform: scale(1.3);
-            transform: scale(1.3);
-  }
-}
-
 @keyframes hover_twitter {
   0% {
     color: white;
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
   100% {
     color: #1DA1F2;
-    -webkit-transform: scale(1.3);
-            transform: scale(1.3);
+    transform: scale(1.3);
   }
 }
-
-@-webkit-keyframes hover_github {
-  0% {
-    color: #8bc34a;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  100% {
-    color: white;
-    -webkit-transform: scale(1.3);
-            transform: scale(1.3);
-  }
-}
-
 @keyframes hover_github {
   0% {
     color: #8bc34a;
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
   100% {
     color: white;
-    -webkit-transform: scale(1.3);
-            transform: scale(1.3);
+    transform: scale(1.3);
   }
 }
-
-@-webkit-keyframes hover_linkedin {
-  0% {
-    color: white;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  100% {
-    color: #0e76a8;
-    -webkit-transform: scale(1.3);
-            transform: scale(1.3);
-  }
-}
-
 @keyframes hover_linkedin {
   0% {
     color: white;
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
   100% {
     color: #0e76a8;
-    -webkit-transform: scale(1.3);
-            transform: scale(1.3);
+    transform: scale(1.3);
   }
 }
-
-@-webkit-keyframes hover_genome {
-  0% {
-    color: white;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  100% {
-    color: #D69600;
-    -webkit-transform: scale(1.3);
-            transform: scale(1.3);
-  }
-}
-
 @keyframes hover_genome {
   0% {
     color: white;
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
   100% {
     color: #D69600;
-    -webkit-transform: scale(1.3);
-            transform: scale(1.3);
+    transform: scale(1.3);
   }
 }
-
-@-webkit-keyframes hover_say-hello {
-  0% {
-    -webkit-transform: rotateZ(0deg);
-            transform: rotateZ(0deg);
-    background-color: white;
-    color: #4A4A4A;
-  }
-  25% {
-    -webkit-transform: rotateZ(7deg);
-            transform: rotateZ(7deg);
-  }
-  50% {
-    -webkit-transform: rotateZ(-7deg);
-            transform: rotateZ(-7deg);
-  }
-  100% {
-    font-stretch: extra-expanded;
-    -webkit-transform: rotateZ(0deg);
-            transform: rotateZ(0deg);
-    background-color: #CDDC39;
-  }
-}
-
 @keyframes hover_say-hello {
   0% {
-    -webkit-transform: rotateZ(0deg);
-            transform: rotateZ(0deg);
+    transform: rotateZ(0deg);
     background-color: white;
     color: #4A4A4A;
   }
   25% {
-    -webkit-transform: rotateZ(7deg);
-            transform: rotateZ(7deg);
+    transform: rotateZ(7deg);
   }
   50% {
-    -webkit-transform: rotateZ(-7deg);
-            transform: rotateZ(-7deg);
+    transform: rotateZ(-7deg);
   }
   100% {
     font-stretch: extra-expanded;
-    -webkit-transform: rotateZ(0deg);
-            transform: rotateZ(0deg);
-    background-color: #CDDC39;
+    transform: rotateZ(0deg);
+    background-color: #70a724;
   }
 }
-
-@-webkit-keyframes hover_technical {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    background-color: white;
-    color: #4A4A4A;
-  }
-  100% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-    background-color: #F72210;
-  }
-}
-
 @keyframes hover_technical {
   0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
     background-color: white;
     color: #4A4A4A;
   }
   100% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    transform: scale(1.1);
     background-color: #F72210;
   }
 }
-
-@-webkit-keyframes hover_soft {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    background-color: white;
-    color: #4A4A4A;
-  }
-  100% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-    background-color: #57BA86;
-  }
-}
-
 @keyframes hover_soft {
   0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
     background-color: white;
     color: #4A4A4A;
   }
   100% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    transform: scale(1.1);
     background-color: #57BA86;
   }
 }
-
-@-webkit-keyframes hover_framework {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    background-color: white;
-    color: #47CCFB;
-  }
-  100% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-    background-color: #47CCFB;
-  }
-}
-
 @keyframes hover_framework {
   0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
     background-color: white;
     color: #47CCFB;
   }
   100% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    transform: scale(1.1);
     background-color: #47CCFB;
   }
 }
-
-@-webkit-keyframes hover_i-letter {
-  0% {
-    position: relative;
-    -webkit-transform: rotateZ(0deg);
-            transform: rotateZ(0deg);
-    color: white;
-  }
-  20% {
-    color: #57BA86;
-    -webkit-transform: rotateZ(180deg);
-            transform: rotateZ(180deg);
-  }
-  25% {
-    color: white;
-  }
-  40% {
-    -webkit-transform: rotateZ(360deg);
-            transform: rotateZ(360deg);
-    color: #47CCFB;
-    top: 0;
-  }
-  45% {
-    color: white;
-  }
-  60% {
-    -webkit-transform: rotateZ(540deg);
-            transform: rotateZ(540deg);
-    color: #292929;
-  }
-  65% {
-    color: white;
-  }
-  80% {
-    -webkit-transform: rotateZ(720deg);
-            transform: rotateZ(720deg);
-    color: #52A6E6;
-    top: 0;
-  }
-  85% {
-    color: white;
-  }
-  100% {
-    -webkit-transform: rotateZ(900deg);
-            transform: rotateZ(900deg);
-    color: #8bc34a;
-    position: relative;
-  }
-}
-
 @keyframes hover_i-letter {
   0% {
     position: relative;
-    -webkit-transform: rotateZ(0deg);
-            transform: rotateZ(0deg);
+    transform: rotateZ(0deg);
     color: white;
   }
   20% {
     color: #57BA86;
-    -webkit-transform: rotateZ(180deg);
-            transform: rotateZ(180deg);
+    transform: rotateZ(180deg);
   }
   25% {
     color: white;
   }
   40% {
-    -webkit-transform: rotateZ(360deg);
-            transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
     color: #47CCFB;
     top: 0;
   }
@@ -384,16 +141,14 @@
     color: white;
   }
   60% {
-    -webkit-transform: rotateZ(540deg);
-            transform: rotateZ(540deg);
+    transform: rotateZ(540deg);
     color: #292929;
   }
   65% {
     color: white;
   }
   80% {
-    -webkit-transform: rotateZ(720deg);
-            transform: rotateZ(720deg);
+    transform: rotateZ(720deg);
     color: #52A6E6;
     top: 0;
   }
@@ -401,104 +156,43 @@
     color: white;
   }
   100% {
-    -webkit-transform: rotateZ(900deg);
-            transform: rotateZ(900deg);
+    transform: rotateZ(900deg);
     color: #8bc34a;
     position: relative;
   }
 }
-
-@-webkit-keyframes hover_my-university {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    background-color: #27292D;
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    background-color: #6A449A;
-    color: white;
-  }
-}
-
 @keyframes hover_my-university {
   0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
     background-color: #27292D;
   }
   100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
     background-color: #6A449A;
     color: white;
   }
 }
-
-@-webkit-keyframes hover_my-school {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    background-color: #6F23FF;
-    color: white;
-  }
-}
-
 @keyframes hover_my-school {
   0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
   100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
     background-color: #6F23FF;
     color: white;
   }
 }
-
-@-webkit-keyframes hover_my-work {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    color: #CDDC39;
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    background-color: #8bc34a;
-    color: #CDDC39;
-  }
-}
-
 @keyframes hover_my-work {
   0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    color: #CDDC39;
+    transform: scale(1);
+    color: #70a724;
   }
   100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
     background-color: #8bc34a;
-    color: #CDDC39;
+    color: #70a724;
   }
 }
-
-@-webkit-keyframes fade_out {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
 @keyframes fade_out {
   0% {
     opacity: 1;
@@ -507,18 +201,6 @@
     opacity: 0;
   }
 }
-
-@-webkit-keyframes fade_in {
-  0% {
-    display: none;
-    opacity: 0;
-  }
-  100% {
-    display: block;
-    opacity: 1;
-  }
-}
-
 @keyframes fade_in {
   0% {
     display: none;
@@ -529,20 +211,6 @@
     opacity: 1;
   }
 }
-
-@-webkit-keyframes swing_from_left {
-  0% {
-    visibility: hidden;
-    left: -500px;
-    opacity: 0;
-  }
-  100% {
-    visibility: visible;
-    left: 0;
-    opacity: 1;
-  }
-}
-
 @keyframes swing_from_left {
   0% {
     visibility: hidden;
@@ -555,27 +223,21 @@
     opacity: 1;
   }
 }
-
 html {
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
 }
-
 html * {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: 'Fira Sans', sans-serif;
+  box-sizing: border-box;
+  font-family: "Fira Sans", sans-serif;
   outline: 0;
 }
-
 html a:hover {
   text-decoration: none;
 }
-
 @media (min-width: 0) {
   html {
     overflow-y: scroll;
@@ -583,31 +245,27 @@ html a:hover {
 }
 
 body {
-  background-color: #27292D;
+  background-color: #FCE4EC;
+  background-image: radial-gradient(#FF4081 10%, transparent 10%), radial-gradient(#FF4081 10%, transparent 10%);
+  background-size: 10px 10px;
+  background-position: 0 0 5px 5px;
   min-width: 300px;
 }
-
 body .left-bar {
   overflow-y: auto;
   max-height: 850px;
   padding-right: 45px;
   padding-left: 45px;
 }
-
 body .left-bar .hovering-area:hover > #i-letter {
-  -webkit-animation-name: hover_i-letter;
-          animation-name: hover_i-letter;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-name: hover_i-letter;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
 }
-
 body .left-bar #i-letter {
   display: inline-block;
   color: #8bc34a;
 }
-
 body .left-bar #play {
   position: relative;
   top: 8px;
@@ -615,181 +273,117 @@ body .left-bar #play {
   cursor: pointer;
   color: #8bc34a;
 }
-
 body .left-bar #play:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
   color: #57BA86;
 }
-
 @media (max-width: 410px) {
   body .left-bar #play {
     left: -35px;
   }
 }
-
 body .left-bar .my-school {
   display: inline-block;
-  color: #CDDC39;
+  color: #70a724;
   font-weight: 500;
 }
-
 body .left-bar .my-school:hover {
   border-radius: 2px;
-  -webkit-animation-name: hover_my-school;
-          animation-name: hover_my-school;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-name: hover_my-school;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
-
 body .left-bar .my-university {
   display: inline-block;
-  color: #CDDC39;
+  color: #70a724;
   font-weight: 500;
 }
-
 body .left-bar .my-university:hover {
   border-radius: 2px;
-  -webkit-animation-name: hover_my-university;
-          animation-name: hover_my-university;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-name: hover_my-university;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
-
 body .left-bar .my-work {
   display: inline-block;
-  color: #CDDC39;
+  color: #70a724;
   font-weight: 500;
 }
-
 body .left-bar .my-work:hover {
   border-radius: 2px;
-  -webkit-animation-name: hover_my-work;
-          animation-name: hover_my-work;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-name: hover_my-work;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
-
 body .left-bar .skills {
   cursor: default;
 }
-
 body .left-bar .skills .badge {
-  background-color: #CDDC39;
-  color: #27292D;
+  background-color: #70a724;
+  color: #FCE4EC;
 }
-
 body .left-bar .skills .technical:hover {
-  -webkit-animation-name: hover_technical;
-          animation-name: hover_technical;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-name: hover_technical;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
 }
-
 body .left-bar .skills .soft:hover {
-  -webkit-animation-name: hover_soft;
-          animation-name: hover_soft;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-name: hover_soft;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
 }
-
 body .left-bar .skills .framework:hover {
-  -webkit-animation-name: hover_framework;
-          animation-name: hover_framework;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-name: hover_framework;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
 }
-
 body .left-bar .open-for-job {
   color: #EF5C32;
   font-weight: 600;
 }
-
 body .left-bar .social-media-links a {
   color: #8bc34a;
 }
-
 body .left-bar .social-media-links .link-cv:hover {
-  -webkit-animation-name: hover_cv;
-          animation-name: hover_cv;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-name: hover_cv;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
 }
-
 body .left-bar .social-media-links .link-angel:hover {
-  -webkit-animation-name: hover_angel;
-          animation-name: hover_angel;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-name: hover_angel;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
 }
-
 body .left-bar .social-media-links .link-twitter:hover {
-  -webkit-animation-name: hover_twitter;
-          animation-name: hover_twitter;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-name: hover_twitter;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
 }
-
 body .left-bar .social-media-links .link-linkedin:hover {
-  -webkit-animation-name: hover_linkedin;
-          animation-name: hover_linkedin;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-name: hover_linkedin;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
 }
-
 body .left-bar .social-media-links .link-genome:hover {
-  -webkit-animation-name: hover_genome;
-          animation-name: hover_genome;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-name: hover_genome;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
 }
-
 body .left-bar .social-media-links .link-github:hover {
-  -webkit-animation-name: hover_github;
-          animation-name: hover_github;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-name: hover_github;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
 }
-
 body .left-bar .say-hello-wrapper .say-hello {
   background-color: #8bc34a;
   color: #27292D;
   height: auto;
 }
-
 body .left-bar .say-hello-wrapper .say-hello:hover {
-  -webkit-animation-name: hover_say-hello;
-          animation-name: hover_say-hello;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-name: hover_say-hello;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
-
 @media (min-width: 540px) {
   body .left-bar {
     padding-right: 60px;
@@ -799,7 +393,6 @@ body .left-bar .say-hello-wrapper .say-hello:hover {
     font-size: 35px;
   }
 }
-
 @media (min-width: 720px) {
   body .left-bar {
     padding-right: 60px;
@@ -815,7 +408,6 @@ body .left-bar .say-hello-wrapper .say-hello:hover {
     font-size: 0.9rem;
   }
 }
-
 @media (min-width: 992px) {
   body .left-bar {
     padding-right: 60px;
@@ -835,28 +427,24 @@ body .left-bar .say-hello-wrapper .say-hello:hover {
     width: 100%;
   }
 }
-
 @media (min-width: 1100px) {
   body .left-bar {
     padding-right: 70px;
     padding-left: 70px;
   }
 }
-
 @media (min-width: 1200px) {
   body .left-bar {
     padding-right: 80px;
     padding-left: 80px;
   }
 }
-
 @media (min-width: 1300px) {
   body .left-bar {
     padding-right: 90px;
     padding-left: 90px;
   }
 }
-
 @media (max-height: 710px) and (min-width: 992px) {
   body .left-bar {
     padding-right: 40px;
@@ -882,112 +470,92 @@ body .left-bar .say-hello-wrapper .say-hello:hover {
     font-size: 0.8rem;
   }
 }
-
 @media (max-height: 580px) {
   body .left-bar .my-motto p {
-    font-size: 1.0rem;
+    font-size: 1rem;
   }
 }
-
 @media (max-height: 580px) {
   body .left-bar .my-motto p {
     font-size: 0.9rem;
   }
 }
-
 @media (max-height: 520px) {
   body .left-bar .skills .badge {
     font-size: 0.7rem;
   }
 }
-
 @media (max-height: 480px) {
   body .left-bar .my-motto p {
     font-size: 0.8rem;
   }
 }
-
 body .btn-hello {
   width: 175px;
 }
-
 body .my-name {
   color: #8bc34a;
   font-weight: bolder;
 }
-
 body .skills .skill {
   color: white;
   background-color: #160906;
   font-weight: 400;
   text-transform: uppercase;
 }
-
 body .skills .title {
   text-transform: uppercase;
   font-weight: 400;
 }
-
 body .my-motto {
   color: #8bc34a;
   font-weight: 500;
 }
-
 body .social-media-links {
   width: 225px;
   font-size: 33px;
 }
-
 body section {
   height: auto;
   width: 100%;
   font-weight: 300;
 }
-
 body section .projects {
   scroll-snap-align: center;
 }
-
 body section p {
   font-weight: 500;
 }
-
 body section .badges .badge {
   font-weight: 200;
 }
-
 @media (max-width: 540px) {
   body section .badges .badge {
     font-size: 2.5vw;
   }
 }
-
 body section a .fas,
 body section a .fab {
   font-size: 20px;
   color: white;
 }
-
 body section a .fas:hover,
 body section a .fab:hover {
   color: #20677a;
 }
-
 @media (min-width: 720px) {
   body section {
     height: auto;
-    padding-top: calc( 12vh);
+    padding-top: 12vh;
   }
 }
-
 @media (min-width: 992px) {
   body section {
     height: 100vh;
     min-height: 620px;
-    padding-top: calc( 13vh);
+    padding-top: 13vh;
   }
 }
-
 body section .overcapture {
   height: auto;
   width: 100%;
@@ -997,7 +565,6 @@ body section .overcapture {
   padding-top: 10vh;
   padding-bottom: 10vh;
 }
-
 @media (min-width: 992px) {
   body section .overcapture {
     padding-bottom: 0;
@@ -1005,7 +572,6 @@ body section .overcapture {
     height: 80%;
   }
 }
-
 body section .overcapture img {
   margin: 0 auto;
   margin-top: 3vh;
@@ -1013,7 +579,6 @@ body section .overcapture img {
   margin-top: 5vh;
   margin-bottom: 5vh;
 }
-
 @media (min-width: 992px) {
   body section .overcapture img {
     width: 45vw;
@@ -1022,263 +587,202 @@ body section .overcapture img {
     margin-bottom: 3vh;
   }
 }
-
 body section .project-spesific-skills {
   font-size: 1.1em;
 }
-
 body section .project-spesific-skills .badge {
   font-weight: 400;
   color: white;
 }
-
 body section .project-spesific-skills div {
   text-transform: uppercase;
 }
-
 body section .live-link {
   position: relative;
 }
-
 body section .live-link .spinner {
   position: absolute;
-  -webkit-animation-name: spinning;
-          animation-name: spinning;
-  -webkit-animation-duration: 6s;
-          animation-duration: 6s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  animation-name: spinning;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
   left: 14px;
   top: 11px;
 }
-
 body .project1 {
   background-color: #EF5C32;
 }
-
 body .project1 .include-text-color {
   color: #160906;
 }
-
 body .project1 .project-spesific-skills .badge {
   background-color: #160906;
 }
-
 body .project1 a .fas:hover,
 body .project1 a .fab:hover {
   color: #160906;
 }
-
 body .project2 {
   background-color: #47CCFB;
 }
-
 body .project2 .include-text-color {
   color: #071825;
 }
-
 body .project2 .project-spesific-skills .badge {
   background-color: #071825;
 }
-
 body .project2 a .fas:hover,
 body .project2 a .fab:hover {
   color: #071825;
 }
-
 body .project3 {
   background-color: #292929;
 }
-
 body .project3 .include-text-color {
   color: #B8B8B8;
 }
-
 body .project3 .project-spesific-skills .badge {
   background-color: #B8B8B8;
 }
-
 body .project3 a .fas:hover,
 body .project3 a .fab:hover {
   color: #B8B8B8;
 }
-
 body .project4 {
   background-color: #52A6E6;
 }
-
 body .project4 .include-text-color {
   color: #113855;
 }
-
 body .project4 .project-spesific-skills .badge {
   background-color: #113855;
 }
-
 body .project4 a .fas:hover,
 body .project4 a .fab:hover {
   color: #113855;
 }
-
 body .project5 {
   background-color: #e7c54b;
 }
-
 body .project5 .include-text-color {
   color: #2b240e;
 }
-
 body .project5 .project-spesific-skills .badge {
   background-color: #2b240e;
 }
-
 body .project5 a .fas:hover,
 body .project5 a .fab:hover {
   color: #2b240e;
 }
-
 body .project6 {
   background-color: #F3C9AE;
 }
-
 body .project6 .include-text-color {
   color: #291B19;
 }
-
 body .project6 .project-spesific-skills .badge {
   background-color: #291B19;
 }
-
 body .project6 a .fas:hover,
 body .project6 a .fab:hover {
   color: #291B19;
 }
-
 body .project7 {
   background-color: #EC5242;
 }
-
 body .project7 .include-text-color {
   color: #291B19;
 }
-
 body .project7 .project-spesific-skills .badge {
   background-color: #291B19;
 }
-
 body .project7 a .fas:hover,
 body .project7 a .fab:hover {
   color: #291B19;
 }
-
 body .project8 {
   background-color: #3097d3;
 }
-
 body .project8 .include-text-color {
   color: #0F1010;
 }
-
 body .project8 .project-spesific-skills .badge {
   background-color: #0F1010;
 }
-
 body .project8 a .fas:hover,
 body .project8 a .fab:hover {
   color: #0F1010;
 }
-
 body .project9 {
   background-color: #ED4631;
 }
-
 body .project9 .include-text-color {
   color: #1C1717;
 }
-
 body .project9 .project-spesific-skills .badge {
   background-color: #1C1717;
 }
-
 body .project9 a .fas:hover,
 body .project9 a .fab:hover {
   color: #1C1717;
 }
-
 body .articles {
-  background-color: #27292D;
+  background-color: #FCE4EC;
+  background-image: radial-gradient(#FF4081 10%, transparent 10%), radial-gradient(#FF4081 10%, transparent 10%);
+  background-size: 10px 10px;
+  background-position: "0 0, 5px 5px";
   color: #292929;
   padding-bottom: 15%;
 }
-
 @media (max-width: 720px) {
   body .articles {
-    padding-top: calc( 12vh);
+    padding-top: 12vh;
   }
 }
-
 body .articles a,
 body .articles a .fas,
 body .articles a .fab {
   color: #8bc34a;
 }
-
 body .articles a:hover,
 body .articles a .fas:hover,
 body .articles a .fab:hover {
-  color: #CDDC39;
+  color: #70a724;
 }
-
 body .articles .article-separator {
   border-bottom: 10px solid #8bc34a;
 }
-
 body footer {
   scroll-snap-align: center;
   background-color: #8bc34a;
 }
-
 body footer .email {
   -webkit-user-select: all;
      -moz-user-select: all;
-      -ms-user-select: all;
           user-select: all;
   color: #27292D;
 }
-
 body footer .fas {
   color: #27292D;
 }
-
 body footer p {
   color: #27292D;
 }
-
 body footer .social-media-links a i {
   color: #27292D;
 }
-
 body footer .social-media-links a i:hover {
-  color: #CDDC39;
+  color: #70a724;
 }
-
 body .thanks {
   font-family: sans-serif;
   font-size: 8px;
 }
 
 .loading {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   position: fixed;
   font-size: 3em;
   background: linear-gradient(115deg, #8bc34a 0%, #8bc34a 50%, #27292D 100%);
@@ -1286,47 +790,35 @@ body .thanks {
   width: 100vw;
   height: 100vh;
 }
-
 .loading .spinner {
   width: 40px;
   height: 40px;
   position: relative;
   margin: 100px auto;
 }
-
 .loading .spinner .double-bounce1 {
-  background-color: #CDDC39;
+  background-color: #70a724;
 }
-
 .loading .spinner .double-bounce2 {
-  background-color: #CDDC39;
+  background-color: #70a724;
 }
 
 .fade-out {
-  -webkit-animation-name: fade_out;
-          animation-name: fade_out;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-name: fade_out;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 
 .fade-in {
-  -webkit-animation-name: fade_in;
-          animation-name: fade_in;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-name: fade_in;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 
 .swing-from-left {
-  -webkit-animation-name: swing_from_left;
-          animation-name: swing_from_left;
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-name: swing_from_left;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
 }
 
 .hidden {
@@ -1344,24 +836,12 @@ body .thanks {
   position: absolute;
   top: 0;
   left: 0;
-  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
-  animation: sk-bounce 2.0s infinite ease-in-out;
+  animation: sk-bounce 2s infinite ease-in-out;
 }
 
 .double-bounce2 {
-  -webkit-animation-delay: -1.0s;
-  animation-delay: -1.0s;
+  animation-delay: -1s;
 }
-
-@-webkit-keyframes sk-bounce {
-  0%, 100% {
-    -webkit-transform: scale(0);
-  }
-  50% {
-    -webkit-transform: scale(1);
-  }
-}
-
 @keyframes sk-bounce {
   0%, 100% {
     transform: scale(0);
@@ -1371,5 +851,4 @@ body .thanks {
     transform: scale(1);
     -webkit-transform: scale(1);
   }
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
