@@ -252,8 +252,6 @@ body {
   min-width: 300px;
 }
 body .left-bar {
-  overflow-y: auto;
-  max-height: 850px;
   padding-right: 45px;
   padding-left: 45px;
 }
@@ -412,11 +410,6 @@ body .left-bar .say-hello-wrapper .say-hello:hover {
   body .left-bar {
     padding-right: 60px;
     padding-left: 60px;
-    max-width: 650px;
-    position: fixed;
-    bottom: 0;
-    height: 100vh;
-    width: 42%;
   }
   body .left-bar .my-name {
     font-size: 3rem;

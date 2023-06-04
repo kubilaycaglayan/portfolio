@@ -256,8 +256,6 @@ body
   @include subtle-background-pattern(#FF4081, 10px 10px, 0 0 5px 5px)
   min-width: 300px
   .left-bar
-    overflow-y: auto
-    max-height: 850px
     @include padding-x( $pad-x: 45px )
     .hovering-area
       &:hover > #i-letter
@@ -384,11 +382,6 @@ body
         font-size: 0.9rem
     @media ( min-width: $breaking_point1 )
       @include padding-x( $pad-x: 60px )
-      max-width: 650px
-      position: fixed
-      bottom: 0
-      height: 100vh
-      width: 42%
       .my-name
         font-size: 3rem
       .my-motto,
