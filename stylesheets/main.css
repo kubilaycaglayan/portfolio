@@ -20,7 +20,7 @@
 }
 @keyframes hover_angel {
   0% {
-    color: #8bc34a;
+    color: #b4de84;
     transform: scale(1);
   }
   100% {
@@ -40,7 +40,7 @@
 }
 @keyframes hover_github {
   0% {
-    color: #8bc34a;
+    color: #b4de84;
     transform: scale(1);
   }
   100% {
@@ -157,7 +157,7 @@
   }
   100% {
     transform: rotateZ(900deg);
-    color: #8bc34a;
+    color: #b4de84;
     position: relative;
   }
 }
@@ -189,7 +189,7 @@
   }
   100% {
     transform: scale(1);
-    background-color: #8bc34a;
+    background-color: #b4de84;
     color: #70a724;
   }
 }
@@ -248,6 +248,7 @@ body {
   min-width: 300px;
 }
 body .background-pattern {
+  background-color: #FCE4EC;
   position: fixed;
   z-index: -1;
   top: 0;
@@ -255,10 +256,9 @@ body .background-pattern {
   width: 100%;
   height: 100%;
   pointer-events: none;
-  background-image: radial-gradient(#FF4081 10%, transparent 10%), radial-gradient(#FF4081 10%, transparent 10%);
-  background-size: 10px 10px;
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #4158D0 50%, #C850C0 76%, #FFCC70 100%);
   background-position: 0 0 5px 5px;
-  background-color: #FCE4EC;
 }
 body .left-bar {
   padding-right: 45px;
@@ -271,14 +271,14 @@ body .left-bar .hovering-area:hover > #i-letter {
 }
 body .left-bar #i-letter {
   display: inline-block;
-  color: #8bc34a;
+  color: #b4de84;
 }
 body .left-bar #play {
   position: relative;
   top: 8px;
   left: 10px;
   cursor: pointer;
-  color: #8bc34a;
+  color: #b4de84;
 }
 body .left-bar #play:hover {
   transform: scale(1.1);
@@ -349,7 +349,7 @@ body .left-bar .open-for-job {
   font-weight: 600;
 }
 body .left-bar .social-media-links a {
-  color: #8bc34a;
+  color: #b4de84;
 }
 body .left-bar .social-media-links .link-cv:hover {
   animation-name: hover_cv;
@@ -382,7 +382,7 @@ body .left-bar .social-media-links .link-github:hover {
   animation-fill-mode: forwards;
 }
 body .left-bar .say-hello-wrapper .say-hello {
-  background-color: #8bc34a;
+  background-color: #b4de84;
   color: #27292D;
   height: auto;
 }
@@ -496,7 +496,7 @@ body .btn-hello {
   width: 175px;
 }
 body .my-name {
-  color: #8bc34a;
+  color: #b4de84;
   font-weight: bolder;
 }
 body .skills .skill {
@@ -510,7 +510,7 @@ body .skills .title {
   font-weight: 400;
 }
 body .my-motto {
-  color: #8bc34a;
+  color: #b4de84;
   font-weight: 500;
 }
 body .social-media-links {
@@ -740,7 +740,7 @@ body .articles {
 body .articles a,
 body .articles a .fas,
 body .articles a .fab {
-  color: #8bc34a;
+  color: #b4de84;
 }
 body .articles a:hover,
 body .articles a .fas:hover,
@@ -748,11 +748,11 @@ body .articles a .fab:hover {
   color: #70a724;
 }
 body .articles .article-separator {
-  border-bottom: 10px solid #8bc34a;
+  border-bottom: 10px solid #b4de84;
 }
 body footer {
   scroll-snap-align: center;
-  background-color: #8bc34a;
+  background-color: #b4de84;
 }
 body footer .email {
   -webkit-user-select: all;
@@ -783,7 +783,7 @@ body .thanks {
   align-items: center;
   position: fixed;
   font-size: 3em;
-  background: linear-gradient(115deg, #8bc34a 0%, #8bc34a 50%, #27292D 100%);
+  background: linear-gradient(115deg, #b4de84 0%, #b4de84 50%, #27292D 100%);
   z-index: 199;
   width: 100vw;
   height: 100vh;
