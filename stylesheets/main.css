@@ -223,11 +223,6 @@
     opacity: 1;
   }
 }
-html {
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-}
 html * {
   padding: 0;
   margin: 0;
@@ -755,9 +750,6 @@ body footer {
   background-color: #b4de84;
 }
 body footer .email {
-  -webkit-user-select: all;
-     -moz-user-select: all;
-          user-select: all;
   color: #27292D;
 }
 body footer .fas {
