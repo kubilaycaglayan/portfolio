@@ -1,8 +1,16 @@
 const mail = document.getElementById('email');
+const animationTime = 1000;
+let shouldBlockAction = false;
 
 mail.addEventListener('click', function() {
-  console.log('clicked');
-  console.log(mail.innerText);
+  if (shouldBlockAction) {
+    return;
+  } else {
+    shouldBlockAction = true;
+    setTimeout(() => {
+      shouldBlockAction = false;
+    }, animationTime);
+  }
 
   const ghostEmail = createHiddenTextAreaAndAttachToTheDOM(mail.innerText);
   ghostEmail.select();
@@ -23,7 +31,7 @@ const changeInnerTextAndColorOfTheElementFor1SecondAndThenRevert = (element) => 
     element.style.color = oldColor;
     clearInterval(interval);
     clearInterval(interval2);
-  }, 1000);
+  }, animationTime);
 };
 
 const changeColorOfTheElementRandomly = (element) => {
