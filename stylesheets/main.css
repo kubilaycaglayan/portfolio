@@ -267,6 +267,7 @@ body .left-bar .hovering-area:hover > #i-letter {
 body .left-bar #i-letter {
   display: inline-block;
   color: #b4de84;
+  cursor: wait;
 }
 body .left-bar #play {
   position: relative;
@@ -493,6 +494,7 @@ body .btn-hello {
 body .my-name {
   color: #b4de84;
   font-weight: bolder;
+  cursor: default;
 }
 body .skills .skill {
   color: white;
