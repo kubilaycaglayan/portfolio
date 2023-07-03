@@ -6,7 +6,7 @@ const countTo10SecondsAndRunCallBack = (callback) => {
   timeOut = setTimeout(() => {
     callback();
     addMouseMoveEvent();
-  }, 1000);
+  }, 4000);
 };
 
 letterI.addEventListener('mouseover', () => {
