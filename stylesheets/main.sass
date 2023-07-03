@@ -258,7 +258,20 @@ html
     overflow-y: scroll
 
 body
-  min-width: 300px
+  #wolf-overlay
+    display: none
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    z-index: 9999
+    min-width: 300px
+    img
+      display: block
+      width: 100%
+      height: 100%
+      object-fit: cover
   .background-pattern
     background-color: #FCE4EC
     @include subtle-background-pattern(#FF4081, 10px 10px, 0 0 5px 5px)

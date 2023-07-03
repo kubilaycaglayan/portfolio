@@ -239,8 +239,22 @@ html a:hover {
   }
 }
 
-body {
+body #wolf-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
   min-width: 300px;
+}
+body #wolf-overlay img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 body .background-pattern {
   background-color: #FCE4EC;
