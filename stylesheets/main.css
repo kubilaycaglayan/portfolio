@@ -249,7 +249,7 @@ body #wolf-overlay {
   z-index: 9999;
   min-width: 300px;
 }
-body #wolf-overlay img {
+body #wolf-overlay video {
   display: block;
   width: 100%;
   height: 100%;
