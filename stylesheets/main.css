@@ -34,7 +34,7 @@
     transform: scale(1);
   }
   100% {
-    color: #1DA1F2;
+    color: #27292D;
     transform: scale(1.3);
   }
 }
@@ -58,13 +58,13 @@
     transform: scale(1.3);
   }
 }
-@keyframes hover_genome {
+@keyframes hover_goodreads {
   0% {
     color: white;
     transform: scale(1);
   }
   100% {
-    color: #D69600;
+    color: #382110;
     transform: scale(1.3);
   }
 }
@@ -381,8 +381,8 @@ body .left-bar .social-media-links .link-linkedin:hover {
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
 }
-body .left-bar .social-media-links .link-genome:hover {
-  animation-name: hover_genome;
+body .left-bar .social-media-links .link-goodreads:hover {
+  animation-name: hover_goodreads;
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
 }

@@ -40,6 +40,7 @@ $lime-yellow: #70a724
 $kc-green: #b4de84
 $kc-black: #27292D
 $kc-orange: #D69600
+$kc-darky: #382110
 
 $my-name: $kc-green
 
@@ -93,7 +94,7 @@ $my-name: $kc-green
     color: white
     transform: scale(1)
   100%
-    color: #1DA1F2
+    color: $kc-black
     transform: scale(1.3)
 
 @keyframes hover_github
@@ -112,12 +113,12 @@ $my-name: $kc-green
     color: #0e76a8
     transform: scale(1.3)
 
-@keyframes hover_genome
+@keyframes hover_goodreads
   0%
     color: white
     transform: scale(1)
   100%
-    color: $kc-orange
+    color: $kc-darky
     transform: scale(1.3)
 
 @keyframes hover_say-hello
@@ -370,9 +371,9 @@ body
           animation-name: hover_linkedin
           animation-duration: 0.5s
           animation-fill-mode: forwards
-      .link-genome
+      .link-goodreads
         &:hover
-          animation-name: hover_genome
+          animation-name: hover_goodreads
           animation-duration: 0.5s
           animation-fill-mode: forwards
       .link-github
