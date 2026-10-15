@@ -12,7 +12,7 @@
 }
 * { box-sizing: border-box; }
 html { overflow-x: clip; }
-body { margin: 0; background-color: var(--bg); background-image: linear-gradient(to bottom, var(--bg) 0%, rgba(32, 42, 50, var(--ocean-overlay, .68)) 18%, rgba(32, 42, 50, var(--ocean-overlay, .68)) 72%, var(--bg) 100%), url("assets/ocean-background.webp"); background-repeat: no-repeat; background-size: 100% 220px, 100% 220px; background-position: center 64px, center 64px; background-attachment: fixed, fixed; color: var(--text); }
+body { margin: 0; background-color: var(--bg); background-image: linear-gradient(to bottom, var(--bg) 0%, rgba(32, 42, 50, var(--ocean-overlay, .50)) 18%, rgba(32, 42, 50, var(--ocean-overlay, .50)) 72%, var(--bg) 100%), url("assets/ocean-background.webp"); background-repeat: no-repeat; background-size: 100% 220px, 100% 220px; background-position: center 94px, center 94px; background-attachment: fixed, fixed; color: var(--text); }
 a { color: inherit; }
 a:focus-visible, button:focus-visible { outline: 3px solid var(--focus); outline-offset: 5px; }
 button { font: inherit; }
@@ -35,6 +35,7 @@ h1 { max-width: 920px; font-size: clamp(22px, 5vw, 48px); font-weight: 550; line
 .hero-link { margin-top: 8px; padding: 11px 15px; }
 .section { border-top: 1px solid var(--line); padding-block: 54px 64px; display: grid; gap: 26px; scroll-margin-top: 24px; }
 #about { border-top: 0; }
+#about .section-content { max-width: 62ch; margin-inline: auto; text-align: center; }
 .section-heading h2, .contact h2 { font-size: clamp(26px, 5vw, 38px); font-weight: 520; line-height: 1.12; margin: 0; }
 .section-content { max-width: 680px; }
 .prose { color: var(--muted); font-family: Georgia, "Times New Roman", serif; font-size: clamp(16px, 1.7vw, 18px); line-height: 1.68; }
@@ -76,11 +77,12 @@ h1 { max-width: 920px; font-size: clamp(22px, 5vw, 48px); font-weight: 550; line
 @media (min-width: 720px) {
   .wrap { width: min(100% - 70px, 1160px); }
   .site-header { min-height: 76px; }
-  body { background-size: 100% 304px, 100% 304px; background-position: center 76px, center 76px; }
+  body { background-size: 100% 304px, 100% 304px; background-position: center 106px, center 106px; }
   .site-header nav { gap: 34px; }
   .site-header nav a { font-size: 13px; }
   .hero { padding-block: 72px 82px; }
   .section { padding-block: 72px 90px; grid-template-columns: minmax(220px, .77fr) minmax(0, 1.23fr); gap: 60px; }
+  #about { grid-template-columns: minmax(0, 1fr); justify-items: center; }
   .contact { display: grid; grid-template-columns: minmax(220px, .77fr) minmax(0, 1.23fr); gap: 60px; }
   .contact-primary { grid-column: 1; grid-row: 1; }
   .contact-content { grid-column: 2; grid-row: 1; }
