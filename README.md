@@ -1,53 +1,16 @@
-# PORTFOLIO
+# Kubilay Caglayan — Portfolio
 
-> Source code of my personal web page.
+A mobile-first, static portfolio site with locally saved articles. The site uses plain HTML, CSS, and JavaScript, and can be served directly from the repository root by GitHub Pages.
 
-![personal webpage](https://user-images.githubusercontent.com/60448833/88680608-5cc3ee80-d0f9-11ea-96f1-3af4db0c6aad.png)
+## Local preview
 
-## Built With
+Run `python -m http.server 8000` in this directory, then open `http://localhost:8000`.
 
-- Html
-- Sass
-- JavaScript
-- Webpack
-- Bootstrap
+## Content
 
-## Live Demo
+- `index.html` is the homepage.
+- `content.txt` holds the portfolio copy and source links.
+- `articles/` contains eight standalone article pages. Six are listed on the homepage.
+- `sound/kubilay.mp3` is the pronunciation audio.
 
-[Live Demo Link](https://kubilaycaglayan.com/)
-
-### Usage
-
-- You can visit the website by clicking the link above.
-
-### Run tests
-
-- There is no automated tests for this project.
-
-## Authors
-
-👤 **Kubilay Caglayan**
-
-- Website: [kubilay](https://kubilaycaglayan.com)
-- Github: [@kubilaycaglayan](https://github.com/kubilaycaglayan)
-- Twitter: [@kbcaglayan](https://twitter.com/kbcaglayan)
-- Linkedin: [linkedin](https://linkedin.com/in/kubilaycaglayan)
-
-## 🤝 Contributing
-
-Contributions, issues and feature requests are welcome!
-
-Feel free to check the [issues page](https://github.com/kubilaycaglayan/portfolio/issues).
-
-## Show your support
-
-Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- Special thanks to Charlie Waite for inspiring me with his design. 
-- http://charliewaite.me/
-
-## 📝 License
-
-This project is [MIT](lic.url) licensed.
+The homepage has a pronunciation button and a copy-email button. The article pages include their images inline, so they can be opened as standalone files.

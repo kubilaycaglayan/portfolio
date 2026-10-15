@@ -1,6 +1,8 @@
-const play = document.getElementById('play')
-const voiceOver = new Audio('../sound/kubilay.mp3')
+const pronunciation = new Audio('sound/kubilay.mp3');
 
-play.addEventListener('click', function() {
-  voiceOver.play();
-})
+document.querySelectorAll('[data-pronunciation]').forEach((button) => {
+  button.addEventListener('click', () => {
+    pronunciation.currentTime = 0;
+    pronunciation.play().catch(() => {});
+  });
+});

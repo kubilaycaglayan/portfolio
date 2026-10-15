@@ -1,222 +1,94 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167893407-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-167893407-1');
-  </script>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <script src="https://kit.fontawesome.com/2c6133bcaa.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="stylesheets/bootstrap.css" />
-  <link rel="icon" type="image/png" href="images/kc_logo_blue.png" sizes="32x32" />
-  <link rel="stylesheet" href="stylesheets/main.css" />
-
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;300;400;600;900&display=swap"
-    rel="stylesheet">
-  <title>Kubilay Caglayan | Full Stack Software Programmer</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#2c3634">
+  <title>Kubilay Caglayan</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script/sound.js" defer></script>
+  <script src="script/autocopy.js" defer></script>
 </head>
-
 <body>
-  <div class="loading">
-    <div class="wrapper">
-      <div class="spinner">
-        <div class="double-bounce1"></div>
-        <div class="double-bounce2"></div>
+  <header class="site-header wrap">
+    <nav aria-label="Articles">
+      <a target="_blank" rel="noopener noreferrer" href="#about">About</a>
+      <a target="_blank" rel="noopener noreferrer" href="#products">Products</a>
+      <a target="_blank" rel="noopener noreferrer" href="#articles">Articles</a>
+      <a target="_blank" rel="noopener noreferrer" href="#email">Email</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <h1 id="hero-title"><button class="hero-name" type="button" data-pronunciation>Kubilay Caglayan <svg class="sound-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4Zm12-1a6 6 0 0 1 0 8m2-11a10 10 0 0 1 0 14" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></button></h1>
+      <p class="hero-role">Senior SE | AI Engineer | GenAI, LLMs &amp; Deep Learning</p>
+      <a target="_blank" rel="noopener noreferrer" class="hero-link" href="mailto:contactkubilay@gmail.com?subject=Website%20Contact">Say Hello! <span aria-hidden="true">↗</span></a>
+    </section>
+
+    <section class="section wrap" id="about" aria-labelledby="about-title">
+      <div class="section-heading"><h2 id="about-title">About</h2></div>
+      <div class="section-content prose">
+        <p>My <a target="_blank" rel="noopener noreferrer" href="https://www.hacettepe.edu.tr/english/">bachelor's degree</a> 🎓 in engineering and my technical experience at <a target="_blank" rel="noopener noreferrer" href="https://microverse.org">Microverse</a> 💻 have cultivated a unique blend of skills and experiences that add depth to my personality.</p>
+        <p>After my time at Microverse, I joined <a target="_blank" rel="noopener noreferrer" href="https://torre.ai/">Torre.AI</a>, where I started as a mid-level engineer and was later promoted to a senior engineer, eventually becoming a tech lead. Leading a dynamic team and the development of solutions allowed me to grow significantly both professionally and personally.</p>
+        <p>I have now decided to deepen my expertise in system architecture, AI engineering, generative AI solutions, machine learning and broaden my knowledge in preparation for my next collaboration. My goal is to leverage my time to further refine my skills, so I can contribute even more effectively in my future endeavors.</p>
+        <p>If you're interested in exploring my career journey or connecting about potential opportunities, feel free to reach out.</p>
       </div>
-    </div>
-  </div>
+    </section>
 
-  <div id="wolf-overlay">
-    <!-- <img src="./images/fox_and_wolf.png" alt="Fox and wolf"> -->
-    <video id="wolf-overlay" autoplay loop muted>
-      <source src="./videos/wolfy.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </div>
-
-
-  <div class="">
-    <div class="background-pattern"></div>
-    <div class="">
-      <div class="p-0">
-        <div class="left-bar d-flex flex-column justify-content-start">
-          <div class="hidden d-flex" title="My name  /ˈkʊbɪlaɪ/">
-            <h1 class="my-name mt-5">
-              Kub<span class="hovering-area"><span id="i-letter">i</span></span>lay
-              Caglayan <br>
-            </h1>
-            <div class="mt-5" title="Listen to my name /ˈkʊbɪlaɪ/">
-              <i id="play" class="fas fa-volume-up"></i>
-            </div>
-            <h2 class="d-none">Remote Full Stack Software Programmer</h2>
-            <h3 class="d-none">Kubilay Çağlayan</h3>
-            <h3 class="d-none">Kubilay Yasin Çağlayan</h3>
-            <h3 class="d-none">kubilay çağlayan</h3>
-            <h3 class="d-none">kubilay caglayan</h3>
-            <h3 class="d-none">Kubilay Caglayan</h3>
-            <h3 class="d-none">Kubilay Yasin Caglayan</h3>
-            <h3 class="d-none">kubilay microverse</h3>
-            <h3 class="d-none">microverse</h3>
-            <h3 class="d-none">vibe coder</h3>
-            <h3 class="d-none">viber</h3>
-            <h3 class="d-none">architecture</h3>
-            <h3 class="d-none">ai ml</h3>
-            <h3 class="d-none">genai</h3>
-            <h3 class="d-none">data streams</h3>
-            <h3 class="d-none">event driven design</h3>
-            <h3 class="d-none">ruby on rails</h3>
-            <h3 class="d-none">ruby on rails</h3>
-          </div>
-          <div class="hidden skills d-flex flex-wrap mt-2" title="My skills">
-            <!-- <h3 class="badge title mr-2 mt-2 p-1 pr-2 pl-2" title="My title">Lead</h3> -->
-            <h3 class="badge title mr-2 mt-2 p-1 pr-2 pl-2" title="My title">full stack</h3>
-            <h3 class="badge title mr-2 mt-2 p-1 pr-2 pl-2" title="My title">AI Engineer</h3>
-            <h3 class="badge title mr-2 mt-2 p-1 pr-2 pl-2" title="My title">software programmer</h3>
-            <h3 class="badge title mr-2 mt-2 p-1 pr-2 pl-2" title="My title">
-              <!-- write "viber" with every letter different color -->
-            <span style="color: #FF5733;">v</span><span style="color: #FFBD33;">i</span><span style="color: #75FF33;">b</span><span style="color: #3358ff;">e</span><span style="color: #d3ff33;">r</span>
-            </h3>
-          </div>
-
-
-          <div class="hidden my-motto my-3 pr-4">
-            <br>
-            <p>
-              My <a class="my-university" title="My university" href="https://www.hacettepe.edu.tr/english/" target="_blank">bachelor's degree</a> 🎓 in engineering and my technical experience at <a class="my-school" title="My remote software development school" href="https://microverse.org"
-                  target="_blank">Microverse</a> 💻 have cultivated a unique blend of skills and experiences that add depth to my personality.
-            </p>
-            <br>
-            <p>
-              After my time at Microverse, I joined <a class="my-work" title="Make the work fulfilling" href="https://torre.ai/"
-              target="_blank">Torre</a>, where I started as a mid-level engineer and was later promoted to a senior engineer, eventually becoming a tech lead. Leading a dynamic team and the development of solutions allowed me to grow significantly both professionally and personally.
-            </p>
-            <br>
-            <p>
-              I have now decided to deepen my expertise in system architecture, AI engineering, generative AI solutions, machine learning and broaden my knowledge in preparation for my next collaboration. My goal is to leverage my time to further refine my skills, so I can contribute even more effectively in my future endeavors.
-            </p>
-            <br>
-            <p>
-              If you're interested in exploring my career journey or connecting about potential opportunities, feel free to reach out.
-            </p>
-          </div>
-          <div class="hidden social-media-links align-items-center justify-content-between d-flex">
-            <h2 class="d-none">Social Media Links</h2>
-            <h3 class="d-none">Linkedin</h3>
-            <h4 class="d-none">https://www.linkedin.com/in/kubilaycaglayan</h4>
-            <a class="link-linkedin" href="https://www.linkedin.com/in/kubilaycaglayan" title="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <h3 class="d-none">GitHub</h3>
-            <h4 class="d-none">https://github.com/kubilaycaglayan</h4>
-            <a class="link-github" href="https://github.com/kubilaycaglayan" title="GitHub" target="_blank"><i
-                class="fab fa-github"></i></a>
-            <h3 class="d-none">X Twitter</h3>
-            <h4 class="d-none">https://x.com/kbcaglayan</h4>
-            <a class="link-twitter" href="https://x.com/kbcaglayan" title="X" target="_blank">
-              <i class="fab fa-x-twitter"></i>
-            </a>
-            <h3 class="d-none">Goodreads</h3>
-            <h4 class="d-none">https://www.goodreads.com/kubilaycaglayan</h4>
-            <a class="link-goodreads" href="https://www.goodreads.com/kubilaycaglayan" title="Goodreads" target="_blank"><i class="fab fa-goodreads"></i></a>
-          </div>
-          <div class="hidden say-hello-wrapper mt-3">
-            <h3 class="d-none">Contact Email</h3>
-            <h4 class="d-none">contactkubilay@gmail.com</h4>
-            <a class="say-hello btn border-0 rounded-pill btn-hello text-center p-2 mb-5 mb-lg-3"
-              href="mailto:contactkubilay@gmail.com?subject=Website%20Contact" title="Mail to me" target="_blank">Say Hello!</a>
-          </div>
-        </div>
+    <section class="section wrap" id="products" aria-labelledby="products-title">
+      <div class="section-heading"><h2 id="products-title">Products</h2></div>
+      <div class="section-content">
+        <ul class="project-grid">
+          <li><article class="project-card">
+            <div class="project-main"><h3 class="project-name">Sea Surface Waviness Predictor</h3><p>A deep-learning wave-prediction pipeline that predicts the waviness of the sea.</p></div>
+            <div class="project-footer"><ul class="project-tags"><li>Neural Networks</li><li>Regression Model</li><li>Python</li></ul><div class="project-links"><a target="_blank" rel="noopener noreferrer" href="https://github.com/kubilaycaglayan/wave-regression-model" aria-label="Sea Surface Waviness Predictor on GitHub">GitHub <span aria-hidden="true">↗</span></a><a target="_blank" rel="noopener noreferrer" href="https://huggingface.co/kubilaycaglayan/wave-regression">Hugging Face model <span aria-hidden="true">↗</span></a></div></div>
+          </article></li>
+          <li><article class="project-card">
+            <div class="project-main"><h3 class="project-name">Millennium Series RAG Explorer</h3><p>A deployed, observability-first RAG pipeline that connects subtle details across thousands of pages, optimized for the Millennium series.</p></div>
+            <div class="project-footer"><ul class="project-tags"><li>RAG</li><li>LLM</li><li>Langfuse</li><li>Python</li></ul><div class="project-links"><a target="_blank" rel="noopener noreferrer" href="https://github.com/kubilaycaglayan/advanced-rag-with-langfuse" aria-label="Millennium Series RAG Explorer on GitHub">GitHub <span aria-hidden="true">↗</span></a><a target="_blank" rel="noopener noreferrer" href="https://millenium.blaqc.space">Live app <span aria-hidden="true">↗</span></a></div></div>
+          </article></li>
+          <li><article class="project-card">
+            <div class="project-main"><h3 class="project-name">Personal Productivity Hub</h3><p>Personal productivity app that connects personal data to AI pipelines through MCP.</p></div>
+            <div class="project-footer"><ul class="project-tags"><li>Java</li><li>Spring Boot</li><li>Vue</li><li>Docker</li></ul><div class="project-links"><a target="_blank" rel="noopener noreferrer" href="https://github.com/kubilaycaglayan/knowledge-base" aria-label="Personal Productivity Hub on GitHub">GitHub <span aria-hidden="true">↗</span></a><a target="_blank" rel="noopener noreferrer" href="https://knowledgebase.blaqc.space">Live app <span aria-hidden="true">↗</span></a></div></div>
+          </article></li>
+          <li><article class="project-card">
+            <div class="project-main"><h3 class="project-name">Remote Development Toolkit</h3><p>iOS &amp; macOS remote-development tool for SSH port forwards, remote services, folder syncs, Docker, and AI usage.</p></div>
+            <div class="project-footer"><ul class="project-tags"><li>iOS</li><li>macOS</li><li>SSH</li></ul><div class="project-links"><a target="_blank" rel="noopener noreferrer" href="https://github.com/kubilaycaglayan/devboost" aria-label="Remote Development Toolkit on GitHub">GitHub <span aria-hidden="true">↗</span></a></div></div>
+          </article></li>
+          <li><article class="project-card">
+            <div class="project-main"><h3 class="project-name">Multi-Server tmux Manager</h3><p>A tmux-based project manager hosted behind a VPN that can connect to multiple servers.</p></div>
+            <div class="project-footer"><ul class="project-tags"><li>Go</li><li>Vue</li><li>tmux</li><li>Agentic Coding</li></ul><div class="project-links"><a target="_blank" rel="noopener noreferrer" href="https://github.com/kubilaycaglayan/hostbud" aria-label="Multi-Server tmux Manager on GitHub">GitHub <span aria-hidden="true">↗</span></a></div></div>
+          </article></li>
+          <li><article class="project-card">
+            <div class="project-main"><h3 class="project-name">LSM Tree Key-Value Store</h3><p>Key-value store backed by a WAL, LSM tree, SSTables, and configurable compaction.</p></div>
+            <div class="project-footer"><ul class="project-tags"><li>Ruby</li><li>LSM Trees</li><li>SSTables</li></ul><div class="project-links"><a target="_blank" rel="noopener noreferrer" href="https://github.com/kubilaycaglayan/lsm_tree_ss_table" aria-label="LSM Tree Key-Value Store on GitHub">GitHub <span aria-hidden="true">↗</span></a></div></div>
+          </article></li>
+        </ul>
       </div>
-      <section class="right-flow  m-0 p-0">
-        <h2 class="d-none">Articles</h2>
-        <section class="articles d-flex flex-column justify-content-center">
-          <div class="article d-flex justify-content-between align-items-center px-5">
-            <h4 class="mr-3">
-              <a href="https://medium.com/@kblycaglayan/how-to-create-the-simplest-friendship-model-on-rails-de0ab51448ec"
-              target="_blank">
-              How to Create the Simplest Friendship Model on Rails
-            </a>
-            </h4>
-            <a href="https://medium.com/@kblycaglayan/how-to-create-the-simplest-friendship-model-on-rails-de0ab51448ec"
-              target="_blank">
-              <i class="fas fa-link"></i>
-            </a>
-          </div>
-          <div class="article-separator mx-5 mt-3" ></div>
-          <div class="article d-flex justify-content-between align-items-center px-5 mt-4">
-            <h4 class="mr-3">
-              <a href="https://medium.com/@kblycaglayan/3-initial-experience-at-microverse-20d22354be2e" target="_blank">
-              3 Initial Experiences at Microverse
-              </a>
-            </h4>
-            <a href="https://medium.com/@kblycaglayan/3-initial-experience-at-microverse-20d22354be2e" target="_blank">
-              <i class="fas fa-link"></i>
-            </a>
-          </div>
-          <div class="article-separator mx-5 mt-3" ></div>
-          <div class="article d-flex justify-content-between align-items-center px-5 mt-4">
-            <h4 class="mr-3">
-              <a href="https://medium.com/@kblycaglayan/online-learning-nowadays-a03cc1987833" target="_blank">
-              Online Learning Nowadays
-              </a>
-            </h4>
-            <a href="https://medium.com/@kblycaglayan/online-learning-nowadays-a03cc1987833" target="_blank">
-              <i class="fas fa-link"></i>
-            </a>
-          </div>
-          <div class="article-separator mx-5 mt-3" ></div>
-          <div class="article d-flex justify-content-between align-items-center px-5 mt-4">
-            <h4 class="mr-3">
-              <a href="https://kubilaycaglayan.medium.com/how-to-seed-with-ruby-on-rails-%EF%B8%8F-1d2dceda3e7d" target="_blank">
-                How To “Seed” With Ruby on Rails
-              </a>
-            </h4>
-            <a href="https://kubilaycaglayan.medium.com/how-to-seed-with-ruby-on-rails-%EF%B8%8F-1d2dceda3e7d" target="_blank">
-              <i class="fas fa-link"></i>
-            </a>
-          </div>
+    </section>
 
+    <section class="section wrap" id="articles" aria-labelledby="articles-title">
+      <div class="section-heading"><h2 id="articles-title">Articles</h2></div>
+      <div class="section-content">
+        <ol class="article-list">
+          <li><a target="_blank" rel="noopener noreferrer" href="articles/learning-compass-2026-efd768af7123.html"><span>Learning Compass 2026</span><time datetime="2026-09-26">2026</time></a></li>
+          <li><a target="_blank" rel="noopener noreferrer" href="articles/understanding-neural-networks-through-the-perceptron-ab84edf33704.html"><span>Understanding Neural Networks Through the Perceptron</span><time datetime="2026-08-25">2026</time></a></li>
+          <li><a target="_blank" rel="noopener noreferrer" href="articles/how-to-seed-with-ruby-on-rails---1d2dceda3e7d.html"><span>How To “Seed” With Ruby on Rails</span><time datetime="2020-11-09">2020</time></a></li>
+          <li><a target="_blank" rel="noopener noreferrer" href="articles/online-learning-nowadays-a03cc1987833.html"><span>Online Learning, Nowadays</span><time datetime="2020-07-15">2020</time></a></li>
+          <li><a target="_blank" rel="noopener noreferrer" href="articles/how-to-create-the-simplest-friendship-model-on-rails-de0ab51448ec.html"><span>How to Create the Simplest Friendship Model on Rails</span><time datetime="2020-06-03">2020</time></a></li>
+          <li><a target="_blank" rel="noopener noreferrer" href="articles/3-initial-experience-at-microverse-20d22354be2e.html"><span>3 Initial Experience at Microverse</span><time datetime="2020-03-18">2020</time></a></li>
+        </ol>
+      </div>
+    </section>
 
-        </section>
-
-        <footer class="footer py-1">
-          <div class="social-media-links align-items-center justify-content-center d-flex w-100 d-block d-lg-none mt-3">
-            <a class="link-linkedin px-2" href="https://www.linkedin.com/in/kubilaycaglayan" title="LINKEDIN" target="_blank"><i
-            class="fab fa-linkedin"></i></a>
-            <a class="link-github px-2 m-0" href="https://github.com/kubilaycaglayan" title="GITHUB" target="_blank"><i
-                class="fab fa-github"></i></a>
-            <a class="link-twitter px-2 m-0" href="https://x.com/kbcaglayan" title="X" target="_blank">
-              <i class="fab fa-x-twitter"></i>
-            </a>
-            <a class="link-goodreads px-2" href="https://www.goodreads.com/kubilaycaglayan" title="GOODREADS" target="_blank"><i class="fab fa-goodreads"></i></a>
-          </div>
-          <h2 class="d-none">Contact Email</h2>
-          <h3 class="d-none">contactkubilay@gmail.com</h3>
-          <p class="text-center mt-2 mb-2">
-            <span class="email" id="email">contactkubilay@gmail.com</span> | <span><i
-                class="fas fa-copyright"></i></span></p>
-        </footer>
-      </section>
-    </div>
-  </div>
-
-  <!-- <script src="script/ping.js"></script> -->
-  <script src="script/autocopy.js"></script>
-  <script src="script/wolfy.js"></script>
-  <!--
-    <script src="script/color.js"></script>
-   -->
-  <script src="script/sound.js"></script>
-  <script src="script/loading.js"></script>
+    <section class="contact wrap" id="email" aria-labelledby="contact-title">
+      <h2 id="contact-title">Social and contact links</h2>
+      <div class="contact-row"><button class="email-copy" id="email-copy" type="button" data-email="contactkubilay@gmail.com">contactkubilay@gmail.com <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="8" y="8" width="11" height="11" rx="1.5" stroke="currentColor" stroke-width="1.5"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2" stroke="currentColor" stroke-width="1.5"/></svg></button><span id="copy-status" role="status" aria-live="polite"></span></div>
+      <a target="_blank" rel="noopener noreferrer" class="contact-action" href="mailto:contactkubilay@gmail.com?subject=Website%20Contact">Say Hello! <span aria-hidden="true">↗</span></a>
+      <nav class="social-links" aria-label="Social and contact links"><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/kubilaycaglayan">LinkedIn</a><a target="_blank" rel="noopener noreferrer" href="https://github.com/kubilaycaglayan">GitHub</a><a target="_blank" rel="noopener noreferrer" href="https://huggingface.co/kubilaycaglayan">Hugging Face</a><a target="_blank" rel="noopener noreferrer" href="https://x.com/kbcaglayan">X</a><a target="_blank" rel="noopener noreferrer" href="https://www.goodreads.com/kubilaycaglayan">Goodreads</a></nav>
+    </section>
+  </main>
 </body>
-
 </html>

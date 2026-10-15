@@ -1,77 +1,36 @@
-const mail = document.getElementById('email');
-const animationTime = 1000;
-let shouldBlockAction = false;
+const copyButton = document.getElementById('email-copy');
+const copyStatus = document.getElementById('copy-status');
+let feedbackTimer;
 
-mail.addEventListener('click', function() {
-  if (shouldBlockAction) {
-    return;
-  } else {
-    shouldBlockAction = true;
-    setTimeout(() => {
-      shouldBlockAction = false;
-    }, animationTime);
+function copyWithSelection(text) {
+  const field = document.createElement('textarea');
+  field.value = text;
+  field.setAttribute('readonly', '');
+  field.style.position = 'fixed';
+  field.style.opacity = '0';
+  document.body.appendChild(field);
+  field.select();
+  const copied = document.execCommand('copy');
+  field.remove();
+  if (!copied) throw new Error('Clipboard unavailable');
+}
+
+copyButton?.addEventListener('click', async () => {
+  const email = copyButton.dataset.email;
+  try {
+    if (navigator.clipboard?.writeText) {
+      try {
+        await navigator.clipboard.writeText(email);
+      } catch {
+        copyWithSelection(email);
+      }
+    } else {
+      copyWithSelection(email);
+    }
+    copyStatus.textContent = '✓';
+  } catch {
+    copyStatus.textContent = '!';
   }
-
-  const ghostEmail = createHiddenTextAreaAndAttachToTheDOM(mail.innerText);
-  ghostEmail.select();
-  document.execCommand('copy');
-  removeElementFromDOM(ghostEmail);
-
-  changeInnerTextAndColorOfTheElementFor1SecondAndThenRevert(mail);
+  clearTimeout(feedbackTimer);
+  feedbackTimer = setTimeout(() => { copyStatus.textContent = ''; }, 2600);
 });
-
-const changeInnerTextAndColorOfTheElementFor1SecondAndThenRevert = (element) => {
-  const oldText = element.innerText;
-  const oldColor = element.style.color;
-  const interval = changeColorOfTheElementRandomly(element);
-  const interval2 = addELetterToCopiedTextIntervally(element);
-
-  setTimeout(() => {
-    element.innerText = oldText;
-    element.style.color = oldColor;
-    clearInterval(interval);
-    clearInterval(interval2);
-  }, animationTime);
-};
-
-const changeColorOfTheElementRandomly = (element) => {
-  return setInterval(() => {
-    element.style.color = getRandomColor();
-  }, 150);
-};
-
-const getRandomColor = () => {
-  const red = getRandomNumberBetween(0, 255);
-  const green = getRandomNumberBetween(0, 255);
-  const blue = getRandomNumberBetween(0, 255);
-
-  return `rgb(${red}, ${green}, ${blue})`;
-};
-
-const getRandomNumberBetween = (min, max) => {
-  return Math.floor(Math.random() * (max - min + 1) + min);
-};
-
-const addELetterToCopiedTextIntervally = (element, text = "Copied!") => {
-  element.innerText = text;
-
-  return setInterval(() => {
-    const newText = element.innerText.replace(/(c|C)opie/, 'Copiee');
-    element.innerText = newText;
-  }, 200);
-};
-
-const createHiddenTextAreaAndAttachToTheDOM = (text) => {
-  const textArea = document.createElement('textarea');
-  textArea.setAttribute('id', 'emailGhost');
-  textArea.setAttribute('readonly', '');
-  textArea.setAttribute('style', 'position: absolute; left: -9999px');
-  textArea.value = text;
-  document.body.appendChild(textArea);
-
-  return textArea;
-};
-
-const removeElementFromDOM = (element) => {
-  element.remove();
-};

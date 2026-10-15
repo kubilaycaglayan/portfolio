@@ -1,0 +1,70 @@
+Kubilay Caglayan | Senior SE | AI Engineer | GenAI, LLMs & Deep Learning
+
+Name and roles
+Kubilay Caglayan
+Senior SE | AI Engineer | GenAI, LLMs & Deep Learning
+
+About
+My bachelor's degree 🎓 in engineering and my technical experience at Microverse 💻 have cultivated a unique blend of skills and experiences that add depth to my personality.
+
+After my time at Microverse, I joined Torre.AI, where I started as a mid-level engineer and was later promoted to a senior engineer, eventually becoming a tech lead. Leading a dynamic team and the development of solutions allowed me to grow significantly both professionally and personally.
+
+I have now decided to deepen my expertise in system architecture, AI engineering, generative AI solutions, machine learning and broaden my knowledge in preparation for my next collaboration. My goal is to leverage my time to further refine my skills, so I can contribute even more effectively in my future endeavors.
+
+If you're interested in exploring my career journey or connecting about potential opportunities, feel free to reach out.
+
+Education and work links
+bachelor's degree — https://www.hacettepe.edu.tr/english/
+Microverse — https://microverse.org
+Torre.AI — https://torre.ai/
+
+Social and contact links
+LinkedIn — https://www.linkedin.com/in/kubilaycaglayan
+GitHub — https://github.com/kubilaycaglayan
+Hugging Face — https://huggingface.co/kubilaycaglayan
+X — https://x.com/kbcaglayan
+Goodreads — https://www.goodreads.com/kubilaycaglayan
+Email — contactkubilay@gmail.com
+Say Hello! — mailto:contactkubilay@gmail.com?subject=Website%20Contact
+
+Products
+Sea Surface Waviness Predictor — https://github.com/kubilaycaglayan/wave-regression-model
+A deep-learning wave-prediction pipeline that predicts the waviness of the sea.
+Neural Networks | Regression Model | Python
+Hugging Face model — https://huggingface.co/kubilaycaglayan/wave-regression
+
+Millennium Series RAG Explorer — https://github.com/kubilaycaglayan/advanced-rag-with-langfuse
+A deployed, observability-first RAG pipeline that connects subtle details across thousands of pages, optimized for the Millennium series.
+RAG | LLM | Langfuse | Python
+Live app — https://millenium.blaqc.space
+
+Personal Productivity Hub — https://github.com/kubilaycaglayan/knowledge-base
+Personal productivity app that connects personal data to AI pipelines through MCP.
+Java | Spring Boot | Vue | Docker
+Live app — https://knowledgebase.blaqc.space
+
+Remote Development Toolkit — https://github.com/kubilaycaglayan/devboost
+iOS & macOS remote-development tool for SSH port forwards, remote services, folder syncs, Docker, and AI usage.
+iOS | macOS | SSH
+
+Multi-Server tmux Manager — https://github.com/kubilaycaglayan/hostbud
+A tmux-based project manager hosted behind a VPN that can connect to multiple servers.
+Go | Vue | tmux | Agentic Coding
+
+LSM Tree Key-Value Store — https://github.com/kubilaycaglayan/lsm_tree_ss_table
+Key-value store backed by a WAL, LSM tree, SSTables, and configurable compaction.
+Ruby | LSM Trees | SSTables
+
+Articles
+How to Create the Simplest Friendship Model on Rails — https://medium.com/@kblycaglayan/how-to-create-the-simplest-friendship-model-on-rails-de0ab51448ec
+3 Initial Experiences at Microverse — https://medium.com/@kblycaglayan/3-initial-experience-at-microverse-20d22354be2e
+Online Learning Nowadays — https://medium.com/@kblycaglayan/online-learning-nowadays-a03cc1987833
+How To “Seed” With Ruby on Rails — https://kubilaycaglayan.medium.com/how-to-seed-with-ruby-on-rails-%EF%B8%8F-1d2dceda3e7d
+
+Site stack and dependencies named in the HTML
+HTML
+CSS (Bootstrap and stylesheets/main.css)
+JavaScript (script/autocopy.js, script/wolfy.js, script/sound.js, script/loading.js)
+Font Awesome — https://kit.fontawesome.com/2c6133bcaa.js
+Google Fonts (Fira Sans) — https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;300;400;600;900&display=swap
+Google Analytics — https://www.googletagmanager.com/gtag/js?id=UA-167893407-1
