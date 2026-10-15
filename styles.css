@@ -18,9 +18,9 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--focus); outline
 button { font: inherit; }
 ::selection { background: var(--accent); color: var(--bg); }
 .wrap { width: min(100% - 36px, 1160px); margin-inline: auto; }
-.site-header { min-height: 64px; display: flex; align-items: center; justify-content: flex-end; gap: 16px; }
+.site-header { position: fixed; top: 0; left: 50%; transform: translateX(-50%); min-height: 64px; display: flex; align-items: center; justify-content: flex-end; gap: 16px; pointer-events: none; }
 .site-header nav { display: flex; gap: 16px; }
-.site-header nav a { color: var(--muted); text-decoration: none; font-size: 12px; }
+.site-header nav a { color: var(--muted); text-decoration: none; font-size: 12px; pointer-events: auto; }
 .site-header nav a:hover, .social-links a:hover { color: var(--accent); }
 .hero { display: flex; flex-direction: column; align-items: center; justify-content: center; padding-block: 48px 54px; text-align: center; }
 h1, h2, p { margin-top: 0; }
@@ -74,6 +74,7 @@ h1 { max-width: 920px; font-size: clamp(22px, 5vw, 48px); font-weight: 550; line
 .social-links a { color: var(--muted); text-decoration: none; font-size: 16px; }
 .social-links a:last-child { padding-right: 10ch; }
 @media (max-width: 420px) { .site-header nav { gap: 11px; } }
+@media (max-width: 719px) { body { padding-top: 42px; background-position: center 136px, center 136px; } }
 @media (min-width: 720px) {
   .wrap { width: min(100% - 70px, 1160px); }
   .site-header { min-height: 76px; }
