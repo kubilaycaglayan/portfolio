@@ -175,6 +175,12 @@ h1 {
   padding: 11px 15px;
 }
 
+.hero-link-space {
+  width: 120px;
+  height: 37px;
+  margin-top: 8px;
+}
+
 .section {
   border-top: 1px solid var(--line);
   padding-block: 54px 64px;
