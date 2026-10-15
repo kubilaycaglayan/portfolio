@@ -12,7 +12,7 @@
 }
 * { box-sizing: border-box; }
 html { overflow-x: clip; }
-body { margin: 0; background: var(--bg); color: var(--text); }
+body { margin: 0; background-color: var(--bg); background-image: linear-gradient(to bottom, var(--bg) 0%, rgba(32, 42, 50, var(--ocean-overlay, .68)) 18%, rgba(32, 42, 50, var(--ocean-overlay, .68)) 72%, var(--bg) 100%), url("assets/ocean-background.webp"); background-repeat: no-repeat; background-size: 100% 220px, 100% 220px; background-position: center 64px, center 64px; background-attachment: fixed, fixed; color: var(--text); }
 a { color: inherit; }
 a:focus-visible, button:focus-visible { outline: 3px solid var(--focus); outline-offset: 5px; }
 button { font: inherit; }
@@ -22,8 +22,7 @@ button { font: inherit; }
 .site-header nav { display: flex; gap: 16px; }
 .site-header nav a { color: var(--muted); text-decoration: none; font-size: 12px; }
 .site-header nav a:hover, .social-links a:hover { color: var(--accent); }
-.hero { position: relative; isolation: isolate; display: flex; flex-direction: column; align-items: center; justify-content: center; padding-block: 48px 54px; text-align: center; }
-.hero::before { position: absolute; z-index: -1; inset-block: 0; left: 50%; width: 100vw; transform: translateX(-50%); background: url("assets/ocean-background.webp") center 58% / cover no-repeat fixed; content: ""; opacity: .32; filter: blur(1px); -webkit-mask-image: linear-gradient(to bottom, transparent 0%, #000 18%, #000 72%, transparent 100%); mask-image: linear-gradient(to bottom, transparent 0%, #000 18%, #000 72%, transparent 100%); pointer-events: none; }
+.hero { display: flex; flex-direction: column; align-items: center; justify-content: center; padding-block: 48px 54px; text-align: center; }
 h1, h2, p { margin-top: 0; }
 h1, h2 { letter-spacing: -.055em; }
 h1 { max-width: 920px; font-size: clamp(22px, 5vw, 48px); font-weight: 550; line-height: 1.06; margin-bottom: 12px; }
@@ -77,6 +76,7 @@ h1 { max-width: 920px; font-size: clamp(22px, 5vw, 48px); font-weight: 550; line
 @media (min-width: 720px) {
   .wrap { width: min(100% - 70px, 1160px); }
   .site-header { min-height: 76px; }
+  body { background-size: 100% 304px, 100% 304px; background-position: center 76px, center 76px; }
   .site-header nav { gap: 34px; }
   .site-header nav a { font-size: 13px; }
   .hero { padding-block: 72px 82px; }
