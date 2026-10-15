@@ -491,7 +491,7 @@ h1 {
     width: min(100vw, 800px);
     aspect-ratio: 1800 / 799;
     transform: translateX(-50%);
-    background-image: linear-gradient(to bottom, var(--bg) 0%, rgba(32, 42, 50, calc(var(--ocean-overlay, .50) * .68)) 18%, rgba(32, 42, 50, calc(var(--ocean-overlay, .50) * .68)) 72%, var(--bg) 100%), url("assets/ocean-background.webp");
+    background-image: linear-gradient(to bottom, var(--bg) 0%, rgba(32, 42, 50, var(--ocean-overlay, .50)) 18%, rgba(32, 42, 50, var(--ocean-overlay, .50)) 72%, var(--bg) 100%), url("assets/ocean-background.webp");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     pointer-events: none;
