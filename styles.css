@@ -22,12 +22,12 @@ button { font: inherit; }
 .site-header nav { display: flex; gap: 16px; }
 .site-header nav a { color: var(--muted); text-decoration: none; font-size: 12px; }
 .site-header nav a:hover, .social-links a:hover { color: var(--accent); }
-.hero { position: relative; isolation: isolate; display: flex; flex-direction: column; justify-content: center; padding-block: 48px 54px; }
+.hero { position: relative; isolation: isolate; display: flex; flex-direction: column; align-items: center; justify-content: center; padding-block: 48px 54px; text-align: center; }
 .hero::before { position: absolute; z-index: -1; inset-block: 0; left: 50%; width: 100vw; transform: translateX(-50%); background: url("assets/ocean-background.webp") center 58% / cover no-repeat fixed; content: ""; opacity: .32; filter: blur(1px); -webkit-mask-image: linear-gradient(to bottom, transparent 0%, #000 18%, #000 72%, transparent 100%); mask-image: linear-gradient(to bottom, transparent 0%, #000 18%, #000 72%, transparent 100%); pointer-events: none; }
 h1, h2, p { margin-top: 0; }
 h1, h2 { letter-spacing: -.055em; }
 h1 { max-width: 920px; font-size: clamp(22px, 5vw, 48px); font-weight: 550; line-height: 1.06; margin-bottom: 12px; }
-.hero-name { display: inline; border: 0; padding: 0; background: none; color: var(--text); font: inherit; letter-spacing: inherit; line-height: inherit; text-align: left; cursor: pointer; }
+.hero-name { display: inline; border: 0; padding: 0; background: none; color: var(--text); font: inherit; letter-spacing: inherit; line-height: inherit; text-align: center; cursor: pointer; }
 .hero-name:hover { color: var(--accent); }
 .sound-icon { width: 15px; height: 15px; vertical-align: middle; color: var(--accent); }
 .hero-role { max-width: 680px; color: var(--muted); font-family: Georgia, "Times New Roman", serif; font-size: clamp(14px, 1.65vw, 17px); line-height: 1.4; }
