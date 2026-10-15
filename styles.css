@@ -54,7 +54,7 @@ h1 { max-width: 920px; font-size: clamp(22px, 5vw, 48px); font-weight: 550; line
 .project-tags { display: flex; flex-wrap: wrap; gap: 6px; list-style: none; padding: 0; margin: 0; }
 .project-tags li { padding: 5px 8px; border: 1px solid var(--line); border-radius: 3px; color: var(--accent); font-size: 12px; line-height: 1.25; }
 .project-links { display: flex; flex-direction: column; align-items: flex-end; gap: 8px; min-width: 0; text-align: right; }
-.project-links a { max-width: 100%; color: var(--accent); font-size: 12px; font-weight: 600; text-decoration: none; overflow-wrap: anywhere; }
+.project-links a { display: inline-flex; align-items: center; justify-content: flex-end; min-width: 24px; min-height: 18px; max-width: 100%; padding: 2px 4px; color: var(--accent); font-size: 12px; font-weight: 600; line-height: 1.2; text-decoration: none; overflow-wrap: anywhere; }
 .project-links a:hover { text-decoration: underline; text-underline-offset: 3px; }
 .article-list { list-style: none; padding: 0; margin: 0; border-top: 1px solid var(--line); }
 .article-list li { border-bottom: 1px solid var(--line); }
