@@ -51,7 +51,7 @@ iOS | macOS | SSH
 Multi-Server tmux Manager (HostBud) — https://github.com/kubilaycaglayan/hostbud
 A tmux-based project manager hosted behind a VPN that can connect to multiple servers.
 Go | Vue | tmux | Agentic Coding
-Live Behind VPN — https://hostbud.blaqc.space
+Live behind VPN — https://hostbud.blaqc.space
 
 LSM Tree Key-Value Store — https://github.com/kubilaycaglayan/lsm_tree_ss_table
 Key-value store backed by a WAL, LSM tree, SSTables, and configurable compaction.
