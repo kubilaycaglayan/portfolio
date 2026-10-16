@@ -44,7 +44,7 @@ Personal productivity app that connects personal data to AI pipelines through MC
 Java | Spring Boot | Vue | Docker
 Live app — https://knowledgebase.blaqc.space
 
-Remote Development Toolkit — https://github.com/kubilaycaglayan/devboost
+Remote Development Toolkit (DevBoost) — https://github.com/kubilaycaglayan/devboost
 iOS & macOS remote-development tool for SSH port forwards, remote services, folder syncs, Docker, and AI usage.
 iOS | macOS | SSH
 

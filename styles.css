@@ -361,6 +361,17 @@ h1 {
   color: var(--link-live);
 }
 
+.project-badge {
+  padding: 2px 4px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.2;
+  background: linear-gradient(90deg, #a8d1b4, #9ebbc4 50%, #b9a8dc);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
 .project-links a:hover {
   text-decoration: underline;
   text-underline-offset: 3px;
