@@ -348,6 +348,10 @@ h1 {
   overflow-wrap: anywhere;
 }
 
+.project-footer .project-links {
+  margin-top: 4px;
+}
+
 .project-links a[href*="huggingface.co"] {
   color: var(--link-hf);
 }
