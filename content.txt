@@ -37,7 +37,7 @@ Hugging Face model — https://huggingface.co/kubilaycaglayan/wave-regression
 Millennium Series RAG Explorer — https://github.com/kubilaycaglayan/advanced-rag-with-langfuse
 A deployed, observability-first RAG pipeline that connects subtle details across thousands of pages, optimized for the Millennium series.
 RAG | LLM | Langfuse | Python
-Live app — https://millenium.blaqc.space
+Live app — https://millennium.blaqc.space
 
 Personal Productivity Hub — https://github.com/kubilaycaglayan/knowledge-base
 Personal productivity app that connects personal data to AI pipelines through MCP.
