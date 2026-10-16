@@ -515,6 +515,29 @@ h1 {
     background-size: 100% 100%;
     pointer-events: none;
   }
+
+  .contact {
+    text-align: center;
+  }
+
+  .contact-primary,
+  .social-links {
+    align-items: center;
+  }
+
+  .social-links a:last-child {
+    padding-right: 0;
+  }
+
+  .contact-row {
+    position: relative;
+  }
+
+  #copy-status {
+    position: absolute;
+    left: 100%;
+    margin-left: 12px;
+  }
 }
 
 @media (min-width: 720px) {
