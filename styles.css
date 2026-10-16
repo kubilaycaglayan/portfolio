@@ -349,7 +349,8 @@ h1 {
 }
 
 .project-footer .project-links {
-  margin-top: 4px;
+  position: relative;
+  top: 4px;
 }
 
 .project-links a[href*="huggingface.co"] {
