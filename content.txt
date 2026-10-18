@@ -39,7 +39,7 @@ A deployed, observability-first RAG pipeline that connects subtle details across
 RAG | LLM | Langfuse | Python
 Live app — https://millennium.blaqc.space
 
-Personal Productivity Hub — https://github.com/kubilaycaglayan/knowledge-base
+Personal Productivity (Knowledge Base) — https://github.com/kubilaycaglayan/knowledge-base
 Personal productivity app that connects personal data to AI pipelines through MCP.
 Java | Spring Boot | Vue | Docker
 Live app — https://knowledgebase.blaqc.space
