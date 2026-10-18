@@ -29,7 +29,7 @@ Say Hello! — mailto:contactkubilay@gmail.com?subject=Website%20Contact
 
 Products
 Wave Regression Model — https://github.com/kubilaycaglayan/wave-regression-model
-A deep-learning wave-prediction pipeline that predicts the waviness of the sea.
+A deep-learning pipeline that processes hundreds of sea photos and trains a regression head on a pretrained EfficientNet-B0 backbone to estimate how wavy the sea is in a given photo.
 Neural Networks | PyTorch | Lightning AI
 Live app (Swimmable™) — https://swimmable.blaqc.space/
 Hugging Face model — https://huggingface.co/kubilaycaglayan/wave-regression
