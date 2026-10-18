@@ -305,6 +305,10 @@ h1 {
   border-top: 1px solid var(--line);
 }
 
+.project-card-wave .project-footer {
+  grid-template-columns: minmax(0, 1fr) auto;
+}
+
 .project-tags {
   display: flex;
   flex-wrap: wrap;
