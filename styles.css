@@ -288,6 +288,14 @@ h1 {
   overflow-wrap: anywhere;
 }
 
+.project-brand {
+  color: var(--accent);
+  background: linear-gradient(to bottom, var(--text) 0%, var(--focus) 33%, var(--accent) 66%, var(--link-live) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .project-grid p {
   margin: 10px 0 0;
   color: var(--muted);
