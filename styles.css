@@ -376,6 +376,23 @@ h1 {
   top: 4px;
 }
 
+.project-links-inline {
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+@media (max-width: 480px) {
+  .project-footer-wave {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 6px;
+  }
+
+  .project-footer-wave .project-links-inline {
+    justify-content: flex-end;
+  }
+}
+
 .project-links a[href*="huggingface.co"] {
   color: var(--link-hf);
 }

@@ -32,7 +32,7 @@ Wave Regression Model — https://github.com/kubilaycaglayan/wave-regression-mod
 A deep-learning pipeline that processes hundreds of sea photos and trains a regression head on a pretrained EfficientNet-B0 backbone to estimate how wavy the sea is in a given photo.
 Neural Networks | PyTorch | Lightning AI
 Live app (Swimmable™) — https://swimmable.blaqc.space/
-Hugging Face model — https://huggingface.co/kubilaycaglayan/wave-regression
+Hugging Face — https://huggingface.co/kubilaycaglayan/wave-regression
 
 Millennium Series RAG Explorer — https://github.com/kubilaycaglayan/advanced-rag-with-langfuse
 A deployed, observability-first RAG pipeline that connects subtle details across thousands of pages, optimized for the Millennium series.
