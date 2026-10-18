@@ -28,9 +28,9 @@ Email — contactkubilay@gmail.com
 Say Hello! — mailto:contactkubilay@gmail.com?subject=Website%20Contact
 
 Products
-Sea Waviness Predictor — https://github.com/kubilaycaglayan/wave-regression-model
+Wave Regression Model — https://github.com/kubilaycaglayan/wave-regression-model
 A deep-learning wave-prediction pipeline that predicts the waviness of the sea.
-Neural Networks | Regression Model | Python
+Neural Networks | PyTorch | Lightning AI
 Live app (Swimmable™) — https://swimmable.blaqc.space/
 Hugging Face model — https://huggingface.co/kubilaycaglayan/wave-regression
 
