@@ -41,7 +41,7 @@ Live app — https://millennium.blaqc.space
 
 Personal Productivity (Knowledge Base™) — https://github.com/kubilaycaglayan/knowledge-base
 Personal productivity app that connects personal data to AI pipelines through MCP.
-Java | Spring Boot | Vue | Docker
+Java | Spring Boot | Vue | Docker | WebSocket
 Live app — https://knowledgebase.blaqc.space
 
 Remote Development Toolkit (DevBoost™) — https://github.com/kubilaycaglayan/devboost
