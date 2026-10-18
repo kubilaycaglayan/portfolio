@@ -31,31 +31,37 @@ Products
 Wave Regression Model — https://github.com/kubilaycaglayan/wave-regression-model
 A deep-learning pipeline that processes hundreds of sea photos and trains a regression head on a pretrained EfficientNet-B0 backbone to estimate how wavy the sea is in a given photo.
 Neural Networks | PyTorch | Lightning AI
+Skills: Computer Vision | Semantic Segmentation | Image Preprocessing | Transfer Learning | Regression | Model Evaluation | Model Fine-Tuning
 Live app (Swimmable™) — https://swimmable.blaqc.space/
 Hugging Face — https://huggingface.co/kubilaycaglayan/wave-regression
 
 Advanced RAG for Novels — https://github.com/kubilaycaglayan/advanced-rag-with-langfuse
-A deployed, observability-first RAG pipeline that connects subtle details across thousands of pages, optimized for the Millennium series.
-RAG | LLM | Langfuse | Python
+Deployed, observability-first RAG pipeline that connects subtle details across thousands of pages, optimized for the Millennium series.
+RAG | LLM | Langfuse | Python | Ollama
+Skills: RAG Pipelines | Graph RAG | BM25 | Semantic Search | Query Expansion | HyDE | Rank Fusion | Reranking | Grounded Citations | LLM Evaluation
 Live app — https://millennium.blaqc.space
 
 Personal Productivity (Knowledge Base™) — https://github.com/kubilaycaglayan/knowledge-base
 Personal productivity app that connects personal data to AI pipelines through MCP.
 Java | Spring Boot | Vue | Docker | WebSocket
+Skills: Full-Stack Development | REST APIs | Authentication | Real-Time Updates | Database Migrations | iOS Development | Deployment | Model Context Protocol (MCP)
 Live app — https://knowledgebase.blaqc.space
 
 Remote Development Toolkit (DevBoost™) — https://github.com/kubilaycaglayan/devboost
 iOS & macOS remote-development tool for SSH port forwards, remote services, folder syncs, Docker, and AI usage.
-iOS | macOS | SSH
+iOS | macOS | SSH | SFTP
+Skills: iOS & macOS Development | Secure Remote Access | SSH Port Forwarding | File Synchronization | Service Monitoring
 
 Multi-Server tmux Manager (HostBud™) — https://github.com/kubilaycaglayan/hostbud
 A tmux-based project manager hosted behind a VPN that can connect to multiple servers.
 Go | Vue | tmux | Agentic Coding
+Skills: Go Backend Development | Browser Terminals | Remote Session Management | Secure SSH Access | Agent Workflow Orchestration | Tailwind CSS
 Live behind VPN — https://hostbud.blaqc.space
 
 LSM Tree Key-Value Store — https://github.com/kubilaycaglayan/lsm_tree_ss_table
 Key-value store backed by a WAL, LSM tree, SSTables, and configurable compaction.
 Ruby | LSM Trees | SSTables
+Skills: Storage Engine Design | Crash Recovery | Compaction | Binary Search | Unit Testing
 
 Articles
 How to Create the Simplest Friendship Model on Rails — https://medium.com/@kblycaglayan/how-to-create-the-simplest-friendship-model-on-rails-de0ab51448ec

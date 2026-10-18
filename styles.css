@@ -346,6 +346,55 @@ h1 {
   line-height: 1.25;
 }
 
+.project-tags li.project-tags-more {
+  padding: 0;
+  border: 0;
+}
+
+.project-skills-toggle {
+  display: block;
+  min-width: 27px;
+  min-height: 25px;
+  padding: 0 6px;
+  border: 0;
+  background: none;
+  color: var(--accent);
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  transition: color 180ms ease;
+}
+
+.project-skills-toggle:hover,
+.project-skills-toggle[aria-expanded="true"] {
+  color: var(--text);
+}
+
+.project-skills-panel {
+  height: 0;
+  margin-top: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition:
+    height 460ms cubic-bezier(.2, .75, .25, 1),
+    margin-top 460ms cubic-bezier(.2, .75, .25, 1),
+    opacity 780ms ease;
+}
+
+.project-skills-panel > .project-tags {
+  opacity: 0;
+  transition: opacity 900ms ease;
+}
+
+#products.skills-expanded .project-skills-panel {
+  margin-top: 6px;
+  opacity: 1;
+}
+
+#products.skills-expanded .project-skills-panel > .project-tags {
+  opacity: 1;
+}
+
 .project-links {
   display: flex;
   flex-direction: column;
@@ -680,5 +729,13 @@ h1 {
 @media (prefers-reduced-motion: reduce) {
   :root {
     scroll-behavior: auto;
+  }
+
+  .project-skills-panel {
+    transition: none;
+  }
+
+  .project-skills-toggle {
+    transition: none;
   }
 }
