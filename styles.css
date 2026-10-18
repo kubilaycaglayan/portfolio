@@ -291,6 +291,13 @@ h1 {
 .project-brand {
   color: var(--accent);
   background: linear-gradient(to bottom, var(--text) 0%, var(--focus) 33%, var(--accent) 66%, var(--link-live) 100%);
+  background: linear-gradient(
+    to bottom,
+    color-mix(in srgb, var(--text) 80%, #45add1 20%) 0%,
+    color-mix(in srgb, var(--focus) 80%, #45add1 20%) 33%,
+    color-mix(in srgb, var(--accent) 80%, #45add1 20%) 66%,
+    color-mix(in srgb, var(--link-live) 80%, #4bc98f 20%) 100%
+  );
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
