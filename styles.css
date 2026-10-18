@@ -303,6 +303,14 @@ h1 {
   -webkit-text-fill-color: transparent;
 }
 
+.project-trademark {
+  margin-left: 1px;
+  color: var(--link-live);
+  font-size: .6em;
+  line-height: 0;
+  vertical-align: super;
+}
+
 .project-grid p {
   margin: 10px 0 0;
   color: var(--muted);
