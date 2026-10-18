@@ -426,12 +426,24 @@ h1 {
 }
 
 .project-links-inline {
-  flex-direction: row;
+  flex-direction: row-reverse;
   align-items: center;
   gap: 8px;
 }
 
 @media (max-width: 480px) {
+  .project-footer .project-tags {
+    position: relative;
+    padding-right: 34px;
+  }
+
+  .project-footer .project-tags .project-tags-more {
+    position: absolute;
+    top: 0;
+    left: var(--skills-toggle-left, auto);
+    right: auto;
+  }
+
   .project-footer-wave .project-links-inline {
     flex-direction: column;
     align-items: flex-end;

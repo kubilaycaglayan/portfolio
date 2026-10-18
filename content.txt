@@ -44,7 +44,7 @@ Live app — https://millennium.blaqc.space
 Personal Productivity (Knowledge Base™) — https://github.com/kubilaycaglayan/knowledge-base
 Personal productivity app that connects personal data to AI pipelines through MCP.
 Java | Spring Boot | Vue | Docker | WebSocket
-Skills: Full-Stack Development | REST APIs | Authentication | Real-Time Updates | Database Migrations | iOS Development | Deployment | Model Context Protocol (MCP)
+Skills: Full-Stack Development | REST APIs | Authentication | Real-Time Updates | Database Migrations | iOS | Model Context Protocol (MCP)
 Live app — https://knowledgebase.blaqc.space
 
 Remote Development Toolkit (DevBoost™) — https://github.com/kubilaycaglayan/devboost

@@ -3,11 +3,38 @@ const skillPanels = [...document.querySelectorAll('.project-skills-panel')];
 const products = document.querySelector('#products');
 let focusAdjustmentId = 0;
 
+function positionMobileToggle(button) {
+  const list = button.closest('.project-tags');
+  const toggleContainer = button.closest('.project-tags-more');
+  const listRect = list.getBoundingClientRect();
+  const chips = [...list.children].filter((item) => !item.classList.contains('project-tags-more'));
+
+  if (!window.matchMedia('(max-width: 480px)').matches || chips.length === 0) {
+    toggleContainer.style.removeProperty('--skills-toggle-left');
+    return;
+  }
+
+  const chipRects = chips.map((chip) => chip.getBoundingClientRect());
+  const firstRowTop = Math.min(...chipRects.map((rect) => rect.top));
+  const firstRowRight = Math.max(...chipRects
+    .filter((rect) => Math.abs(rect.top - firstRowTop) < 1.5)
+    .map((rect) => rect.right));
+  const gap = parseFloat(getComputedStyle(list).columnGap) || 6;
+
+  toggleContainer.style.setProperty('--skills-toggle-left', `${firstRowRight - listRect.left + gap}px`);
+}
+
+function positionMobileToggles() {
+  skillToggles.forEach(positionMobileToggle);
+}
+
 skillPanels.forEach((panel, index) => {
   panel.id = `project-skills-${index + 1}`;
 });
 
 const controlledPanels = skillPanels.map((panel) => panel.id).join(' ');
+positionMobileToggles();
+window.addEventListener('resize', positionMobileToggles);
 
 function preserveClickedCard(card, anchorTop, reduceMotion) {
   const adjustmentId = ++focusAdjustmentId;
