@@ -297,16 +297,12 @@ h1 {
 
 .project-footer {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1fr) auto;
   align-items: start;
   gap: 12px;
   margin-top: 18px;
   padding-top: 13px;
   border-top: 1px solid var(--line);
-}
-
-.project-card-wave .project-footer {
-  grid-template-columns: minmax(0, 1fr) auto;
 }
 
 .project-tags {
