@@ -1,6 +1,7 @@
 const skillToggles = [...document.querySelectorAll('.project-skills-toggle')];
 const skillPanels = [...document.querySelectorAll('.project-skills-panel')];
 const products = document.querySelector('#products');
+let focusAdjustmentId = 0;
 
 skillPanels.forEach((panel, index) => {
   panel.id = `project-skills-${index + 1}`;
@@ -8,11 +9,36 @@ skillPanels.forEach((panel, index) => {
 
 const controlledPanels = skillPanels.map((panel) => panel.id).join(' ');
 
+function preserveClickedCard(card, anchorTop, reduceMotion) {
+  const adjustmentId = ++focusAdjustmentId;
+  const startedAt = performance.now();
+  products.classList.add('preserve-card-focus');
+  document.documentElement.classList.add('preserve-card-scroll');
+
+  function adjustScroll(time) {
+    if (adjustmentId !== focusAdjustmentId) return;
+
+    const offset = card.getBoundingClientRect().top - anchorTop;
+    if (Math.abs(offset) > 0.5) window.scrollBy(0, offset);
+
+    if (!reduceMotion && time - startedAt < 520) {
+      requestAnimationFrame(adjustScroll);
+    } else {
+      products.classList.remove('preserve-card-focus');
+      document.documentElement.classList.remove('preserve-card-scroll');
+    }
+  }
+
+  requestAnimationFrame(adjustScroll);
+}
+
 skillToggles.forEach((button) => {
   button.setAttribute('aria-controls', controlledPanels);
   button.addEventListener('click', () => {
     const showSkills = button.getAttribute('aria-expanded') !== 'true';
     const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const clickedCard = button.closest('.project-card');
+    const clickedCardTop = clickedCard.getBoundingClientRect().top;
 
     skillPanels.forEach((panel) => {
       panel.style.height = `${panel.getBoundingClientRect().height}px`;
@@ -38,6 +64,8 @@ skillToggles.forEach((button) => {
       toggle.setAttribute('aria-label', `${showSkills ? 'Hide' : 'Show'} skills for all projects`);
       toggle.textContent = showSkills ? '×' : '…';
     });
+
+    preserveClickedCard(clickedCard, clickedCardTop, reduceMotion);
   });
 });
 

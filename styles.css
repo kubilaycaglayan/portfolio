@@ -432,14 +432,19 @@ h1 {
 }
 
 @media (max-width: 480px) {
-  .project-footer-wave {
-    grid-template-columns: minmax(0, 1fr);
-    gap: 6px;
-  }
-
   .project-footer-wave .project-links-inline {
-    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
   }
+}
+
+html.preserve-card-scroll {
+  scroll-behavior: auto;
+}
+
+#products.preserve-card-focus {
+  overflow-anchor: none;
 }
 
 .project-links a[href*="huggingface.co"] {
