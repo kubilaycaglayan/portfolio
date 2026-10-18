@@ -288,7 +288,8 @@ h1 {
   overflow-wrap: anywhere;
 }
 
-.project-brand {
+.project-brand,
+.project-trademark {
   color: var(--accent);
   background: linear-gradient(to bottom, var(--text) 0%, var(--focus) 33%, var(--accent) 66%, var(--link-live) 100%);
   background: linear-gradient(
@@ -305,7 +306,6 @@ h1 {
 
 .project-trademark {
   margin-left: 1px;
-  color: var(--link-live);
   font-size: .6em;
   line-height: 0;
   vertical-align: super;
