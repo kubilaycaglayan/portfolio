@@ -9,13 +9,15 @@
       const timeout = setTimeout(() => controller.abort(), timeoutMs);
 
       try {
-        // Opaque responses still confirm reachability without requiring CORS.
-        await fetch(link.href, {
-          mode: 'no-cors',
+        const response = await fetch(link.href, {
+          mode: 'cors',
           cache: 'no-store',
           credentials: 'omit',
           signal: controller.signal,
         });
+        if (!response.ok) {
+          throw new Error(`Product returned HTTP ${response.status}`);
+        }
         link.style.removeProperty('display');
         return;
       } catch {
