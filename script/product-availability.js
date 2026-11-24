@@ -18,11 +18,11 @@
         if (!response.ok) {
           throw new Error(`Product returned HTTP ${response.status}`);
         }
-        link.style.removeProperty('display');
+        link.style.removeProperty('visibility');
         return;
       } catch {
-        // Inline display overrides the project link styles while unavailable.
-        link.style.display = 'none';
+        // Preserve the link's space to avoid moving surrounding content.
+        link.style.visibility = 'hidden';
       } finally {
         clearTimeout(timeout);
       }
